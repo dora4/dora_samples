@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <!-- 如网页链接的颜色 -->
+    <color name="colorAccent">#389CFF</color>
+</resources>
