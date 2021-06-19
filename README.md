@@ -152,8 +152,10 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="https://github.com/dora4/dora_samples/blob/master/donate/alipay.jpg" alt="支付宝打赏作者" width="260px" /> | <img src="https://github.com/dora4/dora_samples/blob/master/donate/wxpay.jpg" alt="微信打赏作者" width="260px" /> |
 
-捐赠数字货币（将捐赠截图发给dora924666990@gmail.com可以获取作者的联系方式）
+捐赠虚拟货币
 
-###### 比特币(BTC)：3Cx7ReN6aedaxJieVUchMWE6uGyzvaV21b
+###### 柚子(EOS): 钱包地址 - doramusic123 , 备注TAG - 你的github用户名
 
-###### USDT（TRC-20链）: THE3r6tjr2DBkKeCMvKCusKHJQJi4Ni2eN
+###### USDT(TRC-20链): 钱包地址 - TYVXzqctSSPSTeVPYg7i7qbEtSxwrAJQ5y
+
+###### 以太坊(ETH): 钱包地址 - 0x5dA12D7DB7B5D6C8D2Af78723F6dCE4A3C89caB9
