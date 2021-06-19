@@ -145,12 +145,8 @@
      这个是自动管理BaseActivity内部Fragment切换的框架，常用于不需要activity的转场动画，而直接改变整体界面布局的场景。这里暂不做详细介绍，有兴趣的可以阅读源代码。
 
      
-
-撸码不易，如果觉得帮您节省了大量的开发时间，对您有所帮助，欢迎您的赞赏！
-
-| 支付宝打赏                                                   | 微信打赏                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://github.com/dora4/dora_samples/blob/master/donate/alipay.jpg" alt="支付宝打赏作者" width="260px" /> | <img src="https://github.com/dora4/dora_samples/blob/master/donate/wxpay.jpg" alt="微信打赏作者" width="260px" /> |
+     
+如果帮您节省了大量的开发时间，对您有所帮助，欢迎您的赞赏！
 
 捐赠虚拟货币
 
