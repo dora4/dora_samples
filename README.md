@@ -24,7 +24,7 @@
 
      网络断开和连接状态的监听
 
-  5. onShowStatusBar()
+  5. onSetStatusBar()
     
      方便初始化状态栏
   
