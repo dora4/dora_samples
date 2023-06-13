@@ -32,9 +32,6 @@
             android:name=".ui.WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.RequestPermissionActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.IntroduceActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -42,6 +39,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MenuListActivity"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,7 +48,7 @@
             </intent-filter>
         </activity> <!-- Dora框架内置配置 -->
         <meta-data
-            android:name="dora.TaskStackGlobalConfig"
+            android:name="dora.lifecycle.config.TaskStackGlobalConfig"
             android:value="GlobalConfig" /> <!-- 自定义生命周期配置 -->
         <meta-data
             android:name="com.example.dora.lifecycle.ARouterGlobalConfig"

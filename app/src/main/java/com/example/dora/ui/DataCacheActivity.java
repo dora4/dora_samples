@@ -2,6 +2,7 @@ package com.example.dora.ui;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -19,7 +20,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import dora.BaseActivity;
-import dora.util.NetworkUtils;
+import dora.util.NetUtils;
 import dora.util.ViewUtils;
 
 /**
@@ -37,9 +38,10 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
     }
 
     @Override
-    protected void onSetupComponent() {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         DaggerMenuComponent.builder().appComponent(((SampleApp)getApplication())
                 .getAppComponent()).build().inject(this);
+        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -51,12 +53,7 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
 //                .tables(PopMusic::class.java)
 //            .build()
 //        Orm.init(this, config)
-        if (NetworkUtils.checkNetwork()) {
-            onNetworkConnected(NetworkUtils.getApnType());
-        } else {
-            onNetworkDisconnected();
-        }
-        repository.getListData().observe(this, new Observer<List<PopMusic>>() {
+        repository.getListLiveData().observe(this, new Observer<List<PopMusic>>() {
             @Override
             public void onChanged(List<PopMusic> popMusics) {
                 ViewUtils.configRecyclerView(mBinding.rvDataCache).setAdapter(new PopMusicAdapter(popMusics));
@@ -65,7 +62,7 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
     }
 
     @Override
-    protected void onNetworkConnected(NetworkUtils.ApnType type) {
+    protected void onNetworkConnected(NetUtils.ApnType type) {
         mBinding.tvDataCacheNetwork.setText("网络可用");
     }
 

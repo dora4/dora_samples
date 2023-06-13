@@ -1,29 +1,23 @@
 package com.example.dora
 
-import android.view.View
+import com.chad.library.adapter.base.BaseQuickAdapter
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.dora.bean.Menu
-import com.example.dora.databinding.ItemMenuListBinding
-import dora.adapter.BaseAdapter
-import dora.adapter.ViewHolder
 
 /**
  * 继承JKAdapter可以实现item的数据加载。
  */
-class MenuListAdapter(menus: MutableList<Menu>) : BaseAdapter<Menu, ItemMenuListBinding>(menus) {
+class MenuListAdapter(menus: MutableList<Menu>) : BaseQuickAdapter<Menu, BaseViewHolder>(
+    R.layout.item_menu_list, menus) {
 
-    override fun getLayoutId(viewType: Int): Int {
+    fun getLayoutId(viewType: Int): Int {
         return R.layout.item_menu_list
     }
 
-    class MenuListViewHolder(itemView: View?) : ViewHolder<Menu, ItemMenuListBinding>(itemView) {
-
-        override fun setData(binding: ItemMenuListBinding, data: Menu, position: Int) {
-            binding.menu = data
-            binding.tvMenuItemId.text = (position + 1).toString()
-        }
-    }
-
-    override fun getHolder(v: View, viewType: Int): ViewHolder<Menu, ItemMenuListBinding> {
-        return MenuListViewHolder(v)
+    override fun convert(holder: BaseViewHolder, item: Menu) {
+        holder.setText(R.id.tv_menu_item_id, "${getItemPosition(item) + 1}")
+        holder.setTextColor(R.id.tv_menu_item_id, item.color)
+        holder.setText(R.id.tv_menu_item_title, item.title)
+        holder.setTextColor(R.id.tv_menu_item_title, item.color)
     }
 }

@@ -1,15 +1,18 @@
 package com.example.dora.model;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 
-import dora.db.test.OrmTable;
-import dora.db.test.PrimaryKeyEntity;
-import dora.db.test.PrimaryKeyId;
-import dora.db.test.converter.StringListConverter;
-import dora.db.test.table.Column;
-import dora.db.test.table.Convert;
-import dora.db.test.table.Id;
-import dora.db.test.table.Table;
+import dora.db.constraint.Id;
+import dora.db.converter.StringListConverter;
+import dora.db.migration.OrmMigration;
+import dora.db.table.Column;
+import dora.db.table.Convert;
+import dora.db.table.OrmTable;
+import dora.db.table.PrimaryKeyEntry;
+import dora.db.table.PrimaryKeyId;
+import dora.db.table.Table;
 
 /**
  * 所有用TableManager创建的表务必实现OrmTable接口。
@@ -73,12 +76,18 @@ public class UserEntity implements OrmTable {
     }
 
     @Override
-    public PrimaryKeyEntity getPrimaryKey() {
+    public PrimaryKeyEntry getPrimaryKey() {
         return new PrimaryKeyId(id);
     }
 
     @Override
     public boolean isUpgradeRecreated() {
         return false;
+    }
+
+    @NonNull
+    @Override
+    public OrmMigration[] getMigrations() {
+        return new OrmMigration[0];
     }
 }

@@ -1,10 +1,13 @@
 package com.example.dora.datacache.model;
 
-import dora.db.OrmTable;
-import dora.db.PrimaryKeyEntity;
-import dora.db.PrimaryKeyId;
+import androidx.annotation.NonNull;
+
+import dora.db.constraint.Id;
+import dora.db.migration.OrmMigration;
 import dora.db.table.Column;
-import dora.db.table.Id;
+import dora.db.table.OrmTable;
+import dora.db.table.PrimaryKeyEntry;
+import dora.db.table.PrimaryKeyId;
 import dora.db.table.Table;
 
 @Table("pop_music")
@@ -38,13 +41,20 @@ public class PopMusic implements OrmTable {
         this.musicArtist = musicArtist;
     }
 
+    @NonNull
     @Override
-    public PrimaryKeyEntity getPrimaryKey() {
+    public PrimaryKeyEntry getPrimaryKey() {
         return new PrimaryKeyId(id);
     }
 
     @Override
     public boolean isUpgradeRecreated() {
         return false;
+    }
+
+    @NonNull
+    @Override
+    public OrmMigration[] getMigrations() {
+        return new OrmMigration[0];
     }
 }

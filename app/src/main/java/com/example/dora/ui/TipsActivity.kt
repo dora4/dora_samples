@@ -7,7 +7,6 @@ import com.example.dora.R
 import com.example.dora.databinding.ActivityTipsBinding
 import dora.BaseActivity
 import dora.util.ToastUtils
-import kotlinx.android.synthetic.main.activity_tips.*
 
 @Route(path = ARouterPath.ACTIVITY_TIPS)
 class TipsActivity : BaseActivity<ActivityTipsBinding>() {
@@ -17,10 +16,10 @@ class TipsActivity : BaseActivity<ActivityTipsBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?) {
-        btn_tips_01.setOnClickListener {
+        mBinding.btnTips01.setOnClickListener {
             ToastUtils.showShort("ToastUtils.showShort()")
         }
-        btn_tips_02.setOnClickListener {
+        mBinding.btnTips02.setOnClickListener {
             Thread {
                 ToastUtils.showLong("ToastUtils.showLong()")
             }.start()

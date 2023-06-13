@@ -4,9 +4,12 @@ import com.example.dora.di.component.AppComponent
 import com.example.dora.di.component.DaggerAppComponent
 import com.example.dora.di.module.AppModule
 import com.example.dora.datacache.model.PopMusic
+import com.example.dora.datacache.service.MusicService
 import dora.BaseApplication
 import dora.db.Orm
 import dora.db.OrmConfig
+import dora.http.log.FormatLogInterceptor
+import dora.http.retrofit.RetrofitManager
 
 /**
  * 继承dora.BaseApplication开始Dora之旅吧！如果你不使用这个BaseApplication，直接开始继承
@@ -31,5 +34,12 @@ class SampleApp : BaseApplication() {
             .tables(PopMusic::class.java)
             .build()
         Orm.init(this, config)
+        RetrofitManager.initConfig {
+            okhttp {
+                interceptors().add(FormatLogInterceptor())
+                build()
+            }
+            mappingBaseUrl(MusicService::class.java, "http://doramusic.site:8080/")
+        }
     }
 }

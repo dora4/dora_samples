@@ -38,6 +38,6 @@
         android:singleLine="true"
         android:maxLines="1"
         android:ellipsize="end"
-        android:textColor="@color/gray"
+        android:textColor="#999999"
         android:textSize="15sp"/>
 </LinearLayout>

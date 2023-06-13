@@ -8,10 +8,9 @@ import com.example.dora.R
 import com.example.dora.databinding.ActivityOrmBinding
 import com.example.dora.model.UserEntity
 import dora.BaseActivity
-import dora.db.test.Orm
-import dora.db.test.TableManager
-import dora.db.test.dao.DaoFactory
-import kotlinx.android.synthetic.main.activity_orm.*
+import dora.db.Orm
+import dora.db.dao.DaoFactory
+import dora.db.table.TableManager
 
 @Route(path = ARouterPath.ACTIVITY_ORM)
 class OrmActivity : BaseActivity<ActivityOrmBinding>(), View.OnClickListener {
@@ -25,15 +24,15 @@ class OrmActivity : BaseActivity<ActivityOrmBinding>(), View.OnClickListener {
         Orm.init(this, "orm_sample")
         // 创表，这个也是在Application中创建比较好
         TableManager.createTable(UserEntity::class.java)
-        btn_orm_insert.setOnClickListener(this)
-        btn_orm_delete_all.setOnClickListener(this)
+        mBinding.btnOrmInsert.setOnClickListener(this)
+        mBinding.btnOrmDeleteAll.setOnClickListener(this)
     }
 
     private fun showData() {
         val users = DaoFactory.getDao(UserEntity::class.java).selectAll()
-        tv_orm_display.text = ""
+        mBinding.tvOrmDisplay.text = ""
         users.iterator().forEach {
-            tv_orm_display.append("\n用户名：${it.userName}\n用户ID：${it.userId}\n用户昵称：${it.userAlias}\n好友列表：${it.roster}\n")
+            mBinding.tvOrmDisplay.append("\n用户名：${it.userName}\n用户ID：${it.userId}\n用户昵称：${it.userAlias}\n好友列表：${it.roster}\n")
         }
     }
 

@@ -4,11 +4,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.dora.bean.Menu
 import com.example.dora.databinding.ActivityMenuListBinding
 import com.example.dora.di.component.DaggerMenuComponent
 import com.example.dora.model.MenuModel
 import dora.BaseActivity
-import kotlinx.android.synthetic.main.activity_menu_list.*
 import javax.inject.Inject
 
 /**
@@ -30,21 +30,22 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
         return R.layout.activity_menu_list
     }
 
-    override fun onSetupComponent() {
+    override fun onCreate(savedInstanceState: Bundle?) {
         DaggerMenuComponent.builder()
             .appComponent((application as SampleApp).appComponent)
             .build()
             .inject(this)
+        super.onCreate(savedInstanceState)
     }
 
     /**
      * 初始化数据的地方，在Activity的onCreate()之后调用。
      */
     override fun initData(savedInstanceState: Bundle?) {
-        rv_menu_list.layoutManager = LinearLayoutManager(this)
-        rv_menu_list.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        mBinding.rvMenuList.layoutManager = LinearLayoutManager(this)
+        mBinding.rvMenuList.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         val adapter = MenuListAdapter(model.loadMenus())
-        adapter.setOnItemClickListener { _, _, _, position -> open(adapter.items[position].path) }
-        rv_menu_list.adapter = adapter
+        adapter.setOnItemClickListener { adapter, view, position -> open((adapter.getItem(position) as Menu).path) }
+        mBinding.rvMenuList.adapter = adapter
     }
 }

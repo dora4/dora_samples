@@ -12,7 +12,6 @@ import com.example.dora.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import dora.BaseActivity
 import dora.util.IntentUtils
-import kotlinx.android.synthetic.main.activity_web_view.*
 
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
@@ -32,7 +31,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     override fun initData(savedInstanceState: Bundle?) {
         agentWeb = AgentWeb.with(this)
-            .setAgentWebParent(rl_web_page,
+            .setAgentWebParent(mBinding.rlWebPage,
                 LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT)
             )

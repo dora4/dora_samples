@@ -3,8 +3,8 @@ package com.example.dora.lifecycle
 import android.app.Application
 import android.content.Context
 import androidx.fragment.app.FragmentManager
-import dora.ApplicationLifecycleCallbacks
-import dora.GlobalConfig
+import dora.lifecycle.application.ApplicationLifecycleCallbacks
+import dora.lifecycle.config.GlobalConfig
 
 /**
  * ARouter的初始化的封装。追加GlobalConfig配置，只要使用了com.lwh.dora.BaseApplication，就会加载默认配

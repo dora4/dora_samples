@@ -24,7 +24,6 @@ class MenuModel {
             Menu(Color.GRAY, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
             Menu(Color.GRAY, "数据的三级缓存（断网加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE),
             Menu(Color.GRAY, "有用的小提示", ARouterPath.ACTIVITY_TIPS),
-            Menu(Color.GRAY, "运行时权限申请", ARouterPath.ACTIVITY_REQUEST_PERMISSION),
             Menu(Color.GRAY, "Intent传参", ARouterPath.ACTIVITY_EXTRAS)
         )
     }
