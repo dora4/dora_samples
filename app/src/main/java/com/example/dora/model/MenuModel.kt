@@ -20,11 +20,11 @@ class MenuModel {
         return mutableListOf(
             Menu(Color.MAGENTA, "游乐园简介", ARouterPath.ACTIVITY_INTRODUCE),
             Menu(Color.MAGENTA, "Star收藏一下不迷路", ARouterPath.ACTIVITY_WEB_VIEW),
+            Menu(Color.GRAY, "有用的小提示ToastUtils", ARouterPath.ACTIVITY_TIPS),
+            Menu(Color.GRAY, "Intent传参", ARouterPath.ACTIVITY_EXTRAS),
             Menu(Color.GRAY, "RSA加密", ARouterPath.ACTIVITY_RSA),
             Menu(Color.BLUE, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
-            Menu(Color.BLUE, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE),
-            Menu(Color.GRAY, "有用的小提示", ARouterPath.ACTIVITY_TIPS),
-            Menu(Color.GRAY, "Intent传参", ARouterPath.ACTIVITY_EXTRAS)
+            Menu(Color.BLUE, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
     }
 }
