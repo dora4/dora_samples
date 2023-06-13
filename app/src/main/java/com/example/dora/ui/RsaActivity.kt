@@ -19,11 +19,11 @@ class RsaActivity : BaseActivity<ActivityRsaBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?) {
-        //生成公钥私钥键值对
+        // 生成公钥私钥键值对
         val keyPair = CryptoUtils.generateRSAKeyPair(1024)
-        //从map中获取公钥
+        // 从map中获取公钥
         val publicKey = keyPair["publicKey"]
-        //从map中获取私钥
+        // 从map中获取私钥
         val privateKey = keyPair["privateKey"]
         mBinding.tvRsaKeyPair.text = "生成一对秘钥\n\n公钥：${publicKey}\n\n私钥：${privateKey}\n\n"
         mBinding.btnRsaNextStep.setOnClickListener {

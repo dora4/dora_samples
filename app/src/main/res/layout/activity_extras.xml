@@ -8,9 +8,15 @@
 
     </data>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    </RelativeLayout>
+    <dora.widget.DoraTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dview_title="DoraSample"
+        app:dview_isClickIconClose="true"/>
+    </LinearLayout>
 </layout>

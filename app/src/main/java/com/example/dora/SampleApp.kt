@@ -27,10 +27,10 @@ class SampleApp : BaseApplication() {
         val appModule = AppModule(this)
         appComponent = DaggerAppComponent.builder().appModule(appModule).build()
         appComponent.inject(this)
-        //首先肯定是需要数据库的，在Application中初始化
+        // 首先肯定是需要数据库的，在Application中初始化
         val config = OrmConfig.Builder()
-            .database("orm_sample_2")
-            .version(2)
+            .database("dora_sample")
+            .version(1)
             .tables(PopMusic::class.java)
             .build()
         Orm.init(this, config)

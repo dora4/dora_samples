@@ -46,12 +46,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Dora框架内置配置 -->
+        </activity>
+        <!-- Dora框架内置配置 -->
         <meta-data
             android:name="dora.lifecycle.config.TaskStackGlobalConfig"
-            android:value="GlobalConfig" /> <!-- 自定义生命周期配置 -->
+            android:value="GlobalConfig" />
         <meta-data
-            android:name="com.example.dora.lifecycle.ARouterGlobalConfig"
+            android:name="dora.lifecycle.config.ARouterGlobalConfig"
             android:value="GlobalConfig" />
     </application>
 

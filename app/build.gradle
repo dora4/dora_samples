@@ -20,8 +20,8 @@ android {
 //            }
 //        }
         compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_8
-            targetCompatibility JavaVersion.VERSION_1_8
+            sourceCompatibility JavaVersion.VERSION_11
+            targetCompatibility JavaVersion.VERSION_11
         }
     }
     //第三步，启用databinding
@@ -80,5 +80,6 @@ dependencies {
     //第二步，添加依赖库
     implementation 'com.github.dora4:dora:1.0.124'
     implementation 'com.github.dora4:dcache-android:1.7.6'
-    implementation 'com.github.dora4:dview-titlebar:1.3'
+    implementation 'com.github.dora4:dview-titlebar:1.4'
+    api 'com.github.dora4:dora-arouter-support:1.1'
 }

@@ -12,14 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-<!--        <dora.widget.DoraTitleBar-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"/>-->
-        <TextView
-            android:id="@+id/tv_data_cache_network"
+        <dora.widget.DoraTitleBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="网络不可用"
+            app:dview_title="DoraSample"
+            app:dview_isClickIconClose="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="此设施停止运营检修中，https://github.com/dora4/DoraCacheSample"
             android:padding="5dp"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_data_cache"

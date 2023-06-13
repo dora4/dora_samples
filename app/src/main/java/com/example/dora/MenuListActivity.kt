@@ -9,11 +9,9 @@ import com.example.dora.databinding.ActivityMenuListBinding
 import com.example.dora.di.component.DaggerMenuComponent
 import com.example.dora.model.MenuModel
 import dora.BaseActivity
+import dora.arouter.open
 import javax.inject.Inject
 
-/**
- * 从菜单开始了解Dora，可以更快的了解我哦。
- */
 @Route(path = ARouterPath.ACTIVITY_MENU_LIST)
 class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
 
@@ -23,9 +21,6 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
     @Inject
     lateinit var model: MenuModel
 
-    /**
-     * 告诉系统布局在什么地方。
-     */
     override fun getLayoutId(): Int {
         return R.layout.activity_menu_list
     }
