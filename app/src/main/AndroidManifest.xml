@@ -47,7 +47,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Dora框架内置配置 -->
         <meta-data
             android:name="dora.lifecycle.config.TaskStackGlobalConfig"
             android:value="GlobalConfig" />

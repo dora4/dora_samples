@@ -3,6 +3,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+        <variable
+            name="menu"
+            type="com.example.dora.bean.Menu" />
     </data>
 
     <LinearLayout
@@ -15,13 +18,16 @@
             android:id="@+id/tv_menu_item_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@{menu.color}"/>
 
         <TextView
             android:id="@+id/tv_menu_item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:text="@{menu.title}"
+            android:textColor="@{menu.color}" />
     </LinearLayout>
 </layout>
