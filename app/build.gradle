@@ -77,8 +77,10 @@ dependencies {
     //RecyclerViewAdapter
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
 
+    implementation 'com.github.getActivity:XXPermissions:18.0'
+
     //第二步，添加依赖库
-    implementation 'com.github.dora4:dora:1.0.53'
+    implementation 'com.github.dora4:dora:1.0.124'
     implementation 'com.github.dora4:dcache-android:1.7.6'
     implementation 'com.github.dora4:dview-titlebar:1.4'
     api 'com.github.dora4:dora-arouter-support:1.1'

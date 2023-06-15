@@ -10,6 +10,7 @@ public interface ARouterPath {
     String ACTIVITY_MENU_LIST = GROUP_MAIN + "/MenuListActivity";
     String ACTIVITY_WEB_VIEW = GROUP_MAIN + "/WebViewActivity";
     String ACTIVITY_EXTRAS = GROUP_MAIN + "/ExtrasActivity";
+    String ACTIVITY_CRASH = GROUP_MAIN + "/CrashActivity";
     String ACTIVITY_TIPS = GROUP_MAIN + "/TipsActivity";
     String ACTIVITY_ORM = GROUP_MAIN + "/OrmActivity";
     String ACTIVITY_RSA = GROUP_MAIN + "/RsaActivity";
