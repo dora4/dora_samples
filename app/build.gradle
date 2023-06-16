@@ -83,5 +83,6 @@ dependencies {
     implementation 'com.github.dora4:dora:1.0.124'
     implementation 'com.github.dora4:dcache-android:1.7.6'
     implementation 'com.github.dora4:dview-titlebar:1.4'
+    implementation 'com.github.dora4:dview-progress-view:1.0'
     api 'com.github.dora4:dora-arouter-support:1.1'
 }

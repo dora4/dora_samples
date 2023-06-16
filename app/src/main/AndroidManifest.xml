@@ -3,20 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.dora">
 
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".SampleApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:requestLegacyExternalStorage="true"
-        android:networkSecurityConfig="@xml/network_config"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.ProgressViewActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.DataCacheActivity"
             android:screenOrientation="portrait" />
@@ -51,6 +55,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="dora.lifecycle.config.TaskStackGlobalConfig"
             android:value="GlobalConfig" />

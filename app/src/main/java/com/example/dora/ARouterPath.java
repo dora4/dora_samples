@@ -15,4 +15,5 @@ public interface ARouterPath {
     String ACTIVITY_ORM = GROUP_MAIN + "/OrmActivity";
     String ACTIVITY_RSA = GROUP_MAIN + "/RsaActivity";
     String ACTIVITY_DATA_CACHE = GROUP_MAIN + "/DataCacheActivity";
+    String ACTIVITY_PROGRESS_VIEW = GROUP_MAIN + "/ProgressViewActivity";
 }
