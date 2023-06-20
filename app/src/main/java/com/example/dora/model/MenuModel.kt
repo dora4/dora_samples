@@ -23,6 +23,7 @@ class MenuModel {
             Menu(Color.GRAY, "将Crash写入文件", ARouterPath.ACTIVITY_CRASH),
             Menu(Color.GRAY, "有用的小提示ToastUtils", ARouterPath.ACTIVITY_TIPS),
             Menu(Color.GRAY, "Intent传参", ARouterPath.ACTIVITY_EXTRAS),
+            Menu(Color.GRAY, "使用EventBus扩展包", ARouterPath.ACTIVITY_EVENT_BUS),
             Menu(Color.GRAY, "RSA加密", ARouterPath.ACTIVITY_RSA),
             Menu(Color.CYAN, "仿抖音极速版领现金进度条动画", ARouterPath.ACTIVITY_PROGRESS_VIEW),
             Menu(Color.BLUE, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),

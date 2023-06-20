@@ -6,7 +6,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
 import com.example.dora.R
 import com.example.dora.databinding.ActivityOrmBinding
-import com.example.dora.model.UserEntity
+import com.example.dora.bean.UserEntity
 import dora.BaseActivity
 import dora.db.Orm
 import dora.db.dao.DaoFactory
@@ -40,8 +40,12 @@ class OrmActivity : BaseActivity<ActivityOrmBinding>(), View.OnClickListener {
         when(v?.id) {
             R.id.btn_orm_insert -> {
                 val roster = listOf("10001", "10002")
-                DaoFactory.getDao(UserEntity::class.java).insert(UserEntity("10000",
-                    "jack123", "Jack", roster))
+                DaoFactory.getDao(UserEntity::class.java).insert(
+                    UserEntity(
+                        "10000",
+                        "jack123", "Jack", roster
+                    )
+                )
                 showData()
             }
             R.id.btn_orm_delete_all -> {

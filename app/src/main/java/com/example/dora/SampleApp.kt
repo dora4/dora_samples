@@ -24,21 +24,25 @@ class SampleApp : BaseApplication() {
 
     override fun onCreate() {
         super.onCreate()
+        // 初始化dagger的app模块，dagger不是必须的
         val appModule = AppModule(this)
         appComponent = DaggerAppComponent.builder().appModule(appModule).build()
         appComponent.inject(this)
-        // 首先肯定是需要数据库的，在Application中初始化
+        // 初始化orm框架
         val config = OrmConfig.Builder()
             .database("dora_sample")
             .version(1)
             .tables(PopMusic::class.java)
             .build()
         Orm.init(this, config)
+        // 初始化retrofit的配置
         RetrofitManager.initConfig {
             okhttp {
+                // 添加格式化输出日志的拦截器
                 interceptors().add(FormatLogInterceptor())
                 build()
             }
+            // 映射API服务地址
             mappingBaseUrl(MusicService::class.java, "http://doramusic.site:8080/")
         }
     }

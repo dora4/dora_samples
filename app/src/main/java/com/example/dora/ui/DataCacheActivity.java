@@ -8,10 +8,14 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.dora.ARouterPath;
 import com.example.dora.R;
 import com.example.dora.SampleApp;
+import com.example.dora.bean.MessageEvent;
 import com.example.dora.databinding.ActivityDataCacheBinding;
 import com.example.dora.di.component.DaggerMenuComponent;
 import com.example.dora.datacache.adapter.PopMusicAdapter;
 import com.example.dora.datacache.repository.PopMusicRepository;
+
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import javax.inject.Inject;
 
@@ -51,5 +55,8 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
         repository.fetchListData("描述信息", null)
                 .observe(this, popMusics -> ViewUtils.configRecyclerView(mBinding.rvDataCache)
                         .setAdapter(new PopMusicAdapter(popMusics)));
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MessageEvent msg) {
     }
 }

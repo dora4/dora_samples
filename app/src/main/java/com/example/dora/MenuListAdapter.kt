@@ -8,6 +8,7 @@ class MenuListAdapter(menus: MutableList<Menu>) : BaseAdapter<Menu, ItemMenuList
 
     override fun convert(holder: DoraViewHolder<ItemMenuListBinding>, item: Menu) {
         super.convert(holder, item)
+        // 使用data binding的方式
         holder.binding?.menu = item
         holder.setText(R.id.tv_menu_item_id, "${getItemPosition(item) + 1}")
 //        holder.setTextColor(R.id.tv_menu_item_id, item.color)

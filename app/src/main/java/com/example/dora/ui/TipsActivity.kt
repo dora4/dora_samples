@@ -4,9 +4,12 @@ import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
 import com.example.dora.R
+import com.example.dora.bean.MessageEvent
 import com.example.dora.databinding.ActivityTipsBinding
 import dora.BaseActivity
 import dora.util.ToastUtils
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_TIPS)
 class TipsActivity : BaseActivity<ActivityTipsBinding>() {
@@ -24,5 +27,8 @@ class TipsActivity : BaseActivity<ActivityTipsBinding>() {
                 ToastUtils.showLong("ToastUtils.showLong()")
             }.start()
         }
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    fun onMessageEvent(msg: MessageEvent) {
     }
 }

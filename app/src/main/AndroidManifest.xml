@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.EventBusActivity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ui.ProgressViewActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -61,6 +64,9 @@
             android:value="GlobalConfig" />
         <meta-data
             android:name="dora.lifecycle.config.ARouterGlobalConfig"
+            android:value="GlobalConfig" />
+        <meta-data
+            android:name="dora.lifecycle.config.EventBusGlobalConfig"
             android:value="GlobalConfig" />
     </application>
 

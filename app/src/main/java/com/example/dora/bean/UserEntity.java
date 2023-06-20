@@ -1,4 +1,4 @@
-package com.example.dora.model;
+package com.example.dora.bean;
 
 import androidx.annotation.NonNull;
 

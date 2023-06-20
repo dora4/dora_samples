@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.EventBusActivity">
 
     <data>
+
     </data>
 
     <LinearLayout
@@ -15,10 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:dview_title="DoraSample"
-            app:dview_isShowIcon="false"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_menu_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+            app:dview_isClickIconClose="true"/>
+        <Button
+            android:id="@+id/btn_send_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送消息"/>
     </LinearLayout>
+
 </layout>
