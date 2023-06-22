@@ -33,7 +33,7 @@ android {
     }
 }
 
-//这里使用Kotlin的ARouter配置，当然使用Java的也是兼容的
+// 这里使用Kotlin的ARouter配置，当然对Java也是兼容的
 kapt {
     generateStubs = true
     arguments {
@@ -54,13 +54,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    //ARouter
-    implementation 'com.alibaba:arouter-api:1.5.2'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
-    kapt 'com.alibaba:arouter-compiler:1.5.2'
-
-    // EventBus
-    implementation("org.greenrobot:eventbus:3.3.1")
 
     //Dagger2
     implementation "com.google.dagger:dagger:2.28.3"
@@ -82,11 +75,19 @@ dependencies {
 
     implementation 'com.github.getActivity:XXPermissions:18.0'
 
-    //第二步，添加依赖库
+    // 第二步，添加依赖库
     implementation 'com.github.dora4:dora:1.0.124'
     implementation 'com.github.dora4:dcache-android:1.7.6'
-    implementation 'com.github.dora4:dview-titlebar:1.5'
+    implementation 'com.github.dora4:dview-titlebar:1.6'
     implementation 'com.github.dora4:dview-progress-view:1.0'
-    api 'com.github.dora4:dora-arouter-support:1.1'
-    api 'com.github.dora4:dora-eventbus-support:1.0'
+
+    implementation 'com.github.dora4:dora-arouter-support:1.1'
+    // ARouter，1.3开始不再需要
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+
+    implementation 'com.github.dora4:dora-eventbus-support:1.1'
+    // EventBus，1.1开始不再需要
+//    implementation("org.greenrobot:eventbus:3.3.1")
 }

@@ -14,8 +14,9 @@
         <dora.widget.DoraTitleBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:dview_title="DoraSample"
-            app:dview_isShowIcon="false"/>
+            app:dview_title="@string/app_name"
+            app:dview_isShowBackIcon="false"
+            android:background="@color/colorPrimary"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_menu_list"
         android:layout_width="match_parent"

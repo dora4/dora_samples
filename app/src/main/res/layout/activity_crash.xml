@@ -14,8 +14,8 @@
     <dora.widget.DoraTitleBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:dview_title="DoraSample"
-        app:dview_isClickIconClose="true"/>
+        app:dview_title="@string/app_name"
+        android:background="@color/colorPrimary"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

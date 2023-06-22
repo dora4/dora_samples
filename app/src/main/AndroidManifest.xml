@@ -19,8 +19,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.TitleBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.EventBusActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.ProgressViewActivity"
             android:screenOrientation="portrait" />
