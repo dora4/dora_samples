@@ -1,7 +1,6 @@
 package com.example.dora.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.RelativeLayout
 import androidx.appcompat.widget.AppCompatImageView
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -38,11 +37,11 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
             .addMenuButton(imageView2)
             .setOnIconClickListener(object : DoraTitleBar.OnIconClickListener {
             override fun onIconBackClick(icon: AppCompatImageView) {
-                LogUtils.e("返回")
+                LogUtils.i("返回")
             }
 
             override fun onIconMenuClick(position: Int, icon: AppCompatImageView) {
-                LogUtils.e("点击了第${position}个菜单")
+                LogUtils.i("点击了第${position}个菜单")
             }
         })
     }
