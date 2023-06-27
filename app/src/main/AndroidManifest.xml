@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.LoadingDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.AlertDialogActivity"
             android:screenOrientation="portrait" />
         <activity

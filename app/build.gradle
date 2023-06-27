@@ -81,6 +81,7 @@ dependencies {
     implementation 'com.github.dora4:dview-titlebar:1.6'
     implementation 'com.github.dora4:dview-progress-view:1.0'
     implementation 'com.github.dora4:dview-alert-dialog:1.0'
+    implementation 'com.github.dora4:dview-loading-dialog:1.1'
 
     implementation 'com.github.dora4:dora-arouter-support:1.1'
     // ARouter，1.3开始不再需要

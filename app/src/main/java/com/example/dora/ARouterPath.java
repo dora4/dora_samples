@@ -19,4 +19,5 @@ public interface ARouterPath {
     String ACTIVITY_PROGRESS_VIEW = GROUP_MAIN + "/ProgressViewActivity";
     String ACTIVITY_TITLE_BAR = GROUP_MAIN + "/TitleBarActivity";
     String ACTIVITY_ALERT_DIALOG = GROUP_MAIN + "/AlertDialogActivity";
+    String ACTIVITY_LOADING_DIALOG = GROUP_MAIN + "/LoadingDialogActivity";
 }
