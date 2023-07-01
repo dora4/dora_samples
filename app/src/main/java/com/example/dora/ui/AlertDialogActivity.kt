@@ -7,7 +7,7 @@ import com.example.dora.ARouterPath
 import dora.BaseActivity
 
 import com.example.dora.R
-import com.example.dora.bean.MessageEvent
+import com.example.dora.MessageEvent
 import com.example.dora.databinding.ActivityAlertDialogBinding
 import dora.widget.DoraAlertDialog
 import org.greenrobot.eventbus.Subscribe

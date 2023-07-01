@@ -9,7 +9,7 @@ import com.example.dora.ARouterPath
 import dora.BaseActivity
 
 import com.example.dora.R
-import com.example.dora.bean.MessageEvent
+import com.example.dora.MessageEvent
 import com.example.dora.databinding.ActivityTitleBarBinding
 import dora.util.DensityUtils
 import dora.util.LogUtils

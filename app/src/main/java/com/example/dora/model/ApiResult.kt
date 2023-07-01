@@ -1,4 +1,4 @@
-package com.example.dora.bean
+package com.example.dora.model
 
 class ApiResult<T> {
 

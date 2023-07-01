@@ -8,9 +8,8 @@ import com.example.dora.ARouterPath
 import dora.BaseActivity
 
 import com.example.dora.R
-import com.example.dora.bean.MessageEvent
+import com.example.dora.MessageEvent
 import com.example.dora.databinding.ActivityLoadingDialogBinding
-import dora.widget.DoraAlertDialog
 import dora.widget.DoraLoadingDialog
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode

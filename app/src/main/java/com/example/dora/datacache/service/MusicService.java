@@ -1,6 +1,6 @@
 package com.example.dora.datacache.service;
 
-import com.example.dora.bean.ApiResult;
+import com.example.dora.model.ApiResult;
 import com.example.dora.datacache.model.PopMusic;
 
 import java.util.List;

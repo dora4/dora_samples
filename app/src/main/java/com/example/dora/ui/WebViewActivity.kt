@@ -8,7 +8,7 @@ import android.widget.LinearLayout
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
 import com.example.dora.R
-import com.example.dora.bean.MessageEvent
+import com.example.dora.MessageEvent
 import com.example.dora.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import dora.BaseActivity

@@ -13,6 +13,7 @@ public interface ARouterPath {
     String ACTIVITY_EVENT_BUS = GROUP_MAIN + "/EventBusActivity";
     String ACTIVITY_CRASH = GROUP_MAIN + "/CrashActivity";
     String ACTIVITY_TIPS = GROUP_MAIN + "/TipsActivity";
+    String ACTIVITY_FLOW_PAGE = GROUP_MAIN + "/FlowPageActivity";
     String ACTIVITY_ORM = GROUP_MAIN + "/OrmActivity";
     String ACTIVITY_RSA = GROUP_MAIN + "/RsaActivity";
     String ACTIVITY_DATA_CACHE = GROUP_MAIN + "/DataCacheActivity";

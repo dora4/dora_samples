@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.bean.Menu
-import com.example.dora.bean.MessageEvent
 import com.example.dora.databinding.ActivityMenuListBinding
 import com.example.dora.di.component.DaggerMenuComponent
 import com.example.dora.model.MenuModel

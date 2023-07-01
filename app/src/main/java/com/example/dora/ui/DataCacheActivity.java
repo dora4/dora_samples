@@ -8,7 +8,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.dora.ARouterPath;
 import com.example.dora.R;
 import com.example.dora.SampleApp;
-import com.example.dora.bean.MessageEvent;
+import com.example.dora.MessageEvent;
 import com.example.dora.databinding.ActivityDataCacheBinding;
 import com.example.dora.di.component.DaggerMenuComponent;
 import com.example.dora.datacache.adapter.PopMusicAdapter;
