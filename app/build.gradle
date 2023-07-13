@@ -76,7 +76,7 @@ dependencies {
     implementation 'com.github.getActivity:XXPermissions:18.0'
 
     // 第二步，添加依赖库
-    implementation 'com.github.dora4:dora:1.0.132'
+    implementation 'com.github.dora4:dora:1.1.9'
     implementation 'com.github.dora4:dcache-android:1.7.8'
     implementation 'com.github.dora4:dview-titlebar:1.6'
     implementation 'com.github.dora4:dview-progress-view:1.0'
