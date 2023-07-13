@@ -33,6 +33,10 @@ class NetDetectActivity : BaseActivity<ActivityNetDetectBinding>() {
         }
     }
 
+    override fun isDetectNet(): Boolean {
+        return true
+    }
+
     override fun onNetworkConnected(type: NetUtils.ApnType) {
         super.onNetworkConnected(type)
         if (NetUtils.isWifiConnected(this)) {
