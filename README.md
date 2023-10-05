@@ -9,12 +9,10 @@ This is a framework for Android application development, which incorporates the 
 ![avatar](https://github.com/dora4/dora/blob/master/Dora.gif)
 
 Features
-- Global lifecycle configuration: DefaultGlobalConfig, TaskStackGlobalConfig, and custom configuration. It supports configuring the lifecycles of Application, Activity, and Fragment, allowing you to write once and reuse in all projects.
+- Global lifecycle configuration: TaskStackGlobalConfig, and custom configuration. It supports configuring the lifecycles of Application, Activity, and Fragment, allowing you to write once and reuse in all projects.
 
  <!-- Global lifecycle configuration, value is configured as GlobalConfig, name is the mapping configuration class, multiple configurations can be set -->
  <application>
-      <!-- DefaultGlobalConfig is the default configuration, even if no GlobalConfig is configured, it should be configured at least. It allows Activity to automatically listen to network conditions. Inherit and use [dora.BaseApplication] for automatic configuration -->
-      
       <!-- TaskStackGlobalConfig must be configured for invoking the openActivity series methods of BaseActivity -->
       <meta-data
           android:name="dora.lifecycle.config.TaskStackGlobalConfig"
@@ -34,10 +32,10 @@ Features
   </application>
 
 - BaseActivity and BaseFragment encapsulation based on the MVVM architecture. It supports seamless switching of Fragments in Activity, providing a perfect solution for Fragment switching without overlap. It also supports monitoring network changes in Activity. You can use the IDE plugin for more convenient development, available at https://github.com/dora4/dora-studio-plugin.
-  1. showShortToast() and showLongToast()
+  1. showShortToast() and showLongToast(), deprecated, instead of ToastUtils.
 
      Convenient methods to display a Toast message at any point in your code. Automatically handles thread switching, so you don't need to worry about errors.
-  2. openActivity() and openActivityForResult() series
+  2. openActivity() and openActivityForResult() serie, deprecated, moved to IntentUtils.
 
      Alternative methods to startActivity and startActivityForResult, providing a more convenient way to pass parameters.
 
@@ -49,11 +47,11 @@ Features
 
      Listeners for network connection status, indicating when the network is connected or disconnected.
 
-  5. onSetStatusBar()
+  5. onSetStatusBar() and onSetNavigationBar()
     
-     Convenient method for initializing the status bar.
+     Convenient method for initializing system status bar and navigation bar.
   
-  6. showPage(), nextPage(), and getFlowFragmentPageKeys()
+  6. showPage(), nextPage(), getFlowFragment(), getFlowFragmentContainerId(), getFlowFragmentPageKeys(), and isLoop()
   
      This framework automatically manages the switching of Fragments within BaseActivity. It is commonly used in scenarios where there is no need for activity transition animations but rather direct changes to the overall layout of the interface. A detailed explanation is not provided here, but you can refer to the source code if you're interested.
 
@@ -70,13 +68,13 @@ Features
 Getting Started (Tutorial: https://github.com/dora4/dora_samples)
 
 ```groovy
-// Add the following code to the root build.gradle file of your project
+// Add the following code to the root build.gradle.kts file of your project
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
     }
 }
-// Add the following code to the build.gradle file of your app module
+// Add the following code to the build.gradle.kts file of your app module
 dependencies {
     implementation 'com.github.dora4:dora:latest'
 }
