@@ -18,16 +18,17 @@ class TipsActivity : BaseActivity<ActivityTipsBinding>() {
         return R.layout.activity_tips
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
-        mBinding.btnTips01.setOnClickListener {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityTipsBinding) {
+        binding.btnTips01.setOnClickListener {
             ToastUtils.showShort("ToastUtils.showShort()")
         }
-        mBinding.btnTips02.setOnClickListener {
+        binding.btnTips02.setOnClickListener {
             Thread {
                 ToastUtils.showLong("ToastUtils.showLong()")
             }.start()
         }
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

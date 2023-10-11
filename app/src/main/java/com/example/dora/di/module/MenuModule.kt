@@ -1,7 +1,6 @@
 package com.example.dora.di.module
 
 import android.app.Application
-import com.example.dora.model.MenuModel
 import dagger.Module
 import dagger.Provides
 import dora.util.GlobalContext
@@ -17,10 +16,5 @@ class MenuModule {
     @Singleton
     fun provideContext(): Application {
         return GlobalContext.get()
-    }
-
-    @Provides
-    fun provideMenuModel(): MenuModel {
-        return MenuModel()
     }
 }

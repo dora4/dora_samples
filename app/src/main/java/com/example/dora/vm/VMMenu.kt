@@ -1,13 +1,18 @@
-package com.example.dora.model
+package com.example.dora.vm
 
 import android.graphics.Color
 import com.example.dora.ARouterPath
+import com.example.dora.MenuListAdapter
 import com.example.dora.bean.Menu
 
 /**
  * 以下就是本游乐园支持的所有功能！
  */
-class MenuModel {
+class VMMenu : BaseViewModel() {
+
+    init {
+        adapterObservable.set(MenuListAdapter(initMenus()))
+    }
 
     /**
      * 不同的颜色代表不同的板块哦，比如：
@@ -16,7 +21,7 @@ class MenuModel {
      * CYAN（青色）：代表dview自定义控件
      * BLUE（蓝色）：代表dcache数据缓存
      */
-    fun loadMenus(): MutableList<Menu> {
+    private fun initMenus(): MutableList<Menu> {
         return mutableListOf(
             Menu(Color.MAGENTA, "游乐园简介", ARouterPath.ACTIVITY_INTRODUCE),
             Menu(Color.MAGENTA, "Star收藏一下不迷路", ARouterPath.ACTIVITY_WEB_VIEW),

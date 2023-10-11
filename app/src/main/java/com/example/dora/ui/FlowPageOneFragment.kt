@@ -13,6 +13,10 @@ class FlowPageOneFragment : BaseFragment<FragmentFlowPageOneBinding>() {
         return R.layout.fragment_flow_page_one
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: FragmentFlowPageOneBinding) {
+    }
+
+    companion object {
+        const val PAGE_KEY = "page_one"
     }
 }

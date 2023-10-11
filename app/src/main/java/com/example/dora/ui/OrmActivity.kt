@@ -16,19 +16,34 @@ import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_ORM)
-class OrmActivity : BaseActivity<ActivityOrmBinding>(), View.OnClickListener {
+class OrmActivity : BaseActivity<ActivityOrmBinding>() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_orm
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityOrmBinding) {
+        binding.v = this
         // 正常来说这个是在Application中初始化
         Orm.init(this, "orm_sample")
         // 创表，这个也是在Application中创建比较好
         TableManager.createTable(UserEntity::class.java)
-        mBinding.btnOrmInsert.setOnClickListener(this)
-        mBinding.btnOrmDeleteAll.setOnClickListener(this)
+    }
+
+    fun insertData() {
+        val roster = listOf("10001", "10002")
+        DaoFactory.getDao(UserEntity::class.java).insert(
+            UserEntity(
+                "10000",
+                "jack123", "Jack", roster
+            )
+        )
+        showData()
+    }
+
+    fun deleteAllData() {
+        DaoFactory.getDao(UserEntity::class.java).deleteAll()
+        showData()
     }
 
     private fun showData() {
@@ -39,24 +54,6 @@ class OrmActivity : BaseActivity<ActivityOrmBinding>(), View.OnClickListener {
         }
     }
 
-    override fun onClick(v: View?) {
-        when(v?.id) {
-            R.id.btn_orm_insert -> {
-                val roster = listOf("10001", "10002")
-                DaoFactory.getDao(UserEntity::class.java).insert(
-                    UserEntity(
-                        "10000",
-                        "jack123", "Jack", roster
-                    )
-                )
-                showData()
-            }
-            R.id.btn_orm_delete_all -> {
-                DaoFactory.getDao(UserEntity::class.java).deleteAll()
-                showData()
-            }
-        }
-    }
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

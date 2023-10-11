@@ -20,7 +20,7 @@ class AlertDialogActivity : BaseActivity<ActivityAlertDialogBinding>() {
         return R.layout.activity_alert_dialog
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityAlertDialogBinding) {
         DoraAlertDialog(this).show("提示信息") {
             title("系统消息")
             themeColorResId(R.color.colorAccent)
@@ -32,6 +32,7 @@ class AlertDialogActivity : BaseActivity<ActivityAlertDialogBinding>() {
             }
         }
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

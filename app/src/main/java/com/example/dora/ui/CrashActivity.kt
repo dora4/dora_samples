@@ -20,16 +20,20 @@ class CrashActivity : BaseActivity<ActivityCrashBinding>() {
         return R.layout.activity_crash
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    fun makeBug() {
+        // 除数不能为0
+        val divideZero = 1 / 0
+    }
+
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityCrashBinding) {
+        binding.v = this
         XXPermissions.with(this)
             .permission(Permission.MANAGE_EXTERNAL_STORAGE)
             .request { permissions, allGranted ->
                 DoraCrash.initCrash(this, "crash")
             }
-        mBinding.btnMakeCrash.setOnClickListener {
-            val divideZero = 1 / 0
-        }
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

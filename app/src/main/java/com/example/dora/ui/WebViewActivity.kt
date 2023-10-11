@@ -20,6 +20,9 @@ import org.greenrobot.eventbus.ThreadMode
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     lateinit var agentWeb: AgentWeb
+
+//    @JvmField
+//    @Autowired
     var url = "https://github.com/dora4/dora"
 
     override fun getLayoutId(): Int {
@@ -27,14 +30,13 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
     }
 
     override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
-        if (IntentUtils.hasExtra(intent, "url")) {
-            url = IntentUtils.getStringExtra(intent, "url")
-        }
+        // 也可以使用arouter的注入特性
+        url = IntentUtils.getStringExtra(intent, "url")
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityWebViewBinding) {
         agentWeb = AgentWeb.with(this)
-            .setAgentWebParent(mBinding.rlWebPage,
+            .setAgentWebParent(binding.rlWebPage,
                 LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT)
             )
@@ -52,6 +54,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
         super.onDestroy()
         agentWeb.destroy()
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

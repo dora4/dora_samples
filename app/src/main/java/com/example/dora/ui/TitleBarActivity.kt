@@ -24,17 +24,18 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
         return R.layout.activity_title_bar
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
-        val imageView = AppCompatImageView(this)
-        val dp24 = DensityUtils.dp2px(this, 24f)
-        imageView.layoutParams = RelativeLayout.LayoutParams(dp24, dp24)
-        imageView.setImageResource(R.drawable.ic_save)
-        val imageView2 = AppCompatImageView(this)
-        imageView2.layoutParams = RelativeLayout.LayoutParams(dp24, dp24)
-        imageView2.setImageResource(R.drawable.ic_confirm)
-        mBinding.titleBar
-            .addMenuButton(imageView)
-            .addMenuButton(imageView2)
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityTitleBarBinding) {
+        // 完整写法
+//        val imageView = AppCompatImageView(this)
+//        val dp24 = DensityUtils.dp2px(this, 24f)
+//        imageView.layoutParams = RelativeLayout.LayoutParams(dp24, dp24)
+//        imageView.setImageResource(R.drawable.ic_save)
+//        val imageView2 = AppCompatImageView(this)
+//        imageView2.layoutParams = RelativeLayout.LayoutParams(dp24, dp24)
+//        imageView2.setImageResource(R.drawable.ic_confirm)
+        binding.titleBar
+            .addMenuButton(R.drawable.ic_save)
+            .addMenuButton(R.drawable.ic_confirm)
             .setOnIconClickListener(object : DoraTitleBar.OnIconClickListener {
             override fun onIconBackClick(icon: AppCompatImageView) {
                 LogUtils.i("返回")

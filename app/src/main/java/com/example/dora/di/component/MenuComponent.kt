@@ -8,7 +8,7 @@ import dagger.Component
 /**
  * 菜单组件。
  */
-@Component(modules = arrayOf(MenuModule::class), dependencies = arrayOf(AppComponent::class))
+@Component(modules = [MenuModule::class], dependencies = [AppComponent::class])
 interface MenuComponent {
 
     fun inject(activity: MenuListActivity)

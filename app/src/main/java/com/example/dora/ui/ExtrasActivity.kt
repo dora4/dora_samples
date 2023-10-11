@@ -18,19 +18,12 @@ class ExtrasActivity : BaseActivity<ActivityExtrasBinding>() {
         return R.layout.activity_extras
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
-        // 1. implementation 'com.alibaba:arouter-api:1.5.2'
-        // annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
-        // kapt 'com.alibaba:arouter-compiler:1.5.2'
-        // 2. api 'com.github.dora4:dora-arouter-support:1.1'
-        // 3. 在AndroidManifest.xml加入
-        // <meta-data
-        // android:name="dora.lifecycle.config.ARouterGlobalConfig"
-        // android:value="GlobalConfig" />
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityExtrasBinding) {
         open(ARouterPath.ACTIVITY_WEB_VIEW) {
             withString("url", "https://github.com/dora4");
         }
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="v"
+            type="com.example.dora.ui.CrashActivity" />
     </data>
 
     <LinearLayout
@@ -24,6 +26,7 @@
             android:id="@+id/btn_make_crash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="制造崩溃"/>
+            android:text="制造崩溃"
+            android:click="@{()->v.makeBug()}"/>
     </LinearLayout>
 </layout>

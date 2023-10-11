@@ -2,6 +2,7 @@ package com.example.dora.ui;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -44,7 +45,7 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
     }
 
     @Override
-    public void initData(Bundle savedInstanceState) {
+    public void initData(@Nullable Bundle savedInstanceState, @NonNull ActivityDataCacheBinding binding) {
         // 数据库的初始化操作是必须的，由于使用了dagger的依赖注入，在这里初始化已经迟了，所以移动到SampleApp类中
 //        val config = OrmConfig.Builder()
 //                .database("orm_sample_2")
@@ -56,6 +57,7 @@ public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
                 .observe(this, popMusics -> ViewUtils.configRecyclerView(mBinding.rvDataCache)
                         .setAdapter(new PopMusicAdapter(popMusics)));
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent msg) {
     }

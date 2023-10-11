@@ -4,6 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="v"
+            type="com.example.dora.MenuListActivity" />
+        <variable
+            name="vm"
+            type="com.example.dora.vm.VMMenu" />
+        <variable
+            name="decoration"
+            type="androidx.recyclerview.widget.DividerItemDecoration" />
+        <variable
+            name="rv"
+            type="androidx.recyclerview.widget.RecyclerView" />
     </data>
 
     <LinearLayout
@@ -17,9 +29,12 @@
             app:dview_title="@string/app_name"
             app:dview_isShowBackIcon="false"
             android:background="@color/colorPrimary"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_menu_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:itemDecoration="@{vm.listDecorationObservable}"
+            android:adapter="@{vm.adapterObservable}"/>
     </LinearLayout>
 </layout>

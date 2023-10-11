@@ -13,6 +13,10 @@ class FlowPageThreeFragment : BaseFragment<FragmentFlowPageThreeBinding>() {
         return R.layout.fragment_flow_page_three
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: FragmentFlowPageThreeBinding) {
+    }
+
+    companion object {
+        const val PAGE_KEY = "page_three"
     }
 }

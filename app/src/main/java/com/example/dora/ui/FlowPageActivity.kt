@@ -16,23 +16,21 @@ import org.greenrobot.eventbus.ThreadMode
 @Route(path = ARouterPath.ACTIVITY_FLOW_PAGE)
 class FlowPageActivity : BaseActivity<ActivityFlowPageBinding>() {
 
-    val pages = arrayListOf<BaseFragment<*>>()
-    val pageOne = FlowPageOneFragment()
-    val pageTwo = FlowPageTwoFragment()
-    val pageThree = FlowPageThreeFragment()
+    private val pages = arrayListOf<BaseFragment<*>>()
+    private val pageOne = FlowPageOneFragment()
+    private val pageTwo = FlowPageTwoFragment()
+    private val pageThree = FlowPageThreeFragment()
 
     override fun getLayoutId(): Int {
         return R.layout.activity_flow_page
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityFlowPageBinding) {
+        binding.v = this
         pages.add(pageOne)
         pages.add(pageTwo)
         pages.add(pageThree)
-        showPage("page_one")
-        mBinding.btnNextPage.setOnClickListener {
-            nextPage()
-        }
+        showPage(FlowPageOneFragment.PAGE_KEY)
     }
 
     override fun isLoop(): Boolean {
@@ -41,20 +39,21 @@ class FlowPageActivity : BaseActivity<ActivityFlowPageBinding>() {
 
     override fun getFlowFragment(key: String): BaseFragment<*> {
         return when (key) {
-            "page_one" -> FlowPageOneFragment()
-            "page_two" -> FlowPageTwoFragment()
-            "page_three" -> FlowPageThreeFragment()
+            FlowPageOneFragment.PAGE_KEY -> FlowPageOneFragment()
+            FlowPageTwoFragment.PAGE_KEY -> FlowPageTwoFragment()
+            FlowPageThreeFragment.PAGE_KEY -> FlowPageThreeFragment()
             else -> FlowPageOneFragment()
         }
     }
 
     override fun getFlowFragmentPageKeys(): Array<String> {
-        return arrayOf("page_one", "page_two", "page_three")
+        return arrayOf(FlowPageOneFragment.PAGE_KEY, FlowPageTwoFragment.PAGE_KEY, FlowPageThreeFragment.PAGE_KEY)
     }
 
     override fun getFlowFragmentContainerId(): Int {
         return R.id.fl_flow_container
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(msg: MessageEvent) {
     }

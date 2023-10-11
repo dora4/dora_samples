@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="v"
+            type="com.example.dora.ui.OrmActivity" />
     </data>
 
     <LinearLayout
@@ -22,12 +25,14 @@
             android:id="@+id/btn_orm_insert"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="插入数据"/>
+            android:text="插入数据"
+            android:click="@{()->v.insertData()}"/>
         <Button
             android:id="@+id/btn_orm_delete_all"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="清空数据"/>
+            android:text="清空数据"
+            android:click="@{()->v.deleteAllData()}"/>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

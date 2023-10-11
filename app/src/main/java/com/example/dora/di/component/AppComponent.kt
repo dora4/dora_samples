@@ -7,7 +7,7 @@ import dagger.Component
 /**
  * APP组件。
  */
-@Component(modules = arrayOf(AppModule::class))
+@Component(modules = [AppModule::class])
 interface AppComponent {
     fun inject(app: Application)
 }

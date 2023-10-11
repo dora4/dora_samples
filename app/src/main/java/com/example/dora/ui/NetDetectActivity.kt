@@ -10,7 +10,6 @@ import dora.BaseActivity
 import com.example.dora.R
 import com.example.dora.databinding.ActivityNetDetectBinding
 import dora.util.NetUtils
-import dora.util.ToastUtils
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
@@ -21,15 +20,15 @@ class NetDetectActivity : BaseActivity<ActivityNetDetectBinding>() {
         return R.layout.activity_net_detect
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityNetDetectBinding) {
         if (NetUtils.checkNetworkAvailable(this)) {
             if (NetUtils.isWifiConnected(this)) {
-                mBinding.tvNetStatus.text = "网络已连接[无线网络]"
+                binding.tvNetStatus.text = "网络已连接[无线网络]"
             } else if (NetUtils.isMobileConnected(this)) {
-                mBinding.tvNetStatus.text = "网络已连接[移动网络]"
+                binding.tvNetStatus.text = "网络已连接[移动网络]"
             }
         } else {
-            mBinding.tvNetStatus.text = "网络连接已断开"
+            binding.tvNetStatus.text = "网络连接已断开"
         }
     }
 

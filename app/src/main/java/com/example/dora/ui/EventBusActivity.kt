@@ -27,9 +27,11 @@ class EventBusActivity : BaseActivity<ActivityEventBusBinding>() {
         }
     }
 
-    override fun initData(savedInstanceState: Bundle?) {
-        mBinding.btnSendEvent.setOnClickListener {
-            EventBus.getDefault().post(MessageEvent(MessageEvent.EVENT_TEST_EVENT_BUS))
-        }
+    fun sendEvent() {
+        EventBus.getDefault().post(MessageEvent(MessageEvent.EVENT_TEST_EVENT_BUS))
+    }
+
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityEventBusBinding) {
+        binding.v = this
     }
 }

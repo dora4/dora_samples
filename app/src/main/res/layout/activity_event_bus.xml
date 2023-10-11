@@ -5,7 +5,9 @@
     tools:context=".ui.EventBusActivity">
 
     <data>
-
+        <variable
+            name="v"
+            type="com.example.dora.ui.EventBusActivity" />
     </data>
 
     <LinearLayout
@@ -22,7 +24,8 @@
             android:id="@+id/btn_send_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="发送消息"/>
+            android:text="发送消息"
+            android:click="@{()->v.sendEvent()}"/>
     </LinearLayout>
 
 </layout>

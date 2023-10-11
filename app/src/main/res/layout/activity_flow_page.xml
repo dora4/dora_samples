@@ -5,7 +5,9 @@
     tools:context=".ui.FlowPageActivity">
 
     <data>
-
+        <variable
+            name="v"
+            type="com.example.dora.ui.FlowPageActivity" />
     </data>
 
     <LinearLayout
@@ -28,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="50dp"
                 android:layout_gravity="bottom|center_horizontal"
-                android:text="下一页"/>
+                android:text="下一页"
+                android:click="@{()->v.nextPage()}"/>
         </FrameLayout>
     </LinearLayout>
 
