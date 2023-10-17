@@ -29,6 +29,7 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
      * 初始化数据的地方，在Activity的onCreate()之后调用。
      */
     override fun initData(savedInstanceState: Bundle?, binding: ActivityMenuListBinding) {
+        binding.v = this
         binding.vm = ViewModelProvider(this)[VMMenu::class.java]
     }
 

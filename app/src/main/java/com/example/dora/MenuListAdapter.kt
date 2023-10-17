@@ -3,6 +3,7 @@ package com.example.dora
 import com.example.dora.bean.Menu
 import com.example.dora.databinding.ItemMenuListBinding
 import dora.arouter.open
+import dora.brvah.BaseAdapter
 
 class MenuListAdapter(menus: MutableList<Menu>) : BaseAdapter<Menu, ItemMenuListBinding>(
     R.layout.item_menu_list, menus) {

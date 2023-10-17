@@ -73,6 +73,7 @@ kapt {
 }
 
 dependencies {
+    // 官方库
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.10")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -81,12 +82,10 @@ dependencies {
     // Dora全家桶
     implementation("com.github.dora4:dora:1.1.37")
     implementation("com.github.dora4:dora-eventbus-support:1.1")
-
+    implementation("com.github.dora4:dora-brvah-support:1.1")
     implementation("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")
-
     implementation("com.github.dora4:dcache-android:1.8.5")
-
     implementation("com.github.dora4:dview-titlebar:1.27")
     implementation("com.github.dora4:dview-colors:1.0")
     implementation("com.github.dora4:dview-bottom-dialog:1.11")
@@ -107,6 +106,4 @@ dependencies {
 //    implementation("com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.0-alpha.1-androidx") // (可选)
 //    implementation("com.github.Justson:Downloader:v5.0.0-androidx") // (可选)
 
-    // BRVAH
-    implementation("com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.10")
 }
