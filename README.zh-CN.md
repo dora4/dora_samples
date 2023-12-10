@@ -35,7 +35,7 @@ Dora SDK官方文档 ![Release](https://jitpack.io/v/dora4/dora.svg)
         </application>
    
 - BaseActivity、BaseFragment封装，基于MVVM架构。支持Activity中Fragment的流式切换，完美的Fragment切换方案，无Fragment重叠情况。并支持在Activity中监听手机网络的变化。
-  1. showShortToast()和showLongToast()，过时，使用ToastUtils替代
+  1. showShortToast()和showLongToast()
 
      方便你在任意代码处弹出Toast，自动帮你切换线程，所以无需担心会报错
 
@@ -78,11 +78,11 @@ allprojects {
 }
 //添加以下代码到app模块的build.gradle
 dependencies {
-    implementation 'com.github.dora4:dora:latest'
+    implementation 'com.github.dora4:dora:latest-version'
 }
 ```
-latest换成JitPack编译出来的最新绿色可用版本，如1.0.0，这样代码就变成了implementation 'com.github.dora4:dora:1.0.0'。
+latest-version换成JitPack编译出来的最新绿色可用版本，如1.0.0，这样代码就变成了implementation 'com.github.dora4:dora:1.0.0'。
 
-四、Android Studio IDE插件 (Jar包: [dora-studio-plugin-1.1.jar](https://github.com/dora4/dora-studio-plugin/blob/main/art/dora-studio-plugin-1.1.jar))
+四、Android Studio IDE插件 (Jar包: [dora-studio-plugin-1.2.jar](https://github.com/dora4/dora-studio-plugin/blob/main/art/dora-studio-plugin-1.2.jar))
 
 如果你觉得有用的话，不妨点击Github网页右上角的Fork按钮，让更多的人受益！
