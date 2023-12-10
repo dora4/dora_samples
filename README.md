@@ -32,7 +32,7 @@ Features
   </application>
 
 - BaseActivity and BaseFragment encapsulation based on the MVVM architecture. It supports seamless switching of Fragments in Activity, providing a perfect solution for Fragment switching without overlap. It also supports monitoring network changes in Activity. You can use the IDE plugin for more convenient development, available at https://github.com/dora4/dora-studio-plugin.
-  1. showShortToast() and showLongToast(), deprecated, instead of ToastUtils.
+  1. showShortToast() and showLongToast().
 
      Convenient methods to display a Toast message at any point in your code. Automatically handles thread switching, so you don't need to worry about errors.
   2. openActivity() and openActivityForResult() serie, deprecated, moved to IntentUtils.
@@ -76,11 +76,11 @@ allprojects {
 }
 // Add the following code to the build.gradle.kts file of your app module
 dependencies {
-    implementation 'com.github.dora4:dora:latest'
+    implementation 'com.github.dora4:dora:latest-version'
 }
 ```
-Replace "latest" with the latest stable version available on JitPack, such as 1.0.0. So the code will become implementation 'com.github.dora4:dora:1.0.0'.
+Replace "latest-version" with the latest stable version available on JitPack, such as 1.0.0. So the code will become implementation 'com.github.dora4:dora:1.0.0'.
 
-Android Studio IDE Plugin (Jar: [dora-studio-plugin-1.1.jar](https://github.com/dora4/dora-studio-plugin/blob/main/art/dora-studio-plugin-1.1.jar))
+Android Studio IDE Plugin (Jar: [dora-studio-plugin-1.2.jar](https://github.com/dora4/dora-studio-plugin/blob/main/art/dora-studio-plugin-1.2.jar))
 
 If you find it useful, you may wish to click the Fork button in the upper right corner of the Github page to benefit more people!
