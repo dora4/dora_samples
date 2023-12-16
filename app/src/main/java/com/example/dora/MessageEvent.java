@@ -1,5 +1,8 @@
 package com.example.dora;
 
+/**
+ * EventBus的事件类型。
+ */
 public class MessageEvent {
 
     public static final int EVENT_TEST_EVENT_BUS = 0x00;

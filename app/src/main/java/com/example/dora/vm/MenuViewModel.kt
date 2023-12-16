@@ -5,18 +5,14 @@ import com.example.dora.ARouterPath
 import com.example.dora.MenuListAdapter
 import com.example.dora.bean.Menu
 
-/**
- * 以下就是本游乐园支持的所有功能！
- */
-class VMMenu : BaseViewModel() {
+class MenuViewModel : BaseViewModel() {
 
     init {
         adapterObservable.set(MenuListAdapter(initMenus()))
     }
 
     /**
-     * 不同的颜色代表不同的板块哦，比如：
-     * MAGENTA（紫色）：代表导游
+     * MAGENTA（紫色）：代表引言
      * GRAY（灰色）：代表dora基础架构
      * CYAN（青色）：代表dview自定义控件
      * BLUE（蓝色）：代表dcache数据缓存

@@ -23,9 +23,6 @@ import javax.inject.Inject;
 import dora.BaseActivity;
 import dora.util.ViewUtils;
 
-/**
- * 代码参考datacache包。使用三级缓存框架需要先掌握Retrofit和DoraDb框架{@link OrmActivity}。
- */
 @Route(path = ARouterPath.ACTIVITY_DATA_CACHE)
 public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
 

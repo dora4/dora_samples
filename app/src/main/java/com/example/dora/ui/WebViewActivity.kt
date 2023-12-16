@@ -21,6 +21,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     lateinit var agentWeb: AgentWeb
 
+    // 也可以使用ARouter的注入功能读取参数
 //    @JvmField
 //    @Autowired
     var url = "https://github.com/dora4/dora"
@@ -30,7 +31,6 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
     }
 
     override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
-        // 也可以使用arouter的注入特性
         url = IntentUtils.getStringExtra(intent, "url")
     }
 

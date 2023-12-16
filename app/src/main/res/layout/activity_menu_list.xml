@@ -9,7 +9,7 @@
             type="com.example.dora.MenuListActivity" />
         <variable
             name="vm"
-            type="com.example.dora.vm.VMMenu" />
+            type="com.example.dora.vm.MenuViewModel" />
         <variable
             name="decoration"
             type="androidx.recyclerview.widget.DividerItemDecoration" />

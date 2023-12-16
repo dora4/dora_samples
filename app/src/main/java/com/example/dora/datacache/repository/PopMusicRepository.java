@@ -32,6 +32,7 @@ public class PopMusicRepository extends DoraDatabaseCacheRepository<PopMusic> {
      */
     @Override
     protected void onLoadFromNetwork(@NonNull DoraListCallback<PopMusic> callback, @Nullable OnLoadStateListener listener) {
+        // 这里采用了适配器对接口类型进行转换
         RetrofitManager.INSTANCE.getService(MusicService.class).popMusicGet()
                 .enqueue(new ListResultAdapter(callback));
     }

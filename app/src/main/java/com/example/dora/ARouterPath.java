@@ -1,7 +1,7 @@
 package com.example.dora;
 
 /**
- * 这是一张本游乐园全景地图，可以告诉你哪个地方怎么走。
+ * ARouter的路径。
  */
 public interface ARouterPath {
 

@@ -13,7 +13,8 @@ import dora.http.retrofit.RetrofitManager
 
 /**
  * 继承dora.BaseApplication开始Dora之旅吧！如果你不使用这个BaseApplication，直接开始继承
- * dora.BaseActivity也是可以的，这样做的话，会丢失Dora对于app开发的一些优化。
+ * dora.BaseActivity也是可以的，这样做的话，会丢失Dora对于app开发的一些优化，如Dora SDK的生
+ * 命周期注入将无法使用。
  */
 class SampleApp : BaseApplication() {
 
@@ -25,25 +26,37 @@ class SampleApp : BaseApplication() {
     override fun onCreate() {
         super.onCreate()
         // 初始化dagger的app模块，dagger不是必须的
+        initDagger()
+        // 初始化orm框架
+        initOrm()
+        // 初始化retrofit的配置
+        initRetrofit()
+    }
+
+    private fun initDagger() {
         val appModule = AppModule(this)
         appComponent = DaggerAppComponent.builder().appModule(appModule).build()
         appComponent.inject(this)
-        // 初始化orm框架
-        val config = OrmConfig.Builder()
-            .database("dora_sample")
-            .version(1)
-            .tables(PopMusic::class.java)
-            .build()
-        Orm.init(this, config)
-        // 初始化retrofit的配置
+    }
+
+    private fun initRetrofit() {
         RetrofitManager.initConfig {
             okhttp {
                 // 添加格式化输出日志的拦截器
                 interceptors().add(FormatLogInterceptor())
                 build()
             }
-            // 映射API服务地址
+            // 映射API服务地址，可以映射多个
             mappingBaseUrl(MusicService::class.java, "http://doramusic.site:8080/")
         }
+    }
+
+    private fun initOrm() {
+        val config = OrmConfig.Builder()
+            .database("dora_sample")
+            .version(1)
+            .tables(PopMusic::class.java)
+            .build()
+        Orm.init(this, config)
     }
 }

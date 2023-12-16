@@ -1,7 +1,6 @@
 package com.example.dora.ui
 
 import android.os.Bundle
-import android.widget.RelativeLayout
 import androidx.appcompat.widget.AppCompatImageView
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
@@ -11,7 +10,6 @@ import dora.BaseActivity
 import com.example.dora.R
 import com.example.dora.MessageEvent
 import com.example.dora.databinding.ActivityTitleBarBinding
-import dora.util.DensityUtils
 import dora.util.LogUtils
 import dora.widget.DoraTitleBar
 import org.greenrobot.eventbus.Subscribe

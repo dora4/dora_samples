@@ -33,7 +33,7 @@ class FlowPageActivity : BaseActivity<ActivityFlowPageBinding>() {
         showPage(FlowPageOneFragment.PAGE_KEY)
     }
 
-    override fun isLoop(): Boolean {
+    override fun isPageLoop(): Boolean {
         return false
     }
 

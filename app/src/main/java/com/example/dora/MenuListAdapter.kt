@@ -10,17 +10,12 @@ class MenuListAdapter(menus: MutableList<Menu>) : BaseAdapter<Menu, ItemMenuList
 
     override fun convert(holder: DoraViewHolder<ItemMenuListBinding>, item: Menu) {
         super.convert(holder, item)
-
-        // 使用data binding的方式
+        // 使用data binding
         holder.binding?.menu = item
-//        holder.setTextColor(R.id.tv_menu_item_id, item.color)
-//        holder.setText(R.id.tv_menu_item_title, item.title)
-//        holder.setTextColor(R.id.tv_menu_item_title, item.color)
-
         holder.setText(R.id.tv_menu_item_id, "${getItemPosition(item) + 1}")
 
         // 设置item点击事件
-        setOnItemClickListener { adapter, view, position ->
+        setOnItemClickListener { adapter, _, position ->
             open((adapter.getItem(position) as Menu).path)
         }
     }
