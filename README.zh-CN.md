@@ -13,14 +13,14 @@
 - 加载进度对话框
 - ARouter界面跳转
 - EventBus事件通信
-- BaseRecyclerViewAdapterHelper万能适配器演示
+- BaseRecyclerViewAdapterHelper万能适配器
 
 ## 开始
 
 克隆项目到你的磁盘中
 
 ```bash
-git clone https://github.com/dora4/dora
+git clone https://github.com/dora4/dora_samples
 ```
 
 ## 目录
