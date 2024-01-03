@@ -13,14 +13,14 @@ This project serves as a demonstration for https://github.com/dora4/dora.
 - EventBus for event communication
 - Getting Started
 - Clone the project to your local disk:
-- Demonstration of the Universal Adapter using BaseRecyclerViewAdapterHelper
+- The Universal Adapter using BaseRecyclerViewAdapterHelper
 
 ## Get Started
 
 Clone the project to your local disk.
 
 ```bash
-git clone https://github.com/dora4/dora
+git clone https://github.com/dora4/dora_samples
 ```
 
 ## Directory
