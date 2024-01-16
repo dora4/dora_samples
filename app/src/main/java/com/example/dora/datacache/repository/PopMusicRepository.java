@@ -11,13 +11,13 @@ import javax.inject.Inject;
 import dora.cache.data.adapter.ListResultAdapter;
 import dora.cache.data.fetcher.OnLoadStateListener;
 import dora.cache.repository.DoraDatabaseCacheRepository;
-import dora.cache.repository.Repository;
+import dora.cache.repository.ListRepository;
 import dora.db.builder.Condition;
 import dora.http.DoraListCallback;
 import dora.http.retrofit.RetrofitManager;
 import dora.util.GlobalContext;
 
-@Repository
+@ListRepository
 public class PopMusicRepository extends DoraDatabaseCacheRepository<PopMusic> {
 
     @Inject
