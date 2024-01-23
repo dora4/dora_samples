@@ -79,7 +79,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // Dora全家桶
-    implementation("com.github.dora4:dora:1.1.54")
+    implementation("com.github.dora4:dora:1.1.56")
     implementation("com.github.dora4:dora-eventbus-support:1.1")
     implementation("com.github.dora4:dora-brvah-support:1.1")
     implementation("com.github.dora4:dora-arouter-support:1.6")
