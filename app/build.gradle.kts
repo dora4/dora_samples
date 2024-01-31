@@ -86,7 +86,7 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
     implementation("com.github.dora4:dora-dagger-support:1.10")
     kapt("com.google.dagger:dagger-compiler:2.15")
-    implementation("com.github.dora4:dcache-android:2.2.1")
+    implementation("com.github.dora4:dcache-android:2.2.6")
     implementation("com.github.dora4:dview-titlebar:1.27")
     implementation("com.github.dora4:dview-colors:1.0")
     implementation("com.github.dora4:dview-bottom-dialog:1.11")
