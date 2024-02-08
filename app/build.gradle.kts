@@ -86,12 +86,12 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
     implementation("com.github.dora4:dora-dagger-support:1.10")
     kapt("com.google.dagger:dagger-compiler:2.15")
-    implementation("com.github.dora4:dcache-android:2.2.6")
+    implementation("com.github.dora4:dcache-android:2.2.7")
     implementation("com.github.dora4:dview-titlebar:1.27")
     implementation("com.github.dora4:dview-colors:1.0")
     implementation("com.github.dora4:dview-bottom-dialog:1.11")
     implementation("com.github.dora4:dview-loading-dialog:1.4")
-    implementation("com.github.dora4:dview-alert-dialog:1.3")
+    implementation("com.github.dora4:dview-alert-dialog:1.6")
     implementation("com.github.dora4:dview-progress-view:1.0")
 
     // XXPermissions
