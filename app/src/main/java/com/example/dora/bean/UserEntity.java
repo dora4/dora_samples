@@ -10,8 +10,6 @@ import dora.db.migration.OrmMigration;
 import dora.db.table.Column;
 import dora.db.table.Convert;
 import dora.db.table.OrmTable;
-import dora.db.table.PrimaryKeyEntry;
-import dora.db.table.PrimaryKeyId;
 import dora.db.table.Table;
 
 /**
@@ -73,11 +71,6 @@ public class UserEntity implements OrmTable {
 
     public List<String> getRoster() {
         return roster;
-    }
-
-    @Override
-    public PrimaryKeyEntry getPrimaryKey() {
-        return new PrimaryKeyId(id);
     }
 
     @Override

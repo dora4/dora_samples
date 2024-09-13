@@ -6,8 +6,6 @@ import dora.db.constraint.Id;
 import dora.db.migration.OrmMigration;
 import dora.db.table.Column;
 import dora.db.table.OrmTable;
-import dora.db.table.PrimaryKeyEntry;
-import dora.db.table.PrimaryKeyId;
 import dora.db.table.Table;
 
 @Table("pop_music")
@@ -39,12 +37,6 @@ public class PopMusic implements OrmTable {
 
     public void setMusicArtist(String musicArtist) {
         this.musicArtist = musicArtist;
-    }
-
-    @NonNull
-    @Override
-    public PrimaryKeyEntry getPrimaryKey() {
-        return new PrimaryKeyId(id);
     }
 
     @Override
