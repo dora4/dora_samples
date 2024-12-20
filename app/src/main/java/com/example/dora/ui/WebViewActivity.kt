@@ -19,9 +19,9 @@ import org.greenrobot.eventbus.ThreadMode
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
-    lateinit var agentWeb: AgentWeb
+    private lateinit var agentWeb: AgentWeb
 
-    // 也可以使用ARouter的注入功能读取参数
+    // 也可以使用ARouter的注入功能读取参数，则不要使用private
 //    @JvmField
 //    @Autowired
     var url = "https://github.com/dora4/dora"
