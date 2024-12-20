@@ -24,6 +24,7 @@ class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>(
         super.onCreate(savedInstanceState)
     }
 
+    // 继承BaseVMActivity方式提供ViewModel，常用在只有一种ViewModel的场景
     override fun onBindViewModel(binding: ActivityMenuListBinding, viewModel: MenuViewModel) {
         super.onBindViewModel(binding, viewModel)
         binding.v = this

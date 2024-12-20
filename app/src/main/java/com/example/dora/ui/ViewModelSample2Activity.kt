@@ -7,11 +7,10 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
 import com.example.dora.MessageEvent
 
-import dora.BaseVMActivity
-
 import com.example.dora.R
 import com.example.dora.databinding.ActivityViewModelSample2Binding
 import com.example.dora.vm.ViewModelSample2ViewModel
+import dora.BaseActivity
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
@@ -20,8 +19,9 @@ import org.greenrobot.eventbus.ThreadMode
  */
 @Route(path = ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_2)
 class ViewModelSample2Activity :
-    BaseVMActivity<ActivityViewModelSample2Binding, ViewModelSample2ViewModel>() {
+    BaseActivity<ActivityViewModelSample2Binding>() {
 
+    // 官方方式注入
     private val viewModel by viewModels<ViewModelSample2ViewModel>()
 
     override fun getLayoutId(): Int {

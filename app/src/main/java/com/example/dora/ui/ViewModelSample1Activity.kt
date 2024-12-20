@@ -5,21 +5,23 @@ import androidx.activity.viewModels
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.dora.ARouterPath
 import com.example.dora.MessageEvent
-import dora.BaseVMActivity
 
 import com.example.dora.R
 import com.example.dora.databinding.ActivityViewModelSample1Binding
 import com.example.dora.vm.ViewModelSample1ViewModel
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
+import androidx.databinding.ObservableField
+import dora.BaseActivity
 
 /**
- * 使用ObservableField。
+ * 使用[ObservableField]。
  */
 @Route(path = ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_1)
 class ViewModelSample1Activity :
-    BaseVMActivity<ActivityViewModelSample1Binding, ViewModelSample1ViewModel>() {
+    BaseActivity<ActivityViewModelSample1Binding>() {
 
+    // 官方方式注入
     private val viewModel by viewModels<ViewModelSample1ViewModel>()
 
     override fun getLayoutId(): Int {

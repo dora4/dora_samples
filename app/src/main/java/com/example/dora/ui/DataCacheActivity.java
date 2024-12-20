@@ -25,7 +25,8 @@ import dora.util.ViewUtils;
 
 @Route(path = ARouterPath.ACTIVITY_DATA_CACHE)
 public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
-
+    
+    // Dagger方式注入
     @Inject
     PopMusicRepository repository;
 
