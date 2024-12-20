@@ -15,6 +15,8 @@ public interface ARouterPath {
     String ACTIVITY_TIPS = GROUP_MAIN + "/TipsActivity";
     String ACTIVITY_FLOW_PAGE = GROUP_MAIN + "/FlowPageActivity";
     String ACTIVITY_NET_DETECT = GROUP_MAIN + "/NetDetectActivity";
+    String ACTIVITY_VIEW_MODEL_SAMPLE_1 = GROUP_MAIN + "/ViewModelSample1Activity";
+    String ACTIVITY_VIEW_MODEL_SAMPLE_2 = GROUP_MAIN + "/ViewModelSample2Activity";
     String ACTIVITY_ORM = GROUP_MAIN + "/OrmActivity";
     String ACTIVITY_RSA = GROUP_MAIN + "/RsaActivity";
     String ACTIVITY_DATA_CACHE = GROUP_MAIN + "/DataCacheActivity";

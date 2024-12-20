@@ -10,7 +10,7 @@ import javax.inject.Inject;
 
 import dora.cache.data.adapter.ListResultAdapter;
 import dora.cache.data.fetcher.OnLoadStateListener;
-import dora.cache.factory.DatabaseCacheHolderFactory;
+import dora.cache.factory.DoraDatabaseCacheHolderFactory;
 import dora.cache.repository.DoraDatabaseCacheRepository;
 import dora.cache.repository.ListRepository;
 import dora.db.builder.Condition;
@@ -49,7 +49,7 @@ public class PopMusicRepository extends DoraDatabaseCacheRepository<PopMusic> {
 
     @NonNull
     @Override
-    protected DatabaseCacheHolderFactory<PopMusic> createCacheHolderFactory() {
-        return new DatabaseCacheHolderFactory(PopMusic.class);
+    protected DoraDatabaseCacheHolderFactory<PopMusic> createCacheHolderFactory() {
+        return new DoraDatabaseCacheHolderFactory<>();
     }
 }

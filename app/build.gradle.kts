@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.dora"
     compileSdk = 34
-    buildToolsVersion = "33.0.1"
+    buildToolsVersion = "34.0.0"
     lint {
         checkReleaseBuilds = false
         // Or, if you prefer, you can continue to check for errors in release builds,
@@ -63,6 +63,9 @@ android {
         sourceCompatibility(JavaVersion.VERSION_17)
         targetCompatibility(JavaVersion.VERSION_17)
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 kapt {
@@ -77,18 +80,19 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.databinding:databinding-runtime:7.0.0")
 
     // Dora全家桶
-    implementation("com.github.dora4:dora:1.2.26")
+    implementation("com.github.dora4:dora:1.2.34")
     implementation("com.github.dora4:dora-eventbus-support:1.1")
     implementation("com.github.dora4:dora-brvah-support:1.2")
     implementation("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")
     implementation("com.github.dora4:dora-dagger-support:1.12")
     kapt("com.google.dagger:dagger-compiler:2.16")
-    implementation("com.github.dora4:dcache-android:2.4.13")
+    implementation("com.github.dora4:dcache-android:3.1.7")
     implementation("com.github.dora4:dview-titlebar:1.37")
-    implementation("com.github.dora4:dview-colors:1.0")
+    implementation("com.github.dora4:dview-colors:1.1")
     implementation("com.github.dora4:dview-bottom-dialog:1.13")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
     implementation("com.github.dora4:dview-alert-dialog:1.18")
