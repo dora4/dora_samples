@@ -19,12 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.ViewModelSample2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ViewModelSample1Activity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.NetDetectActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -68,6 +62,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.OrmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample2Activity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MenuListActivity"
