@@ -14,6 +14,7 @@
 - ARouter界面跳转
 - EventBus事件通信
 - BaseRecyclerViewAdapterHelper万能适配器
+- ViewModel的使用
 
 ## 开始
 
