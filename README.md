@@ -14,6 +14,7 @@ This project serves as a demonstration for https://github.com/dora4/dora.
 - Getting Started
 - Clone the project to your local disk:
 - The Universal Adapter using BaseRecyclerViewAdapterHelper
+- The usage of ViewModel
 
 ## Get Started
 
