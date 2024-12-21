@@ -23,6 +23,9 @@ import javax.inject.Inject;
 import dora.BaseActivity;
 import dora.util.ViewUtils;
 
+/**
+ * 仅供体验大致写法，详细教程请参考 https://github.com/dora4/DoraCacheSample 。
+ */
 @Route(path = ARouterPath.ACTIVITY_DATA_CACHE)
 public class DataCacheActivity extends BaseActivity<ActivityDataCacheBinding> {
     

@@ -8,7 +8,7 @@ import com.example.dora.bean.Menu
 class MenuViewModel : BaseViewModel() {
 
     init {
-        // 一步完成配置
+        // 一行代码完成数据的配置
         adapterObservable.set(MenuListAdapter(initMenus()))
     }
 
