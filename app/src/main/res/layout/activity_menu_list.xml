@@ -10,12 +10,6 @@
         <variable
             name="vm"
             type="com.example.dora.vm.MenuViewModel" />
-        <variable
-            name="decoration"
-            type="androidx.recyclerview.widget.DividerItemDecoration" />
-        <variable
-            name="rv"
-            type="androidx.recyclerview.widget.RecyclerView" />
     </data>
 
     <LinearLayout
