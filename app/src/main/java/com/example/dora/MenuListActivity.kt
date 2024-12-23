@@ -17,6 +17,7 @@ class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>(
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // 此处代码也可以在DaggerBaseActivity的回调中调用 https://github.com/dora4/dora-dagger-support
         DaggerMenuComponent.builder()
             .appComponent((application as SampleApp).appComponent)
             .build()
