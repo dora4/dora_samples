@@ -9,7 +9,7 @@ class MenuViewModel : BaseViewModel() {
 
     init {
         // 一行代码完成数据的配置
-        adapterObservable.set(MenuListAdapter(initMenus()))
+        adapter.set(MenuListAdapter(initMenus()))
     }
 
     /**
