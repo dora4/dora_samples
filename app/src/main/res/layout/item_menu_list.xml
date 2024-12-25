@@ -5,7 +5,7 @@
     <data>
         <variable
             name="menu"
-            type="com.example.dora.bean.Menu" />
+            type="com.example.app.bean.Menu" />
     </data>
 
     <LinearLayout

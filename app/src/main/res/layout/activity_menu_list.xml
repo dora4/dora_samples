@@ -6,10 +6,10 @@
     <data>
         <variable
             name="v"
-            type="com.example.dora.MenuListActivity" />
+            type="com.example.app.MenuListActivity" />
         <variable
             name="vm"
-            type="com.example.dora.vm.MenuViewModel" />
+            type="com.example.app.vm.MenuViewModel" />
     </data>
 
     <LinearLayout

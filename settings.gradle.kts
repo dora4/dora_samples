@@ -10,7 +10,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.namespace == "com.android.tools.build") {
-                useModule("com.android.tools.build:gradle:7.3.1")
+                useModule("com.android.tools.build:gradle:8.0.2")
             }
             if (requested.id.namespace == "org.jetbrains.kotlin") {
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
@@ -32,3 +32,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "dora_samples"
 include(":app")
+include(":dview")
+include(":common")
+include(":dcache")
+include(":dora")

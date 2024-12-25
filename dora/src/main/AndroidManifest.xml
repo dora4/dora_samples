@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+
+        <activity
+            android:name=".ui.NetDetectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FlowPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EventBusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RsaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CrashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ExtrasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.IntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample2Activity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

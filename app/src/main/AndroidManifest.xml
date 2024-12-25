@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.dora">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
@@ -9,7 +8,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".SampleApp"
+        android:name="com.example.app.SampleApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,58 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.NetDetectActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.FlowPageActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.LoadingDialogActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.AlertDialogActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.TitleBarActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.EventBusActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.ProgressViewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.DataCacheActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.RsaActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.CrashActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.TipsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.ExtrasActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.WebViewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.IntroduceActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.OrmActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.ViewModelSample1Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.ViewModelSample2Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MenuListActivity"
+            android:name="com.example.app.MenuListActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
