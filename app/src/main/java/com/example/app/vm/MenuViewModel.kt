@@ -37,7 +37,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Color.CYAN, "系统提示信息对话框", ARouterPath.ACTIVITY_ALERT_DIALOG),
             Menu(Color.CYAN, "加载中对话框", ARouterPath.ACTIVITY_LOADING_DIALOG),
             Menu(Color.BLUE, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
-            Menu(Color.BLUE, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
+//            Menu(Color.BLUE, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
     }
 }
