@@ -5,6 +5,9 @@ package com.example.dora;
  */
 public interface ARouterPath {
 
+    /**
+     * group name不能带/，这里为了简化调用。
+     */
     String GROUP_MAIN = "/Main";
     String ACTIVITY_INTRODUCE = GROUP_MAIN + "/IntroduceActivity";
     String ACTIVITY_MENU_LIST = GROUP_MAIN + "/MenuListActivity";
