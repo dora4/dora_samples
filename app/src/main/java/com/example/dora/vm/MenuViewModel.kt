@@ -5,6 +5,9 @@ import com.example.dora.ARouterPath
 import com.example.dora.MenuListAdapter
 import com.example.dora.bean.Menu
 
+/**
+ * 菜单列表。
+ */
 class MenuViewModel : BaseViewModel() {
 
     init {
