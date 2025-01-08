@@ -6,7 +6,7 @@ package com.example.dora;
 public interface ARouterPath {
 
     /**
-     * group name不能带/，这里为了简化调用。
+     * group name不能带/，这里为了简化调用，非组件化项目就无所谓了。
      */
     String GROUP_MAIN = "/Main";
     String ACTIVITY_INTRODUCE = GROUP_MAIN + "/IntroduceActivity";
