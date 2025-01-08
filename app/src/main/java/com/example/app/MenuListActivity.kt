@@ -8,6 +8,9 @@ import com.example.app.vm.MenuViewModel
 import com.example.common.ARouterPath
 import dora.BaseVMActivity
 
+/**
+ * 所有菜单请查看[MenuViewModel].
+ */
 @Route(path = ARouterPath.ACTIVITY_MENU_LIST)
 class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>() {
 
@@ -16,7 +19,7 @@ class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>(
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 此处代码也可以在DaggerBaseActivity的回调中调用 https://github.com/dora4/dora-dagger-support
+        // 此处代码也可以在DaggerBaseActivity的回调方法中调用 https://github.com/dora4/dora-dagger-support
         DaggerMenuComponent.builder()
             .appComponent((application as SampleApp).appComponent)
             .build()

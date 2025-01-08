@@ -18,14 +18,16 @@ class AlertDialogActivity : BaseActivity<ActivityAlertDialogBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityAlertDialogBinding) {
-        DoraAlertDialog(this).show("提示信息") {
-            title("系统消息")
-            themeColorResId(com.example.common.R.color.colorAccent)
-            positiveListener {
-                showShortToast("点击了确认按钮")
-            }
-            negativeListener {
-                showShortToast("点击了取消按钮")
+        binding.btnShowAlertDialog.setOnClickListener {
+            DoraAlertDialog(this).show("提示信息") {
+                title("系统消息")
+                themeColorResId(com.example.common.R.color.colorAccent)
+                positiveListener {
+                    showShortToast("点击了确认按钮")
+                }
+                negativeListener {
+                    showShortToast("点击了取消按钮")
+                }
             }
         }
     }

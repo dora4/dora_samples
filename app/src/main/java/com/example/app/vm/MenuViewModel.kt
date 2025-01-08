@@ -6,6 +6,9 @@ import com.example.app.MenuListAdapter
 import com.example.app.bean.Menu
 import com.example.common.vm.BaseViewModel
 
+/**
+ * 菜单列表。
+ */
 class MenuViewModel : BaseViewModel() {
 
     init {

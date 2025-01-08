@@ -18,9 +18,11 @@ class LoadingDialogActivity : BaseActivity<ActivityLoadingDialogBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityLoadingDialogBinding) {
-        val dialog = DoraLoadingDialog(this).show("登录中...") {
-            messageTextSize(15f)
+        binding.btnShowLoadingDialog.setOnClickListener {
+            val dialog = DoraLoadingDialog(this).show("登录中...") {
+                messageTextSize(15f)
+            }
+            binding.root.postDelayed({ dialog.dismissWithAnimation() }, 1000)
         }
-        binding.root.postDelayed({ dialog.dismissWithAnimation() }, 1000)
     }
 }
