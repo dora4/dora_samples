@@ -7,13 +7,10 @@ import com.example.common.ARouterPath
 
 import dora.BaseActivity
 
-import com.example.common.MessageEvent
 import com.example.dview.R
 import com.example.dview.databinding.ActivityTitleBarBinding
 import dora.util.LogUtils
 import dora.widget.DoraTitleBar
-import org.greenrobot.eventbus.Subscribe
-import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_TITLE_BAR)
 class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
@@ -43,8 +40,5 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
                 LogUtils.i("点击了第${position}个菜单")
             }
         })
-    }
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onMessageEvent(msg: MessageEvent) {
     }
 }

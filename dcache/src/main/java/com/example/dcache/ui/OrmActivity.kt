@@ -4,15 +4,12 @@ import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dcache.R
-import com.example.common.MessageEvent
 import com.example.dcache.databinding.ActivityOrmBinding
 import com.example.dcache.model.UserEntity
 import dora.BaseActivity
 import dora.db.Orm
 import dora.db.dao.DaoFactory
 import dora.db.table.TableManager
-import org.greenrobot.eventbus.Subscribe
-import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_ORM)
 class OrmActivity : BaseActivity<ActivityOrmBinding>() {
@@ -51,9 +48,5 @@ class OrmActivity : BaseActivity<ActivityOrmBinding>() {
         users.iterator().forEach {
             mBinding.tvOrmDisplay.append("\n用户名：${it.userName}\n用户ID：${it.userId}\n用户昵称：${it.userAlias}\n好友列表：${it.roster}\n")
         }
-    }
-
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onMessageEvent(msg: MessageEvent) {
     }
 }

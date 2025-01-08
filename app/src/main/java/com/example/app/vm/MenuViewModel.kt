@@ -27,7 +27,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Color.GRAY, "有用的小提示ToastUtils", ARouterPath.ACTIVITY_TIPS),
             Menu(Color.GRAY, "Intent传参", ARouterPath.ACTIVITY_EXTRAS),
             Menu(Color.GRAY, "Fragment流式切换", ARouterPath.ACTIVITY_FLOW_PAGE),
-            Menu(Color.GRAY, "使用EventBus扩展包", ARouterPath.ACTIVITY_EVENT_BUS),
+//            Menu(Color.GRAY, "使用EventBus扩展包", ARouterPath.ACTIVITY_EVENT_BUS),
             Menu(Color.GRAY, "RSA加密", ARouterPath.ACTIVITY_RSA),
             Menu(Color.GRAY, "网络状态探测", ARouterPath.ACTIVITY_NET_DETECT),
             Menu(Color.GRAY, "ViewModel示例1", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_1),

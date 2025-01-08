@@ -51,7 +51,7 @@ dependencies {
     api("com.github.dora4:dora-arouter-support:1.6")
     api("com.github.dora4:dora-dagger-support:1.12")
     api("com.github.dora4:dcache-android:3.1.8")
-    api("com.github.dora4:dora-eventbus-support:1.1")
+//    api("com.github.dora4:dora-eventbus-support:1.1")
     api("com.github.dora4:dview-colors:1.1")
     api("com.github.dora4:dview-titlebar:1.37")
 

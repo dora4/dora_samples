@@ -7,10 +7,7 @@ import com.example.common.ARouterPath
 import dora.BaseActivity
 
 import com.example.dview.R
-import com.example.common.MessageEvent
 import com.example.dview.databinding.ActivityProgressViewBinding
-import org.greenrobot.eventbus.Subscribe
-import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_PROGRESS_VIEW)
 class ProgressViewActivity : BaseActivity<ActivityProgressViewBinding>() {
@@ -40,8 +37,5 @@ class ProgressViewActivity : BaseActivity<ActivityProgressViewBinding>() {
         binding.pv18.setPercentRate(1f)
         binding.pv19.setPercentRate(1f)
         binding.pv20.setPercentRate(1f)
-    }
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onMessageEvent(msg: MessageEvent) {
     }
 }

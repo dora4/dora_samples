@@ -6,10 +6,7 @@ import com.example.app.databinding.ActivityMenuListBinding
 import com.example.app.di.component.DaggerMenuComponent
 import com.example.app.vm.MenuViewModel
 import com.example.common.ARouterPath
-import com.example.common.MessageEvent
 import dora.BaseVMActivity
-import org.greenrobot.eventbus.Subscribe
-import org.greenrobot.eventbus.ThreadMode
 
 @Route(path = ARouterPath.ACTIVITY_MENU_LIST)
 class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>() {
@@ -32,9 +29,5 @@ class MenuListActivity : BaseVMActivity<ActivityMenuListBinding, MenuViewModel>(
         super.onBindViewModel(binding, viewModel)
         binding.v = this
         binding.vm = viewModel
-    }
-
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onMessageEvent(msg: MessageEvent) {
     }
 }
