@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ToastActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_backIcon="@drawable/ic_back"
+            app:dview_backIconSize="26dp"
+            app:dview_isTitleTextBold="true"
+            app:dview_title="@string/common_title" />
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示常规Toast" />
+
+        <Button
+            android:id="@+id/btn_show_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示成功Toast" />
+
+        <Button
+            android:id="@+id/btn_show_failure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示失败Toast" />
+    </LinearLayout>
+
+</layout>

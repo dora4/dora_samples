@@ -53,8 +53,10 @@ dependencies {
     implementation(project(":common"))
     implementation("com.github.dora4:dview-bottom-dialog:1.13")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
-    implementation("com.github.dora4:dview-alert-dialog:1.18")
+    implementation("com.github.dora4:dview-alert-dialog:1.20")
     implementation("com.github.dora4:dview-progress-view:1.0")
+    implementation("com.github.dora4:dview-toast:1.1")
+
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
 }
