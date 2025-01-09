@@ -27,6 +27,7 @@ interface ARouterPath {
         const val ACTIVITY_PROGRESS_VIEW: String = "/$GROUP_VIEW/ProgressViewActivity"
         const val ACTIVITY_TITLE_BAR: String = "/$GROUP_VIEW/TitleBarActivity"
         const val ACTIVITY_TOAST: String = "/$GROUP_VIEW/TipsActivity"
+        const val ACTIVITY_TAB_LAYOUT: String = "/$GROUP_VIEW/TabLayoutActivity"
         const val ACTIVITY_ALERT_DIALOG: String = "/$GROUP_VIEW/AlertDialogActivity"
         const val ACTIVITY_LOADING_DIALOG: String = "/$GROUP_VIEW/LoadingDialogActivity"
     }
