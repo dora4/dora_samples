@@ -9,7 +9,7 @@ android {
     compileSdk = 34
     buildToolsVersion = "34.0.0"
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

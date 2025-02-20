@@ -9,7 +9,7 @@ import com.example.common.service.MusicService;
 import javax.inject.Inject;
 
 import dora.cache.data.adapter.ListResultAdapter;
-import dora.cache.data.fetcher.OnLoadStateListener;
+import dora.cache.data.fetcher.OnLoadListener;
 import dora.cache.repository.DoraDatabaseCacheRepository;
 import dora.cache.repository.ListRepository;
 import dora.db.builder.Condition;
@@ -31,7 +31,7 @@ public class PopMusicRepository extends DoraDatabaseCacheRepository<PopMusic> {
      * @param callback
      */
     @Override
-    protected void onLoadFromNetwork(@NonNull DoraListCallback<PopMusic> callback, @Nullable OnLoadStateListener listener) {
+    protected void onLoadFromNetwork(@NonNull DoraListCallback<PopMusic> callback, @Nullable OnLoadListener listener) {
         // 这里采用了适配器对接口类型进行转换
         RetrofitManager.INSTANCE.getService(MusicService.class).popMusicGet()
                 .enqueue(new ListResultAdapter(callback));

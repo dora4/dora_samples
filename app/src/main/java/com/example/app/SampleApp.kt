@@ -6,11 +6,14 @@ import com.example.app.di.component.DaggerAppComponent
 import com.example.common.di.module.AppModule
 import com.example.common.model.PopMusic
 import com.example.common.service.MusicService
+import com.walletconnect.web3.modal.client.Modal
+import com.walletconnect.web3.modal.presets.Web3ModalChainsPresets
 import dora.BaseApplication
 import dora.db.Orm
 import dora.db.OrmConfig
 import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
+import dora.trade.DoraTrade
 
 /**
  * 继承dora.BaseApplication开始Dora之旅吧！如果你不使用这个BaseApplication，直接开始继承
@@ -32,8 +35,20 @@ class SampleApp : BaseApplication() {
         initOrm()
         // 初始化retrofit的配置
         initRetrofit()
+        // 初始化支付SDK
+        initPay()
         ARouter.openLog()    // 打开日志
         ARouter.openDebug()  // 打开调试模式
+    }
+
+    private fun initPay() {
+        // 通过chainId指定支持的以太坊兼容链
+        val chains: Array<Modal.Model.Chain> = arrayOf(
+            Web3ModalChainsPresets.ethChains["1"]!!,      // 支持Ethereum
+            Web3ModalChainsPresets.ethChains["137"]!!,    // 支持Polygon
+            Web3ModalChainsPresets.ethChains["42161"]!!   // 支持Arbitrum
+        )
+        DoraTrade.init(this, "App Name", "App Description", "https://yourdomain.com", chains)
     }
 
     private fun initDagger() {

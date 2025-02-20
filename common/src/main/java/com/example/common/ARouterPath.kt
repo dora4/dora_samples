@@ -21,8 +21,9 @@ interface ARouterPath {
             "/$GROUP_MAIN/ViewModelSample1Activity"
         const val ACTIVITY_VIEW_MODEL_SAMPLE_2: String =
             "/$GROUP_MAIN/ViewModelSample2Activity"
-        const val ACTIVITY_ORM: String = "/$GROUP_CACHE/OrmActivity"
         const val ACTIVITY_RSA: String = "/$GROUP_MAIN/RsaActivity"
+        const val ACTIVITY_WEB3_PAY: String = "/$GROUP_MAIN/Web3PayActivity"
+        const val ACTIVITY_ORM: String = "/$GROUP_CACHE/OrmActivity"
 //        const val ACTIVITY_DATA_CACHE: String = "/$GROUP_CACHE/DataCacheActivity"
         const val ACTIVITY_PROGRESS_VIEW: String = "/$GROUP_VIEW/ProgressViewActivity"
         const val ACTIVITY_TITLE_BAR: String = "/$GROUP_VIEW/TitleBarActivity"
