@@ -30,6 +30,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="调启支付" />
+
+        <TextView
+            android:id="@+id/tv_transaction_hash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_query_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询上笔支付订单"
+            android:visibility="gone" />
     </LinearLayout>
 
 </layout>
