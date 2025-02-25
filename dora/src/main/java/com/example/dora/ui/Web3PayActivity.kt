@@ -71,7 +71,13 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         // 5.查询订单支付状态
         binding.btnQueryTransaction.setOnClickListener {
             Thread {
-                val ok = PayUtils.queryTransaction(lastTransactionHash)
+                val rpcUrl = when (Web3Modal.getSelectedChain()?.id) {
+                    "137" -> PayUtils.DEFAULT_RPC_POLYGON
+                    "42161" -> PayUtils.DEFAULT_RPC_ARBITRUM
+                    // 其它链，自行修改
+                    else -> PayUtils.DEFAULT_RPC_ETHEREUM
+                }
+                val ok = PayUtils.queryTransaction(lastTransactionHash, rpcUrl)
                 // 如果在确认中，请多点几次
                 ToastUtils.showShort("查询上笔支付订单：${if (ok) "成功" else "失败"}")
             }.start()
