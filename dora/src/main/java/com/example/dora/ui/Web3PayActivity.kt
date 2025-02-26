@@ -58,7 +58,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
                 "测试订单",
                 "支付0.01个代币",
-                "0xf2e802482eE7134EF243fc6FA613818eA801F20f",
+                "0xcBa852Ef29a43a7542B88F60C999eD9cB66f6000",
                 0.01,
                 object : DoraTrade.OrderListener {
                     override fun onPrintOrder(orderId: String) {
