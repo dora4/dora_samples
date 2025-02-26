@@ -44,6 +44,16 @@ android {
         dataBinding = true
         buildConfig = true
     }
+    signingConfigs {
+        create("release") {
+            storeFile = File(rootDir, "dora_samples.jks")
+            keyAlias = "key0"
+            keyPassword = "123456"
+            storePassword = "123456"
+            enableV1Signing = true
+            enableV2Signing = true
+        }
+    }
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -51,6 +61,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
