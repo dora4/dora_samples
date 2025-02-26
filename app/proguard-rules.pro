@@ -44,15 +44,13 @@
 # 保留所有实现了 OrmTable 接口的类
 -keep class * implements dora.db.table.OrmTable { *; }
 
-# 保留 Web3Modal 类
+-keep class org.json.JSONObject { *; }
 -keep class com.walletconnect.web3.modal.client.Web3Modal { *; }
-# 保留 Request 类
 -keep class com.walletconnect.web3.modal.client.models.request.Request { *; }
-# 保留 Modal$Params$Init 类
 -keep class com.walletconnect.web3.modal.client.Modal$Params$Init { *; }
-# 保留 AppMetaData 类
+-keep class com.walletconnect.web3.modal.client.Modal$Model$SessionRequestResponse { *; }
+-keep class com.walletconnect.web3.modal.client.Modal$Model$JsonRpcResponse$JsonRpcResult { *; }
+-keep class com.walletconnect.web3.modal.client.Modal$Model$JsonRpcResponse$JsonRpcError { *; }
 -keep class com.walletconnect.android.Core$Model$AppMetaData { *; }
-# 保留 CoreClient 类
 -keep class com.walletconnect.android.CoreClient { *; }
-# 保留 ConnectionType 类
 -keep class com.walletconnect.android.relay.ConnectionType { *; }
