@@ -41,10 +41,11 @@
 # 保留所有继承自 BaseVMFragment 的子类
 -keep class * extends dora.BaseVMFragment { *; }
 
-# 保留所有实现了 OrmTable 接口的类
 -keep class * implements dora.db.table.OrmTable { *; }
+-keep class * implements dora.db.converter.PropertyConverter { *; }
 
 -keep class org.json.JSONObject { *; }
+-keep class dora.trade.ModalDelegateProxy { *; }
 -keep class com.walletconnect.web3.modal.client.Web3Modal { *; }
 -keep class com.walletconnect.web3.modal.client.models.request.Request { *; }
 -keep class com.walletconnect.web3.modal.client.Modal$Params$Init { *; }
