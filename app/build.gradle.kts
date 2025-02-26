@@ -46,7 +46,7 @@ android {
     }
     signingConfigs {
         create("release") {
-            storeFile = File(rootDir, "dora_samples.jks")
+            storeFile = File(rootProject.projectDir, "dora_samples.jks")
             keyAlias = "key0"
             keyPassword = "123456"
             storePassword = "123456"
