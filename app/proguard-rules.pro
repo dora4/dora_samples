@@ -1,5 +1,18 @@
 -keepattributes *Annotation*
 
+-dontwarn com.alipay.sdk.app.H5PayCallback
+-dontwarn com.alipay.sdk.app.PayTask
+-dontwarn com.alipay.sdk.util.H5PayResultModel
+-dontwarn com.download.library.DownloadImpl
+-dontwarn com.download.library.DownloadListenerAdapter
+-dontwarn com.download.library.DownloadTask
+-dontwarn com.download.library.Extra
+-dontwarn com.download.library.ResourceRequest
+-dontwarn javax.lang.model.element.Element
+-dontwarn org.slf4j.impl.StaticLoggerBinder
+-dontwarn org.slf4j.impl.StaticMDCBinder
+-dontwarn org.slf4j.impl.StaticMarkerBinder
+
 # ARouter
 -keep class com.alibaba.android.arouter.** { *; }
 -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe { *; }
@@ -8,20 +21,3 @@
 -keepclasseswithmembernames class * {
     @Autowired <fields>;
 }
-
-# Javax Element (用于 ARouter)
--keep class javax.lang.model.element.** { *; }
-
-# Alipay SDK
--keep class com.alipay.sdk.** { *; }
-
-# Just AgentWeb
--keep class com.just.agentweb.** { *; }
-
-# Download Library
--keep class com.download.library.** { *; }
-
-# SLF4J Logger
--keep class org.slf4j.** { *; }
--keep class org.slf4j.impl.** { *; }
-
