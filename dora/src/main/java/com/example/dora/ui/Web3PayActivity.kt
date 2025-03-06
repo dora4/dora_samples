@@ -7,6 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dora.R
 import com.example.dora.databinding.ActivityWeb3PayBinding
+import com.walletconnect.web3.modal.client.Modal
 import com.walletconnect.web3.modal.client.Web3Modal
 import dora.BaseActivity
 import dora.trade.DoraTrade
@@ -61,7 +62,11 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "0xcBa852Ef29a43a7542B88F60C999eD9cB66f6000",
                 0.01,
                 object : DoraTrade.OrderListener {
-                    override fun onPrintOrder(orderId: String) {
+                    override fun onPrintOrder(
+                        orderId: String,
+                        chain: Modal.Model.Chain,
+                        tokenValue: Double
+                    ) {
                         // 在这里保存订单号，便于钱包支付完成后得到对应的交易哈希
                         Log.i(TAG, "生成支付订单，交易订单号：$orderId")
                     }
@@ -71,7 +76,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         // 5.查询订单支付状态
         binding.btnQueryTransaction.setOnClickListener {
             Thread {
-                val ok = PayUtils.queryTransaction(lastTransactionHash)
+                val ok = PayUtils.queryTransactionByHash(lastTransactionHash)
                 // 如果在确认中，请多点几次
                 ToastUtils.showShort("查询上笔支付订单：${if (ok) "成功" else "失败"}")
             }.start()
