@@ -50,6 +50,9 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         binding.btnConnect.setOnClickListener {
             DoraTrade.connectWallet(this)
         }
+        binding.btnDisconnect.setOnClickListener {
+            DoraTrade.disconnectWallet()
+        }
         // 4.发起支付
         binding.btnPay.setOnClickListener {
             if (Web3Modal.getAccount() == null) {
