@@ -14,6 +14,9 @@ import dora.trade.DoraTrade
 import dora.trade.PayUtils
 import dora.util.ToastUtils
 
+/**
+ * 中国大陆用户暂时需要开启VPN才能正常访问。
+ */
 @Route(path = ARouterPath.ACTIVITY_WEB3_PAY)
 class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
 
