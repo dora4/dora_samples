@@ -39,8 +39,8 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
 
             }
 
-            override fun onPayFailure(orderId: String, transactionHash: String) {
-                Log.d(TAG, "支付失败，订单号：$orderId，交易哈希：$transactionHash")
+            override fun onPayFailure(orderId: String, errorMsg: String) {
+                Log.d(TAG, "支付失败，订单号：$orderId，错误信息：$errorMsg")
             }
         })
         // 3.连接钱包
@@ -65,7 +65,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                     override fun onPrintOrder(
                         orderId: String,
                         chain: Modal.Model.Chain,
-                        tokenValue: Double
+                        value: Double
                     ) {
                         // 在这里保存订单号，便于钱包支付完成后得到对应的交易哈希
                         Log.i(TAG, "生成支付订单，交易订单号：$orderId")

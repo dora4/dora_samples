@@ -46,11 +46,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
     // Dora全家桶
-    api("com.github.dora4:dora:1.2.51")
+    api("com.github.dora4:dora:1.3.5")
     api("com.github.dora4:dora-brvah-support:1.3")
     api("com.github.dora4:dora-arouter-support:1.6")
     api("com.github.dora4:dora-dagger-support:1.12")
-    api("com.github.dora4:dora-walletconnect-support:1.44")
+    api("com.github.dora4:dora-walletconnect-support:1.78")
     api("com.github.dora4:dcache-android:3.2.9")
 //    api("com.github.dora4:dora-eventbus-support:1.1")
     api("com.github.dora4:dview-colors:1.1")
