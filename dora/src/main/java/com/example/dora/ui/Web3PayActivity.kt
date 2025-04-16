@@ -53,13 +53,12 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 ToastUtils.showShort("请先连接钱包")
                 return@setOnClickListener
             }
-            DoraTrade.pay(
+            DoraTrade.payProxy(
                 this,
                 "eTAIBZuUv0xw",
                 "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
                 "测试订单",
                 "支付0.01个代币",
-                "0xcBa852Ef29a43a7542B88F60C999eD9cB66f6000",
                 0.01,
                 object : DoraTrade.OrderListener {
                     override fun onPrintOrder(
