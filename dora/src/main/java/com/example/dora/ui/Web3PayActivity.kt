@@ -52,6 +52,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         }
         binding.btnDisconnect.setOnClickListener {
             DoraTrade.disconnectWallet()
+            ToastUtils.showShort("断开钱包连接")
         }
         // 4.发起支付
         binding.btnPay.setOnClickListener {
