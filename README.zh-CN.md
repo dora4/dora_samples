@@ -4,6 +4,8 @@
 
 此项目为 https://github.com/dora4/dora 的演示项目。
 
+<img width="524" alt="截屏2025-04-26 16 51 12" src="https://github.com/user-attachments/assets/55d610c4-72e0-4129-85ae-84a7916de39b" />
+
 ## 特性
 
 - 崩溃日志写入文件
