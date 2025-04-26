@@ -63,6 +63,8 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 ToastUtils.showShort("请先连接钱包")
                 return@setOnClickListener
             }
+            // payProxy：基础版密钥，无需填写收款账号，官方代收
+            // pay：去中心化，需填写收款账号，直接打到商户账户
             DoraTrade.payProxy(
                 this,
                 "eTAIBZuUv0xw",
