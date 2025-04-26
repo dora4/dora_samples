@@ -46,7 +46,8 @@ class SampleApp : BaseApplication() {
         val chains: Array<Modal.Model.Chain> = arrayOf(
             Web3ModalChainsPresets.ethChains["1"]!!,      // 支持Ethereum
             Web3ModalChainsPresets.ethChains["137"]!!,    // 支持Polygon
-            Web3ModalChainsPresets.ethChains["42161"]!!   // 支持Arbitrum
+            Web3ModalChainsPresets.ethChains["42161"]!!,   // 支持Arbitrum
+            Web3ModalChainsPresets.ethChains["43114"]!!    // 支持Avalanche C-Chain
         )
         DoraTrade.init(this, "App Name", "App Description", "https://yourdomain.com", chains)
     }
