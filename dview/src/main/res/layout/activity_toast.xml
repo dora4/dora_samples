@@ -23,23 +23,27 @@
             app:dview_isTitleTextBold="true"
             app:dview_title="@string/common_title" />
 
-        <Button
-            android:id="@+id/btn_show"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="显示常规Toast" />
+            android:orientation="vertical"
+            android:padding="5dp">
 
-        <Button
-            android:id="@+id/btn_show_success"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="显示成功Toast" />
+            <Button
+                android:id="@+id/btn_show"
+                style="@style/ThemeButton"
+                android:text="显示常规Toast" />
 
-        <Button
-            android:id="@+id/btn_show_failure"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="显示失败Toast" />
+            <Button
+                android:id="@+id/btn_show_success"
+                style="@style/ThemeButton"
+                android:text="显示成功Toast" />
+
+            <Button
+                android:id="@+id/btn_show_failure"
+                style="@style/ThemeButton"
+                android:text="显示失败Toast" />
+        </LinearLayout>
     </LinearLayout>
 
 </layout>

@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="v"
             type="com.example.dora.ui.CrashActivity" />
@@ -13,20 +14,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <dora.widget.DoraTitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:dview_title="@string/common_title"
-        android:background="@color/colorPrimary"/>
+
+        <dora.widget.DoraTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_request_permission"
+                style="@style/ThemeButton"
+                android:click="@{()->v.requestPermission()}"
+                android:text="申请文件写入权限" />
+
+            <Button
+                android:id="@+id/btn_make_crash"
+                style="@style/ThemeButton"
+                android:click="@{()->v.makeBug()}"
+                android:text="制造崩溃" />
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="崩溃日志保存在/sdcard/crash目录下"/>
-        <Button
-            android:id="@+id/btn_make_crash"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="制造崩溃"
-            android:click="@{()->v.makeBug()}"/>
+            android:layout_marginHorizontal="10dp"
+            android:text="崩溃日志将保存在/sdcard/crash目录下"
+            android:textColor="#1A2025"
+            android:textSize="15sp" />
     </LinearLayout>
 </layout>

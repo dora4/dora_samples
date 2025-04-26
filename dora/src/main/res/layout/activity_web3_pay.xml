@@ -19,27 +19,34 @@
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
 
-        <Button
-            android:id="@+id/btn_connect"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="连接钱包" />
-        <Button
-            android:id="@+id/btn_disconnect"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="断开钱包" />
+            android:orientation="vertical"
+            android:padding="5dp">
 
-        <Button
-            android:id="@+id/btn_pay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="调启支付" />
+            <Button
+                android:id="@+id/btn_connect"
+                style="@style/ThemeButton"
+                android:text="连接钱包" />
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                style="@style/ThemeButton"
+                android:text="断开钱包" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                style="@style/ThemeButton"
+                android:text="调启支付" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_transaction_hash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#1A2025"
             android:padding="5dp"
             android:visibility="gone" />
 
@@ -48,6 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="查询上笔支付订单"
+            android:textSize="15sp"
+            android:textColor="#1A2025"
             android:visibility="gone" />
     </LinearLayout>
 

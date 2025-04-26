@@ -34,7 +34,6 @@ class NetDetectActivity : BaseActivity<ActivityNetDetectBinding>() {
     }
 
     override fun onNetworkConnected(type: NetUtils.ApnType) {
-        super.onNetworkConnected(type)
         if (NetUtils.isWifiConnected(this)) {
             mBinding.tvNetStatus.text = "网络已连接[无线网络]"
         } else if (NetUtils.isMobileConnected(this)) {
@@ -43,7 +42,6 @@ class NetDetectActivity : BaseActivity<ActivityNetDetectBinding>() {
     }
 
     override fun onNetworkDisconnected() {
-        super.onNetworkDisconnected()
         mBinding.tvNetStatus.text = "网络连接已断开"
     }
 }

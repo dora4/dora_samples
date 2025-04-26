@@ -17,17 +17,19 @@ class CrashActivity : BaseActivity<ActivityCrashBinding>() {
         return R.layout.activity_crash
     }
 
-    fun makeBug() {
-        // 除数不能为0
-        val divideZero = 1 / 0
-    }
-
-    override fun initData(savedInstanceState: Bundle?, binding: ActivityCrashBinding) {
-        binding.v = this
+    fun requestPermission() {
         XXPermissions.with(this)
             .permission(Permission.MANAGE_EXTERNAL_STORAGE)
             .request { permissions, allGranted ->
                 DoraCrash.initCrash(this, "crash")
             }
+    }
+
+    fun makeBug() {
+        throw RuntimeException("这是一个玩笑的BUG😁")
+    }
+
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityCrashBinding) {
+        binding.v = this
     }
 }

@@ -22,13 +22,14 @@
             android:background="@color/colorPrimary"/>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="10dp">
             <TextView
                 android:id="@+id/tv_introduce"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autoLink="web"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@{introduce}" />
         </RelativeLayout>

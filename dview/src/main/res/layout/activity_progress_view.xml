@@ -26,7 +26,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv1"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -37,7 +37,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv2"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -49,7 +49,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv3"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -61,7 +61,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv4"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -79,7 +79,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv5"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -91,7 +91,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv6"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -104,7 +104,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv7"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -117,7 +117,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv8"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -136,7 +136,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv9"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -147,7 +147,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv10"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -159,7 +159,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv11"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -171,7 +171,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv12"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -189,7 +189,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv13"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -201,7 +201,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv14"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -214,7 +214,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv15"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -227,7 +227,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv16"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -246,7 +246,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv17"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -257,7 +257,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv18"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -270,7 +270,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv19"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"
@@ -283,7 +283,7 @@
             <dora.widget.DoraProgressView
                 android:id="@+id/pv20"
                 android:layout_width="0dp"
-                android:layout_height="85dp"
+                android:layout_height="90dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 app:dview_progressWidth="5dp"

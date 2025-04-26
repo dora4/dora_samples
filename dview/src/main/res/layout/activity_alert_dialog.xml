@@ -25,7 +25,7 @@
             <Button
                 android:id="@+id/btn_show_alert_dialog"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ThemeButton"
                 android:layout_centerInParent="true"
                 android:text="点此展示提示信息"/>
         </RelativeLayout>

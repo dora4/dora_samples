@@ -18,11 +18,18 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-        <TextView
-            android:id="@+id/tv_net_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_net_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#1A2025"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
     </LinearLayout>
 
 </layout>

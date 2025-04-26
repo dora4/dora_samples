@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="v"
             type="com.example.dcache.ui.OrmActivity" />
@@ -19,28 +20,40 @@
         <dora.widget.DoraTitleBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:dview_title="@string/common_title"
-            android:background="@color/colorPrimary"/>
-        <Button
-            android:id="@+id/btn_orm_insert"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="插入数据"
-            android:click="@{()->v.insertData()}"/>
-        <Button
-            android:id="@+id/btn_orm_delete_all"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="清空数据"
-            android:click="@{()->v.deleteAllData()}"/>
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_orm_insert"
+                style="@style/ThemeButton"
+                android:click="@{()->v.insertData()}"
+                android:text="插入数据" />
+
+            <Button
+                android:id="@+id/btn_orm_delete_all"
+                style="@style/ThemeButton"
+                android:click="@{()->v.deleteAllData()}"
+                android:text="清空数据" />
+        </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:padding="10dp">
+
             <TextView
                 android:id="@+id/tv_orm_display"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="#1A2025"
+                android:textSize="15sp" />
         </ScrollView>
     </LinearLayout>
 </layout>

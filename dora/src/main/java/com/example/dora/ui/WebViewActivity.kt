@@ -7,11 +7,13 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
+import com.example.common.Colors
 import com.example.dora.R
 import com.example.dora.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import dora.BaseActivity
 import dora.util.IntentUtils
+import dora.util.TextUtils
 
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
@@ -29,6 +31,9 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
         url = IntentUtils.getStringExtra(intent, "url")
+        if (TextUtils.isEmpty(url)) {
+            url = "https://github.com/dora4/dora"
+        }
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityWebViewBinding) {
@@ -37,7 +42,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
                 LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT)
             )
-            .useDefaultIndicator()
+            .useDefaultIndicator(Colors.ORANGE)
             .createAgentWeb()
             .ready()
             .go(url)

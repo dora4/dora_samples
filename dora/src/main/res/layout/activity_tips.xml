@@ -15,18 +15,24 @@
         <dora.widget.DoraTitleBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:dview_title="@string/common_title"
-            android:background="@color/colorPrimary"/>
-        <Button
-            android:id="@+id/btn_tips_01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="主线程吐司" />
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
 
-        <Button
-            android:id="@+id/btn_tips_02"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="子线程吐司" />
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_tips_01"
+                style="@style/ThemeButton"
+                android:text="主线程吐司" />
+
+            <Button
+                android:id="@+id/btn_tips_02"
+                style="@style/ThemeButton"
+                android:text="子线程吐司" />
+        </LinearLayout>
     </LinearLayout>
 </layout>

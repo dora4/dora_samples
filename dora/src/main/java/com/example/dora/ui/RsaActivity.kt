@@ -1,6 +1,8 @@
 package com.example.dora.ui
 
 import android.os.Bundle
+import android.view.View
+import androidx.core.view.isGone
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dora.R
@@ -20,6 +22,9 @@ class RsaActivity : BaseActivity<ActivityRsaBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRsaBinding) {
         binding.btnRsaNextStep.setOnClickListener {
+            if (binding.tvRsaKeyPair.isGone) {
+                binding.tvRsaKeyPair.visibility = View.VISIBLE
+            }
             // 生成公钥私钥键值对
             val keyPair = CryptoUtils.generateRSAKeyPair(1024)
             // 从map中获取公钥
