@@ -1,6 +1,7 @@
 package com.example.dora.ui
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -12,6 +13,8 @@ import com.walletconnect.web3.modal.client.Web3Modal
 import dora.BaseActivity
 import dora.trade.DoraTrade
 import dora.trade.PayUtils
+import dora.util.IntentUtils
+import dora.util.StatusBarUtils
 import dora.util.ToastUtils
 import timber.log.Timber
 
@@ -25,6 +28,13 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_web3_pay
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityWeb3PayBinding) {

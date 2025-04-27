@@ -1,5 +1,6 @@
 package com.example.dora.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isGone
@@ -9,6 +10,8 @@ import com.example.dora.R
 import com.example.dora.databinding.ActivityRsaBinding
 import dora.BaseActivity
 import dora.util.CryptoUtils
+import dora.util.IntentUtils
+import dora.util.StatusBarUtils
 
 /**
  * 基于RSA非对称加密。
@@ -18,6 +21,13 @@ class RsaActivity : BaseActivity<ActivityRsaBinding>() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_rsa
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRsaBinding) {

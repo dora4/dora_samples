@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.common.MessageEvent;
 import com.example.dcache.R;
 import com.example.dcache.databinding.ActivityDataCacheBinding;
 import com.example.dcache.adapter.PopMusicAdapter;

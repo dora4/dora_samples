@@ -16,7 +16,11 @@ class MenuListAdapter(menus: MutableList<Menu>) : BaseAdapter<Menu, ItemMenuList
 
         // 设置item点击事件
         setOnItemClickListener { adapter, _, position ->
-            open((adapter.getItem(position) as Menu).path)
+            val menu = (adapter.getItem(position) as Menu)
+            open(menu.path) {
+                withString("title", menu.title)
+                withInt("themeColor", menu.color)
+            }
         }
     }
 }

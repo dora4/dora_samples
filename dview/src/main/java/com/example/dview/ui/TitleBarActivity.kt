@@ -1,5 +1,6 @@
 package com.example.dview.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.widget.AppCompatImageView
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -9,7 +10,9 @@ import dora.BaseActivity
 
 import com.example.dview.R
 import com.example.dview.databinding.ActivityTitleBarBinding
+import dora.util.IntentUtils
 import dora.util.LogUtils
+import dora.util.StatusBarUtils
 import dora.widget.DoraTitleBar
 
 /**
@@ -20,6 +23,13 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_title_bar
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityTitleBarBinding) {

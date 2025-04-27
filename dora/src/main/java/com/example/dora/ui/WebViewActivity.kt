@@ -13,6 +13,7 @@ import com.example.dora.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import dora.BaseActivity
 import dora.util.IntentUtils
+import dora.util.StatusBarUtils
 import dora.util.TextUtils
 
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
@@ -30,6 +31,10 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
     }
 
     override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
         url = IntentUtils.getStringExtra(intent, "url")
         if (TextUtils.isEmpty(url)) {
             url = "https://github.com/dora4/dora"

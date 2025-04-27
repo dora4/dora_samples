@@ -1,5 +1,6 @@
 package com.example.dview.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -8,6 +9,8 @@ import com.example.dview.R
 import com.example.dview.databinding.ActivityTabLayoutBinding
 import dora.BaseActivity
 import dora.util.FragmentUtils
+import dora.util.IntentUtils
+import dora.util.StatusBarUtils
 import dora.widget.DoraTabBar
 
 @Route(path = ARouterPath.ACTIVITY_TAB_LAYOUT)
@@ -19,6 +22,13 @@ class TabLayoutActivity : BaseActivity<ActivityTabLayoutBinding>() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_tab_layout
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityTabLayoutBinding) {
