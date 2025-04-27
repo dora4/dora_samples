@@ -13,8 +13,6 @@ This project serves as a demonstration for https://github.com/dora4/dora.
 - Loading progress dialog
 - ARouter for navigating between screens
 - EventBus for event communication
-- Getting Started
-- Clone the project to your local disk:
 - The Universal Adapter using BaseRecyclerViewAdapterHelper
 - The usage of ViewModel
 
