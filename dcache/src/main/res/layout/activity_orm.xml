@@ -32,13 +32,13 @@
 
             <Button
                 android:id="@+id/btn_orm_insert"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.LeafGreen"
                 android:click="@{()->v.insertData()}"
                 android:text="插入数据" />
 
             <Button
                 android:id="@+id/btn_orm_delete_all"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.LeafGreen"
                 android:click="@{()->v.deleteAllData()}"
                 android:text="清空数据" />
         </LinearLayout>
@@ -53,8 +53,7 @@
                 android:id="@+id/tv_orm_display"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#1A2025"
-                android:textSize="15sp" />
+                style="@style/ThemeTextNormal"/>
         </ScrollView>
     </LinearLayout>
 </layout>

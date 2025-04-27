@@ -15,8 +15,7 @@
             android:id="@+id/tv_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#1A2025"
-            android:textSize="15sp"
+            style="@style/ThemeTextNormal"
             android:layout_gravity="center" />
     </FrameLayout>
 

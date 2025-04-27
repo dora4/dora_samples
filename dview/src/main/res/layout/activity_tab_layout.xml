@@ -18,9 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            app:dview_backIcon="@drawable/ic_back"
-            app:dview_backIconSize="26dp"
-            app:dview_isTitleTextBold="true"
             app:dview_title="@string/common_title" />
 
         <dora.widget.DoraTabBar
@@ -29,6 +26,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             app:dview_isDivide="true"
+            app:dview_tabTextColor="@color/colorTextNormal"
+            app:dview_tabSelectedTextColor="@color/sky_blue"
+            app:dview_indicatorColor="@color/sky_blue"
             app:dview_tabVerticalPadding="10dp" />
 
         <View

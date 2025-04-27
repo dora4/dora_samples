@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/black</color>
-    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorPrimary">@color/obsidian_black</color>
+    <color name="colorPrimaryDark">@color/obsidian_black</color>
     <!-- 如网页链接的颜色 -->
-    <color name="colorAccent">#389CFF</color>
+    <color name="colorAccent">@color/sky_blue</color>
+    <color name="colorTextNormal">#1A2025</color>
+    <color name="colorTextSecondary">#8A8A8A</color>
+    <color name="colorCardBg">#FFFFFF</color>
+
+    <!-- 初恋青 -->
+    <color name="first_love_cyan">#04D5D5</color>
+    <!-- 天蓝 -->
+    <color name="sky_blue">#389CFF</color>
+    <!-- 叶绿 -->
+    <color name="leaf_green">#009944</color>
+    <!-- 鸽血红 -->
+    <color name="pigeon_blood_red">#DB0000</color>
+    <!-- 活力橙 -->
+    <color name="vibrant_orange">#FF6600</color>
+    <!-- 金黄 -->
+    <color name="gold_yellow">#FFD700</color>
+    <!-- 少女粉 -->
+    <color name="girl_pink">#FFC0CB</color>
+    <!-- 魅惑紫 -->
+    <color name="enchanting_purple">#BB86FC</color>
+    <!-- 暗金 -->
+    <color name="dark_gold">#C8B245</color>
+    <!-- 曜石黑 -->
+    <color name="obsidian_black">#292421</color>
 </resources>

@@ -28,8 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:textSize="15sp"
-                android:textColor="#1A2025"
+                style="@style/ThemeTextNormal"
                 android:text="上面展示了标题栏的使用"/>
         </RelativeLayout>
     </LinearLayout>

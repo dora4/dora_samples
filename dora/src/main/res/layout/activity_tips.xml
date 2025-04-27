@@ -27,12 +27,12 @@
 
             <Button
                 android:id="@+id/btn_tips_01"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.ObsidianBlack"
                 android:text="主线程吐司" />
 
             <Button
                 android:id="@+id/btn_tips_02"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.ObsidianBlack"
                 android:text="子线程吐司" />
         </LinearLayout>
     </LinearLayout>

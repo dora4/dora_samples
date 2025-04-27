@@ -27,8 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="过渡页面"
-                android:textSize="15sp"
-                android:textColor="#1A2025"/>
+                style="@style/ThemeTextNormal"/>
         </RelativeLayout>
     </LinearLayout>
 </layout>

@@ -4,10 +4,15 @@ import android.graphics.Color
 
 interface Colors {
     companion object {
-        val PINK = Color.parseColor("#DE3276")
-        val BLACK = Color.parseColor("#1A2025")
+        val FIRST_LOVE_CYAN = Color.parseColor("#04D5D5")
+        val PIGEON_BLOOD_RED = Color.parseColor("#DB0000")
+        val DARK_GOLD = Color.parseColor("#C8B245")
+        val GOLD_YELLOW = Color.parseColor("#FFD700")
+        val ENCHANTING_PURPLE = Color.parseColor("#BB86FC")
+        val GIRL_PINK = Color.parseColor("#DE3276")
+        val OBSIDIAN_BLACK = Color.parseColor("#292421")
         val SKY_BLUE = Color.parseColor("#389CFF")
-        val GREEN = Color.parseColor("#009944")
-        val ORANGE = Color.parseColor("#FF6600")
+        val LEAF_GREEN = Color.parseColor("#009944")
+        val VIBRANT_ORANGE = Color.parseColor("#FF6600")
     }
 }

@@ -21,9 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            app:dview_backIcon="@drawable/ic_back"
-            app:dview_backIconSize="26dp"
-            app:dview_isTitleTextBold="true"
             app:dview_title="@string/common_title" />
 
         <LinearLayout
@@ -37,8 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textColor="#1A2025"
-                android:textSize="15sp" />
+                style="@style/ThemeTextNormal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,17 +43,17 @@
                 android:padding="5dp">
 
                 <Button
-                    style="@style/ThemeButton"
+                    style="@style/ThemeButton.ObsidianBlack"
                     android:onClick="@{vm.onClick1}"
                     android:text="Button 1" />
 
                 <Button
-                    style="@style/ThemeButton"
+                    style="@style/ThemeButton.ObsidianBlack"
                     android:onClick="@{vm.onClick2}"
                     android:text="Button 2" />
 
                 <Button
-                    style="@style/ThemeButton"
+                    style="@style/ThemeButton.ObsidianBlack"
                     android:onClick="@{vm.onClick3}"
                     android:text="Button 3" />
             </LinearLayout>

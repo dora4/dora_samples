@@ -11,8 +11,8 @@ import dora.BaseActivity
 import com.example.dview.R
 import com.example.dview.databinding.ActivityTitleBarBinding
 import dora.util.IntentUtils
-import dora.util.LogUtils
 import dora.util.StatusBarUtils
+import dora.util.ToastUtils
 import dora.widget.DoraTitleBar
 
 /**
@@ -47,11 +47,11 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
             .addMenuButton(com.example.common.R.drawable.ic_confirm)
             .setOnIconClickListener(object : DoraTitleBar.OnIconClickListener {
             override fun onIconBackClick(icon: AppCompatImageView) {
-                LogUtils.i("返回")
+                ToastUtils.showShort("返回")
             }
 
             override fun onIconMenuClick(position: Int, icon: AppCompatImageView) {
-                LogUtils.i("点击了第${position}个菜单")
+                ToastUtils.showShort("点击了第${position}个菜单")
             }
         })
     }

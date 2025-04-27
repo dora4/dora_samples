@@ -28,7 +28,7 @@
             android:padding="10dp">
             <Button
                 android:id="@+id/btn_next_page"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.ObsidianBlack"
                 android:layout_width="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:text="下一页"

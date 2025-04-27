@@ -18,9 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            app:dview_backIcon="@drawable/ic_back"
-            app:dview_backIconSize="26dp"
-            app:dview_isTitleTextBold="true"
             app:dview_title="@string/common_title" />
 
         <LinearLayout
@@ -31,17 +28,17 @@
 
             <Button
                 android:id="@+id/btn_show"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.SkyBlue"
                 android:text="显示常规Toast" />
 
             <Button
                 android:id="@+id/btn_show_success"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.SkyBlue"
                 android:text="显示成功Toast" />
 
             <Button
                 android:id="@+id/btn_show_failure"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.SkyBlue"
                 android:text="显示失败Toast" />
         </LinearLayout>
     </LinearLayout>

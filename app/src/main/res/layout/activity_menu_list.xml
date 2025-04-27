@@ -27,6 +27,7 @@
             android:id="@+id/rv_menu_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorCardBg"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:itemDecoration="@{vm.listDecoration}"
             android:adapter="@{vm.adapter}"/>

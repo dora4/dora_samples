@@ -35,6 +35,7 @@ class RsaActivity : BaseActivity<ActivityRsaBinding>() {
             if (binding.tvRsaKeyPair.isGone) {
                 binding.tvRsaKeyPair.visibility = View.VISIBLE
             }
+            binding.btnRsaNextStep.text = "刷新"
             // 生成公钥私钥键值对
             val keyPair = CryptoUtils.generateRSAKeyPair(1024)
             // 从map中获取公钥

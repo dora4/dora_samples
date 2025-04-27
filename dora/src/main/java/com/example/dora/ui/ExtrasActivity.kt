@@ -28,8 +28,9 @@ class ExtrasActivity : BaseActivity<ActivityExtrasBinding>() {
     override fun initData(savedInstanceState: Bundle?, binding: ActivityExtrasBinding) {
         open(ARouterPath.ACTIVITY_WEB_VIEW) {
             // 闭包中定义传参
-            withString("url", "https://github.com/dora4");
-//            withInt("other_params", 0);
+            withString("url", "https://github.com/dora4")
+            withString("title", IntentUtils.getStringExtra(intent, "title"))
+            withInt("themeColor", IntentUtils.getIntExtra(intent, "themeColor"))
         }
     }
 }

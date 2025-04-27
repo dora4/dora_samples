@@ -47,7 +47,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
                 LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT)
             )
-            .useDefaultIndicator(Colors.ORANGE)
+            .useDefaultIndicator(Colors.VIBRANT_ORANGE)
             .createAgentWeb()
             .ready()
             .go(url)

@@ -31,7 +31,7 @@ class AlertDialogActivity : BaseActivity<ActivityAlertDialogBinding>() {
         binding.btnShowAlertDialog.setOnClickListener {
             DoraAlertDialog(this).show("提示信息") {
                 title("系统消息")
-                themeColorResId(com.example.common.R.color.colorAccent)
+                themeColorResId(com.example.common.R.color.sky_blue)
                 positiveListener {
                     showShortToast("点击了确认按钮")
                 }

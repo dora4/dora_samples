@@ -37,7 +37,7 @@
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/btn_rsa_next_step"
-                    style="@style/ThemeButton"
+                    style="@style/ThemeButton.ObsidianBlack"
                     android:text="下一步"/>
             </LinearLayout>
         </ScrollView>

@@ -30,13 +30,13 @@
 
             <Button
                 android:id="@+id/btn_request_permission"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.ObsidianBlack"
                 android:click="@{()->v.requestPermission()}"
                 android:text="申请文件写入权限" />
 
             <Button
                 android:id="@+id/btn_make_crash"
-                style="@style/ThemeButton"
+                style="@style/ThemeButton.ObsidianBlack"
                 android:click="@{()->v.makeBug()}"
                 android:text="制造崩溃" />
         </LinearLayout>
@@ -46,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:text="崩溃日志将保存在/sdcard/crash目录下"
-            android:textColor="#1A2025"
-            android:textSize="15sp" />
+            style="@style/ThemeTextNormal" />
     </LinearLayout>
 </layout>
