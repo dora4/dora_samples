@@ -51,7 +51,7 @@ class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {
             }
 
             override fun onIconMenuClick(position: Int, icon: AppCompatImageView) {
-                ToastUtils.showShort("点击了第${position}个菜单")
+                ToastUtils.showShort("点击了第${position+1}个菜单")
             }
         })
     }

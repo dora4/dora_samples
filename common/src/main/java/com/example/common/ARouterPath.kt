@@ -33,5 +33,6 @@ interface ARouterPath {
         const val ACTIVITY_TAB_LAYOUT: String = "/$GROUP_VIEW/TabLayoutActivity"
         const val ACTIVITY_ALERT_DIALOG: String = "/$GROUP_VIEW/AlertDialogActivity"
         const val ACTIVITY_LOADING_DIALOG: String = "/$GROUP_VIEW/LoadingDialogActivity"
+        const val ACTIVITY_BOTTOM_DIALOG: String = "/$GROUP_VIEW/BottomDialogActivity"
     }
 }

@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".ui.BottomDialogActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ToggleButtonActivity"
             android:exported="false" />
         <activity
