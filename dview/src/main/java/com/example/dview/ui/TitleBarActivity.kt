@@ -16,7 +16,7 @@ import dora.util.ToastUtils
 import dora.widget.DoraTitleBar
 
 /**
- * 标题栏控件，是一种十分常用的控件，方便配置标题栏的内容，同时适配了老年模式。
+ * 标题栏控件，是一种十分常用的控件，便捷配置标题栏的内容，同时适配了老年模式。
  */
 @Route(path = ARouterPath.ACTIVITY_TITLE_BAR)
 class TitleBarActivity : BaseActivity<ActivityTitleBarBinding>() {

@@ -41,7 +41,9 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "系统提示信息对话框", ARouterPath.ACTIVITY_ALERT_DIALOG),
             Menu(Colors.SKY_BLUE, "进度条对话框", ARouterPath.ACTIVITY_LOADING_DIALOG),
             Menu(Colors.SKY_BLUE, "自定义吐司", ARouterPath.ACTIVITY_TOAST),
-            Menu(Colors.SKY_BLUE, "Tab分页", ARouterPath.ACTIVITY_TAB_LAYOUT),
+//            Menu(Colors.SKY_BLUE, "Tab分页", ARouterPath.ACTIVITY_TAB_LAYOUT),
+            Menu(Colors.SKY_BLUE, "滑块按钮", ARouterPath.ACTIVITY_TOGGLE_BUTTON),
+
             Menu(Colors.LEAF_GREEN, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
 //            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
