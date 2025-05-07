@@ -58,6 +58,8 @@ dependencies {
     implementation("com.github.dora4:dview-toggle-button:1.5")
     implementation("com.github.dora4:dview-toast:1.1")
     implementation("com.github.dora4:dview-tabbar:1.1")
+    implementation("com.github.dora4:dview-radio-group:1.0")
+
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")

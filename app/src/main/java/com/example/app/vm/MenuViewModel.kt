@@ -44,6 +44,7 @@ class MenuViewModel : BaseViewModel() {
 //            Menu(Colors.SKY_BLUE, "Tab分页", ARouterPath.ACTIVITY_TAB_LAYOUT),
             Menu(Colors.SKY_BLUE, "滑块按钮", ARouterPath.ACTIVITY_TOGGLE_BUTTON),
             Menu(Colors.SKY_BLUE, "底部弹窗", ARouterPath.ACTIVITY_BOTTOM_DIALOG),
+            Menu(Colors.SKY_BLUE, "单选按钮（支持多行显示）", ARouterPath.ACTIVITY_RADIO_GROUP),
             Menu(Colors.LEAF_GREEN, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
 //            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
