@@ -59,6 +59,7 @@ dependencies {
     implementation("com.github.dora4:dview-toast:1.1")
     implementation("com.github.dora4:dview-tabbar:1.1")
     implementation("com.github.dora4:dview-radio-group:1.0")
+    implementation("com.github.dora4:dview-empty-layout:1.12")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
