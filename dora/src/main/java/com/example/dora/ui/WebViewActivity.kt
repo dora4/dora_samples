@@ -24,7 +24,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
     // 也可以使用ARouter的注入功能读取参数，则不要使用private
 //    @JvmField
 //    @Autowired
-    var url = "https://github.com/dora4/dora"
+    var url = "https://github.com/dora4/dora_samples"
 
     override fun getLayoutId(): Int {
         return R.layout.activity_web_view
@@ -37,7 +37,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
         StatusBarUtils.setStatusBar(this, themeColor)
         url = IntentUtils.getStringExtra(intent, "url")
         if (TextUtils.isEmpty(url)) {
-            url = "https://github.com/dora4/dora"
+            url = "https://github.com/dora4/dora_samples"
         }
     }
 
