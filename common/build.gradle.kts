@@ -59,8 +59,5 @@ dependencies {
     // XXPermissions
     api("com.github.getActivity:XXPermissions:18.2")
     // AgentWeb
-    api("com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx") // (必选)
-//    implementation("com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.0-alpha.1-androidx") // (可选)
-//    implementation("com.github.Justson:Downloader:v5.0.0-androidx") // (可选)
-
+    api("com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx")
 }

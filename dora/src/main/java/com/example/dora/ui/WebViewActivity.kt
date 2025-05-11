@@ -1,6 +1,7 @@
 package com.example.dora.ui
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.ViewGroup
@@ -51,6 +52,15 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
             .createAgentWeb()
             .ready()
             .go(url)
+        agentWeb.webCreator.webView.setDownloadListener { url, _, _, _, _ ->
+            try {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse(url)
+                startActivity(intent)
+            } catch (e: Exception) {
+                showShortToast("无法打开下载链接")
+            }
+        }
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
