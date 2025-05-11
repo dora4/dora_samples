@@ -53,7 +53,7 @@
             android:id="@+id/emptyLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5dp"
+            android:padding="10dp"
             app:dview_errorLayout="@layout/layout_common_error">
 
             <TextView

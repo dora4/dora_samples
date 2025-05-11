@@ -37,5 +37,6 @@ interface ARouterPath {
         const val ACTIVITY_RADIO_GROUP: String = "/$GROUP_VIEW/RadioGroupActivity"
         const val ACTIVITY_EMPTY_LAYOUT: String = "/$GROUP_VIEW/EmptyLayoutActivity"
         const val ACTIVITY_MENU_PANEL: String = "/$GROUP_VIEW/MenuPanelActivity"
+        const val ACTIVITY_FLEXIBLE_SCROLL_VIEW: String = "/$GROUP_VIEW/FlexibleScrollViewActivity"
     }
 }
