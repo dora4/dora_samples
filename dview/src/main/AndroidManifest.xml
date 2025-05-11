@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".ui.MenuPanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.EmptyLayoutActivity"
             android:exported="false" />
         <activity

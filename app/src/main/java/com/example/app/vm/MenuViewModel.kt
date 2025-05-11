@@ -38,6 +38,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例2", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_2),
 //            Menu(Colors.SKY_BLUE, "短视频极速版领现金进度条动画", ARouterPath.ACTIVITY_PROGRESS_VIEW),
             Menu(Colors.SKY_BLUE, "一个标题栏控件", ARouterPath.ACTIVITY_TITLE_BAR),
+            Menu(Colors.SKY_BLUE, "菜单面板", ARouterPath.ACTIVITY_MENU_PANEL),
             Menu(Colors.SKY_BLUE, "系统提示信息对话框", ARouterPath.ACTIVITY_ALERT_DIALOG),
             Menu(Colors.SKY_BLUE, "进度条对话框", ARouterPath.ACTIVITY_LOADING_DIALOG),
             Menu(Colors.SKY_BLUE, "自定义吐司", ARouterPath.ACTIVITY_TOAST),
