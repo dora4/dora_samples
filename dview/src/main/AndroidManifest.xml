@@ -40,7 +40,7 @@
         <activity
             android:name=".ui.ProgressViewActivity"
             android:screenOrientation="portrait" />
-        <service android:name=".FloatingWindowService" />
+        <service android:name=".ui.FloatingWindowService" />
         <meta-data
             android:name="dora.lifecycle.config.TipsGlobalConfig"
             android:value="GlobalConfig" />

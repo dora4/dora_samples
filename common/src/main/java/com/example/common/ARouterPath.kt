@@ -40,8 +40,8 @@ interface ARouterPath {
         const val ACTIVITY_MENU_PANEL: String = "/$GROUP_VIEW/MenuPanelActivity"
         const val ACTIVITY_FLEXIBLE_SCROLL_VIEW: String = "/$GROUP_VIEW/FlexibleScrollViewActivity"
 
-        const val VIEW_SERVICE = "/$GROUP_VIEW/service/view"
-        const val DORA_SERVICE = "/$GROUP_DORA/service/dora"
-        const val CACHE_SERVICE = "/$GROUP_CACHE/service/cache"
+        const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
+        const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"
+        const val CACHE_SERVICE = "/$GROUP_CACHE/CacheProvider"
     }
 }

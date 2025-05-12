@@ -1,5 +1,7 @@
-package com.example.dview
+package com.example.dview.ui
 
+import com.example.dview.FloatingMenuView
+import com.example.dview.R
 import dora.BaseFloatingWindowService
 import dora.util.DensityUtils
 import dora.util.ScreenUtils
@@ -12,7 +14,8 @@ class FloatingWindowService : BaseFloatingWindowService() {
     }
 
     override fun getInitialPosition(): IntArray {
-        return intArrayOf(ScreenUtils.getScreenWidth() - DensityUtils.DP200, ScreenUtils.getScreenHeight() - DensityUtils.DP200)
+        return intArrayOf(ScreenUtils.getScreenWidth() - DensityUtils.DP200,
+            ScreenUtils.getScreenHeight() - DensityUtils.DP200)
     }
 
     override fun initViews() {

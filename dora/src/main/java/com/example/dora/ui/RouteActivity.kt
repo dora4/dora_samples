@@ -13,6 +13,8 @@ import dora.BaseActivity
 
 import com.example.dora.R
 import com.example.dora.databinding.ActivityRouteBinding
+import dora.util.IntentUtils
+import dora.util.StatusBarUtils
 
 @Route(path = ARouterPath.ACTIVITY_ROUTE)
 class RouteActivity : BaseActivity<ActivityRouteBinding>() {
@@ -32,6 +34,13 @@ class RouteActivity : BaseActivity<ActivityRouteBinding>() {
                 ViewProvider.showFloatingView()
             }
         }
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRouteBinding) {
