@@ -23,6 +23,7 @@ interface ARouterPath {
         const val ACTIVITY_VIEW_MODEL_SAMPLE_2: String =
             "/$GROUP_DORA/ViewModelSample2Activity"
         const val ACTIVITY_RSA: String = "/$GROUP_DORA/RsaActivity"
+        const val ACTIVITY_ROUTE: String = "/$GROUP_DORA/RouteActivity"
         const val ACTIVITY_WEB3_PAY: String = "/$GROUP_DORA/Web3PayActivity"
         const val ACTIVITY_ORM: String = "/$GROUP_CACHE/OrmActivity"
 //        const val ACTIVITY_DATA_CACHE: String = "/$GROUP_CACHE/DataCacheActivity"
@@ -38,5 +39,9 @@ interface ARouterPath {
         const val ACTIVITY_EMPTY_LAYOUT: String = "/$GROUP_VIEW/EmptyLayoutActivity"
         const val ACTIVITY_MENU_PANEL: String = "/$GROUP_VIEW/MenuPanelActivity"
         const val ACTIVITY_FLEXIBLE_SCROLL_VIEW: String = "/$GROUP_VIEW/FlexibleScrollViewActivity"
+
+        const val VIEW_SERVICE = "/$GROUP_VIEW/service/view"
+        const val DORA_SERVICE = "/$GROUP_DORA/service/dora"
+        const val CACHE_SERVICE = "/$GROUP_CACHE/service/cache"
     }
 }

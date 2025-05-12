@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".ui.RouteActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.NetDetectActivity"
             android:screenOrientation="portrait" />
         <activity

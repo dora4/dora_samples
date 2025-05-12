@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application>
         <activity
             android:name=".ui.FlexibleScrollViewActivity"
@@ -38,7 +40,7 @@
         <activity
             android:name=".ui.ProgressViewActivity"
             android:screenOrientation="portrait" />
-
+        <service android:name=".FloatingWindowService" />
         <meta-data
             android:name="dora.lifecycle.config.TipsGlobalConfig"
             android:value="GlobalConfig" />

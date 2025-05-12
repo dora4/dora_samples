@@ -29,6 +29,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.OBSIDIAN_BLACK, "将崩溃日志写入文件", ARouterPath.ACTIVITY_CRASH),
             Menu(Colors.OBSIDIAN_BLACK, "忽略调用线程的吐司", ARouterPath.ACTIVITY_TIPS),
             Menu(Colors.OBSIDIAN_BLACK, "ARouter路由Intent传参", ARouterPath.ACTIVITY_EXTRAS),
+            Menu(Colors.OBSIDIAN_BLACK, "ARouter组件化路由", ARouterPath.ACTIVITY_ROUTE),
             Menu(Colors.OBSIDIAN_BLACK, "Fragment流式切换", ARouterPath.ACTIVITY_FLOW_PAGE),
 //            Menu(Colors.OBSIDIAN_BLACK "使用EventBus扩展包", ARouterPath.ACTIVITY_EVENT_BUS),
             Menu(Colors.OBSIDIAN_BLACK, "RSA加密", ARouterPath.ACTIVITY_RSA),
