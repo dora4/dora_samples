@@ -62,6 +62,7 @@ dependencies {
     implementation("com.github.dora4:dview-empty-layout:1.12")
     implementation("com.github.dora4:dview-menu-panel:1.35")
     implementation("com.github.dora4:dview-flexible-scrollview:1.0")
+    implementation("com.github.dora4:dview-swipe-layout:1.0")
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")

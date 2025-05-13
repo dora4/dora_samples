@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.SwipeLayoutActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <dora.widget.pull.SwipeLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <include layout="@layout/layout_swipe_layout_header"/>
+            <dora.widget.pull.PullableRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <include layout="@layout/layout_swipe_layout_footer"/>
+        </dora.widget.pull.SwipeLayout>
+    </LinearLayout>
+</layout>
