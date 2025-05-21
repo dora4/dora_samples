@@ -2,6 +2,8 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -11,8 +13,8 @@ android {
     defaultConfig {
         minSdk = 23
         targetSdk = 34
-        versionCode = 27
-        versionName = "1.4.11"
+        versionCode = 28
+        versionName = "1.4.12"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
@@ -95,4 +97,11 @@ dependencies {
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
+
+    implementation("com.github.dora4:dora-firebase-support:1.13")
+//    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
+//    implementation("com.google.firebase:firebase-crashlytics-ktx")
+//    implementation("com.google.firebase:firebase-analytics-ktx")
+//    implementation("com.google.firebase:firebase-config-ktx")
+//    implementation("com.google.firebase:firebase-analytics-ktx")
 }

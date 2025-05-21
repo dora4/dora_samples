@@ -15,6 +15,9 @@ pluginManagement {
             if (requested.id.namespace == "org.jetbrains.kotlin") {
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
             }
+            if (requested.id.namespace == "com.google.firebase") {
+                useModule("com.google.firebase:firebase-crashlytics-gradle:2.9.2")
+            }
         }
     }
 }

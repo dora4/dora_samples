@@ -39,7 +39,9 @@ class MenuPanelActivity : BaseActivity<ActivityMenuPanelBinding>() {
                  NormalMenuPanelItem("menu1", "菜单1", true, "角落文字1"),
                  NormalMenuPanelItem("menu2", "菜单2")
              )
-         ).setOnPanelMenuClickListener(object : MenuPanel.OnPanelMenuClickListener {
+         )
+//             .addMenuGroup(groupNormalItem("标题", "menu1" to "菜单2", "menu1" to "菜单2"))
+             .setOnPanelMenuClickListener(object : MenuPanel.OnPanelMenuClickListener {
              override fun onMenuClick(
                  position: Int,
                  view: View,

@@ -73,6 +73,11 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityWeb3PayBinding) {
+        binding.tvSummary.text = "Web3支付是基于区块链和去中心化网络的支付方式，用户通过数字钱包将数字资产直接" +
+                "打给他人的过程。但是由于用户手动操作流程对商家不够自动化，所以使用了Web3钱包聚合平台，或者称为支付" +
+                "网关。这样整个支付和发货流程就完成了自动化，用户支付完成后，商家使用程序代码自动完成发货，大大提升了" +
+                "支付效率。支付流程：1.用户连接钱包，选择合适的公链 2.用户在弹窗时点击确认支付 3.用户在自己的钱包中" +
+                "完成支付 4.查询支付订单完成发货。"
         // 1.在Application中初始化支付SDK
         // 2.设置钱包支付监听
         DoraTrade.setPayListener(object : DoraTrade.PayListener {
@@ -96,9 +101,17 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         })
         // 3.连接钱包
         binding.btnConnect.setOnClickListener {
+            if (DoraTrade.isWalletConnected()) {
+                showShortToast("钱包已连接，无需重复连接")
+                return@setOnClickListener
+            }
             DoraTrade.connectWallet(this, REQUEST_CODE_TEST_PAY)
         }
         binding.btnDisconnect.setOnClickListener {
+            if (!DoraTrade.isWalletConnected()) {
+                showShortToast("钱包未连接，请先连接钱包")
+                return@setOnClickListener
+            }
             DoraTrade.disconnectWallet()
             ToastUtils.showShort("断开钱包连接")
         }
@@ -123,7 +136,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                         chain: Modal.Model.Chain,
                         value: Double
                     ) {
-                        // 在这里保存订单号，便于钱包支付完成后得到对应的交易哈希
+                        // 在这里保存订单号（本地或服务器），便于钱包支付完成后得到对应的交易哈希
                         Timber.tag(TAG).i("生成支付订单，交易订单号：$orderId")
                     }
                 }
@@ -133,7 +146,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         binding.btnQueryTransaction.setOnClickListener {
             Thread {
                 val ok = PayUtils.queryTransactionByHash(lastTransactionHash)
-                // 如果在确认中，请多点几次
+                // 如果交易还在确认中，请尝试多点几次
                 ToastUtils.showShort("查询上笔支付订单：${if (ok) "成功" else "失败"}")
             }.start()
         }
