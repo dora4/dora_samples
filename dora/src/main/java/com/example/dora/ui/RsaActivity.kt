@@ -31,6 +31,8 @@ class RsaActivity : BaseActivity<ActivityRsaBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRsaBinding) {
+        binding.tvSummary.text = "RSA（Rivest–Shamir–Adleman）是一种非对称加密算法，它利用大数分解的计算难" +
+                "题，实现了公钥加密与私钥解密的机制。"
         binding.btnRsaNextStep.setOnClickListener {
             if (binding.tvRsaKeyPair.isGone) {
                 binding.tvRsaKeyPair.visibility = View.VISIBLE

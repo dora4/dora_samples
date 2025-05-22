@@ -5,6 +5,7 @@
     tools:context="com.example.dora.ui.FlowPageActivity">
 
     <data>
+
         <variable
             name="v"
             type="com.example.dora.ui.FlowPageActivity" />
@@ -19,20 +20,42 @@
             android:id="@+id/titleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:dview_title="@string/common_title"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <TextView
+            android:id="@+id/tv_page_loop_mode"
+            style="@style/ThemeTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp" />
+
+
         <FrameLayout
             android:id="@+id/fl_flow_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp">
-            <Button
-                android:id="@+id/btn_next_page"
-                style="@style/ThemeButton.ObsidianBlack"
-                android:layout_width="wrap_content"
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_gravity="bottom|center_horizontal"
-                android:text="下一页"
-                android:click="@{()->v.nextPage()}"/>
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btn_switch_page_loop_mode"
+                    style="@style/ThemeButton.ObsidianBlack"
+                    android:text="切换模式" />
+
+                <Button
+                    android:id="@+id/btn_next_page"
+                    style="@style/ThemeButton.ObsidianBlack"
+                    android:click="@{()->v.nextPage()}"
+                    android:text="下一页" />
+            </LinearLayout>
         </FrameLayout>
     </LinearLayout>
 

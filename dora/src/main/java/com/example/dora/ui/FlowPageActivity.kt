@@ -20,6 +20,7 @@ class FlowPageActivity : BaseActivity<ActivityFlowPageBinding>() {
     private val pageOne = FlowPageOneFragment()
     private val pageTwo = FlowPageTwoFragment()
     private val pageThree = FlowPageThreeFragment()
+    private var isPageLoop: Boolean = true
 
     override fun getLayoutId(): Int {
         return R.layout.activity_flow_page
@@ -38,10 +39,19 @@ class FlowPageActivity : BaseActivity<ActivityFlowPageBinding>() {
         pages.add(pageTwo)
         pages.add(pageThree)
         showPage(FlowPageOneFragment.PAGE_KEY)
+        binding.btnSwitchPageLoopMode.setOnClickListener {
+            isPageLoop = !isPageLoop
+            binding.tvPageLoopMode.text = "页面循环加载：${if (isPageLoop) "是" else "否" }"
+        }
+    }
+
+    override fun showPage(key: String) {
+        super.showPage(key)
+        mBinding.tvPageLoopMode.text = "页面循环加载：${if (isPageLoop) "是" else "否" }"
     }
 
     override fun isPageLoop(): Boolean {
-        return false
+        return isPageLoop
     }
 
     override fun getFlowFragment(key: String): BaseFragment<*> {

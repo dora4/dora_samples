@@ -44,6 +44,7 @@ class RouteActivity : BaseActivity<ActivityRouteBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRouteBinding) {
+        binding.tvSummary.text = "在ARouter中调用其它组件的功能，可使用悬浮球作为其他组件功能的入口。"
         binding.btnShowFloatingView.setOnClickListener {
             if (!Settings.canDrawOverlays(this)) {
                 val intent = Intent(Settings. ACTION_MANAGE_OVERLAY_PERMISSION,

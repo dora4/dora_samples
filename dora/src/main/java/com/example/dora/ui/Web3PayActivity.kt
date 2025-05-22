@@ -74,10 +74,10 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityWeb3PayBinding) {
         binding.tvSummary.text = "Web3支付是基于区块链和去中心化网络的支付方式，用户通过数字钱包将数字资产直接" +
-                "打给他人的过程。但是由于用户手动操作流程对商家不够自动化，所以使用了Web3钱包聚合平台，或者称为支付" +
-                "网关。这样整个支付和发货流程就完成了自动化，用户支付完成后，商家使用程序代码自动完成发货，大大提升了" +
-                "支付效率。支付流程：1.用户连接钱包，选择合适的公链 2.用户在弹窗时点击确认支付 3.用户在自己的钱包中" +
-                "完成支付 4.查询支付订单完成发货。"
+                "打给他人的过程。由于用户手动操作的支付流程对商家来说不够自动化，所以引入了Web3钱包聚合平台，或者称之为" +
+                "支付网关。这样整个支付以及发货流程就完成了自动化。用户支付完成后，商家使用程序代码自动完成发货，大大提升了" +
+                "支付效率。支付流程：1.用户连接钱包，选择合适的公链；2.用户在弹窗时点击确认支付；3.用户在自己的钱包中" +
+                "完成支付；4.查询支付订单完成发货。"
         // 1.在Application中初始化支付SDK
         // 2.设置钱包支付监听
         DoraTrade.setPayListener(object : DoraTrade.PayListener {
