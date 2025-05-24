@@ -19,6 +19,14 @@
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
 
+        <TextView
+            android:id="@+id/tv_summary"
+            style="@style/ThemeTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

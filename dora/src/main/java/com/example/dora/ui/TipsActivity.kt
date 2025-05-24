@@ -26,6 +26,8 @@ class TipsActivity : BaseActivity<ActivityTipsBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityTipsBinding) {
+        binding.tvSummary.text = "由于Android系统限制无法在子线程更新界面，所以直接在子线程显示Toast会报错，" +
+                "因此使用ToastUtils工具类将操作由子线程自动发送到主线程执行。"
         binding.btnTips01.setOnClickListener {
             ToastUtils.showShort("ToastUtils.showShort()")
         }
