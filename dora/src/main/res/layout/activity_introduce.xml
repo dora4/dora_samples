@@ -32,6 +32,7 @@
                 android:autoLink="web"
                 android:layout_margin="5dp"
                 style="@style/ThemeTextNormal"
+                android:textStyle="bold"
                 android:text="@{introduce}" />
         </RelativeLayout>
     </LinearLayout>

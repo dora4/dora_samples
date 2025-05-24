@@ -50,7 +50,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "空态布局", ARouterPath.ACTIVITY_EMPTY_LAYOUT),
             Menu(Colors.SKY_BLUE, "弹性容器", ARouterPath.ACTIVITY_FLEXIBLE_SCROLL_VIEW),
             Menu(Colors.SKY_BLUE, "下拉刷新&上拉加载", ARouterPath.ACTIVITY_SWIPE_LAYOUT),
-            Menu(Colors.LEAF_GREEN, "ORM数据存储——基于dora-db", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储", ARouterPath.ACTIVITY_ORM),
 //            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
     }

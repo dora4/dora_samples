@@ -4,6 +4,7 @@ package com.example.common
  * ARouter的路径。
  */
 interface ARouterPath {
+
     companion object {
         const val GROUP_MAIN: String = "Main"
         const val GROUP_DORA: String = "Dora"
