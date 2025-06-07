@@ -10,6 +10,7 @@ import com.example.common.ARouterPath
 import com.example.dora.R
 import com.example.dora.databinding.ActivityWeb3PayBinding
 import com.walletconnect.web3.modal.client.Modal
+import com.walletconnect.web3.modal.client.Web3Modal
 import dora.BaseActivity
 import dora.trade.DoraTrade
 import dora.trade.PayUtils
@@ -40,7 +41,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
             if (requestCode == REQUEST_CODE_TEST_PAY) {
                 // payProxy：基础版密钥，无需填写收款账号，官方代收
                 // pay：去中心化，需填写收款账号，直接打到商户账户
-                if (DoraTrade.isWalletConnected()) {
+                if (isWalletConnected()) {
                     // 连接上钱包自动调启支付
                     DoraTrade.payProxy(
                         this,
@@ -72,6 +73,10 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         StatusBarUtils.setStatusBar(this, themeColor)
     }
 
+    fun isWalletConnected() : Boolean {
+        return Web3Modal.getAccount() != null
+    }
+
     override fun initData(savedInstanceState: Bundle?, binding: ActivityWeb3PayBinding) {
         binding.tvSummary.text = "Web3支付是基于区块链和去中心化网络的支付方式，用户通过数字钱包将数字资产直接" +
                 "打给他人的过程。由于用户手动操作的支付流程对商家来说不够自动化，所以引入了Web3钱包聚合平台，或者称之为" +
@@ -101,14 +106,14 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         })
         // 3.连接钱包
         binding.btnConnect.setOnClickListener {
-            if (DoraTrade.isWalletConnected()) {
+            if (isWalletConnected()) {
                 showShortToast("钱包已连接，无需重复连接")
                 return@setOnClickListener
             }
             DoraTrade.connectWallet(this, REQUEST_CODE_TEST_PAY)
         }
         binding.btnDisconnect.setOnClickListener {
-            if (!DoraTrade.isWalletConnected()) {
+            if (!isWalletConnected()) {
                 showShortToast("钱包未连接，请先连接钱包")
                 return@setOnClickListener
             }
@@ -117,7 +122,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
         }
         // 4.发起支付
         binding.btnPay.setOnClickListener {
-            if (!DoraTrade.isWalletConnected()) {
+            if (!isWalletConnected()) {
                 ToastUtils.showShort("请先连接钱包")
                 return@setOnClickListener
             }

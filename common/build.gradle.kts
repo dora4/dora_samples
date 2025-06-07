@@ -58,7 +58,9 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
 
     api("com.github.dora4:dora-dagger-support:1.12")
-    api("com.github.dora4:dora-walletconnect-support:1.101")
+    api("com.github.dora4:dora-walletconnect-support:1.160") {
+        exclude(group = "com.madgag.spongycastle", module = "core")
+    }
     api("com.github.dora4:dcache-android:3.3.12")
 //    api("com.github.dora4:dora-eventbus-support:1.1")
     api("com.github.dora4:dview-colors:1.1")

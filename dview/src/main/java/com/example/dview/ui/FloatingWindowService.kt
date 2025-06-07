@@ -1,11 +1,11 @@
 package com.example.dview.ui
 
-import com.example.dview.FloatingMenuView
 import com.example.dview.R
 import dora.BaseFloatingWindowService
 import dora.util.DensityUtils
 import dora.util.ScreenUtils
 import dora.util.ToastUtils
+import dora.widget.DoraFloatingMenuView
 
 class FloatingWindowService : BaseFloatingWindowService() {
 
@@ -19,7 +19,7 @@ class FloatingWindowService : BaseFloatingWindowService() {
     }
 
     override fun initViews() {
-        val menuView = findViewById<FloatingMenuView>(R.id.floating_view)
+        val menuView = findViewById<DoraFloatingMenuView>(R.id.floating_view)
         menuView.onSectorClick = { index ->
             ToastUtils.showShort("点击了扇形按钮 ${index+1}")
         }

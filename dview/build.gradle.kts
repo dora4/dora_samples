@@ -53,7 +53,7 @@ dependencies {
     implementation(project(":common"))
     implementation("com.github.dora4:dview-bottom-dialog:1.13")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
-    implementation("com.github.dora4:dview-alert-dialog:1.20")
+    implementation("com.github.dora4:dview-alert-dialog:1.24")
     implementation("com.github.dora4:dview-progress-view:1.0")
     implementation("com.github.dora4:dview-toggle-button:1.5")
     implementation("com.github.dora4:dview-toast:1.1")
@@ -63,6 +63,8 @@ dependencies {
     implementation("com.github.dora4:dview-menu-panel:1.38")
     implementation("com.github.dora4:dview-flexible-scrollview:1.0")
     implementation("com.github.dora4:dview-swipe-layout:1.0")
+    implementation("com.github.dora4:dview-floating-menu:1.1")
+    implementation("com.github.dora4:dview-gridview:1.19")
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
