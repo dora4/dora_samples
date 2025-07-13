@@ -22,6 +22,10 @@
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/crash_log_report_file"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
