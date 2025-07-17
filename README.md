@@ -6,8 +6,6 @@
 
 This project is a usage example of https://github.com/dora4/dora, simple and easy to understand.
 
-![dorachat_Android_Studio_plugin_for_fast_code_generation_intelli_7b198d59-030d-4619-a9b8-43c5a2716f59](https://github.com/user-attachments/assets/d984a74f-7f95-4ea0-89ff-04da9098d3f0)
-
 ## Features
 - Crash log writing to file
 - Toast with automatic thread switching
