@@ -6,8 +6,6 @@
 
 此项目为 https://github.com/dora4/dora 的使用案例，简单易懂。
 
-![dorachat_Android_Studio_plugin_for_fast_code_generation_intelli_7b198d59-030d-4619-a9b8-43c5a2716f59](https://github.com/user-attachments/assets/d984a74f-7f95-4ea0-89ff-04da9098d3f0)
-
 ## 特性
 
 - 崩溃日志写入文件
