@@ -2,9 +2,11 @@
 
 # Dora SDK 案例
 
+<img width="524" alt="截屏2025-04-26 16 51 12" src="https://github.com/user-attachments/assets/55d610c4-72e0-4129-85ae-84a7916de39b" />
+
 此项目为 https://github.com/dora4/dora 的使用案例，简单易懂。
 
-<img width="524" alt="截屏2025-04-26 16 51 12" src="https://github.com/user-attachments/assets/55d610c4-72e0-4129-85ae-84a7916de39b" />
+![dorachat_Android_Studio_plugin_for_fast_code_generation_intelli_7b198d59-030d-4619-a9b8-43c5a2716f59](https://github.com/user-attachments/assets/d984a74f-7f95-4ea0-89ff-04da9098d3f0)
 
 ## 特性
 
