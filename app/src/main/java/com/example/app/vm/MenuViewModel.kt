@@ -51,7 +51,15 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "弹性容器", ARouterPath.ACTIVITY_FLEXIBLE_SCROLL_VIEW),
             Menu(Colors.SKY_BLUE, "下拉刷新&上拉加载", ARouterPath.ACTIVITY_SWIPE_LAYOUT),
             Menu(Colors.SKY_BLUE, "网格布局", ARouterPath.ACTIVITY_GRID_VIEW),
-            Menu(Colors.LEAF_GREEN, "ORM数据存储", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 更新数据", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 查询数据", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 事务操作", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "非列表数据缓存", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "列表数据缓存", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "分页缓存", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "数据分页", ARouterPath.ACTIVITY_ORM),
 //            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
     }

@@ -1,0 +1,21 @@
+package com.example.dcache.ui
+
+import android.os.Bundle
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.common.ARouterPath
+
+import dora.BaseActivity
+
+import com.example.dcache.R
+import com.example.dcache.databinding.ActivityCachePagerBinding
+
+@Route(path = ARouterPath.ACTIVITY_CACHE_PAGER)
+class CachePagerActivity : BaseActivity<ActivityCachePagerBinding>() {
+
+    override fun getLayoutId(): Int {
+        return R.layout.activity_cache_pager
+    }
+
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityCachePagerBinding) {
+    }
+}
