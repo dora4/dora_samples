@@ -6,6 +6,9 @@
 
     <data>
 
+        <variable
+            name="v"
+            type="com.example.dcache.ui.OrmQueryDataActivity" />
     </data>
 
     <LinearLayout
@@ -14,6 +17,7 @@
         android:orientation="vertical">
 
         <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:dview_title="@string/common_title"
@@ -22,6 +26,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/android_orm_course"/>
+        <Button
+            android:id="@+id/btn_orm_add_filter"
+            style="@style/ThemeButton.LeafGreen"
+            android:click="@{()->v.addFilter()}"
+            android:text="过滤器" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_orm_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeTextNormal"/>
+        </ScrollView>
     </LinearLayout>
 
 </layout>
