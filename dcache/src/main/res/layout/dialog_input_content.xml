@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:inputType="text"
+        android:text="A"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:maxLength="9"
+        android:inputType="numberSigned"
+        android:text="1"/>
+</LinearLayout>

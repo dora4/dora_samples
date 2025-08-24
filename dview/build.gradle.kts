@@ -53,7 +53,6 @@ dependencies {
     implementation(project(":common"))
     implementation("com.github.dora4:dview-bottom-dialog:1.13")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
-    implementation("com.github.dora4:dview-alert-dialog:1.24")
     implementation("com.github.dora4:dview-progress-view:1.0")
     implementation("com.github.dora4:dview-toggle-button:1.5")
     implementation("com.github.dora4:dview-toast:1.1")

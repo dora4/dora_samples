@@ -6,6 +6,7 @@ import com.example.app.di.component.DaggerAppComponent
 import com.example.common.di.module.AppModule
 import com.example.common.model.PopMusic
 import com.example.common.service.MusicService
+import com.example.dcache.model.OrmTestModel
 import com.walletconnect.web3.modal.client.Modal
 import com.walletconnect.web3.modal.presets.Web3ModalChainsPresets
 import dora.BaseApplication
@@ -73,8 +74,8 @@ class SampleApp : BaseApplication() {
     private fun initOrm() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
-            .version(1)
-            .tables(PopMusic::class.java)
+            .version(2)
+            .tables(PopMusic::class.java, OrmTestModel::class.java)
             .build()
         Orm.init(this, config)
     }
