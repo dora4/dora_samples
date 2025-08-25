@@ -15,10 +15,8 @@ import com.example.common.ARouterPath
 import dora.BaseActivity
 
 import com.example.dcache.R
-import com.example.dcache.databinding.ActivityOrmInsertDataBinding
 import com.example.dcache.databinding.ActivityOrmQueryDataBinding
 import com.example.dcache.model.OrmTestModel
-import dora.db.builder.Condition
 import dora.db.builder.WhereBuilder
 import dora.db.dao.DaoFactory
 import dora.util.IntentUtils

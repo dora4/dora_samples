@@ -2,11 +2,7 @@ package com.example.dcache.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import androidx.appcompat.app.AlertDialog
 import com.alibaba.android.arouter.facade.annotation.Route
-import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.listener.OnItemClickListener
 import com.example.common.ARouterPath
 
 import dora.BaseActivity
