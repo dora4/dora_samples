@@ -31,6 +31,7 @@ interface ARouterPath {
         const val ACTIVITY_ORM_UPDATE_DATA: String = "/$GROUP_CACHE/OrmUpdateDataActivity"
         const val ACTIVITY_ORM_QUERY_DATA: String = "/$GROUP_CACHE/OrmQueryDataActivity"
         const val ACTIVITY_ORM_DELETE_DATA: String = "/$GROUP_CACHE/OrmDeleteDataActivity"
+        const val ACTIVITY_ORM_TRANSACTION: String = "/$GROUP_CACHE/OrmTransactionActivity"
         const val ACTIVITY_CACHE_NON_LIST_DATA: String = "/$GROUP_CACHE/CacheNonListDataActivity"
         const val ACTIVITY_CACHE_LIST_DATA: String = "/$GROUP_CACHE/CacheListDataActivity"
         const val ACTIVITY_CACHE_BATCH: String = "/$GROUP_CACHE/CacheBatchActivity"

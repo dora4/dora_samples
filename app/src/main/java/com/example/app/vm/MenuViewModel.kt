@@ -55,7 +55,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 更新数据", ARouterPath.ACTIVITY_ORM_UPDATE_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 查询数据", ARouterPath.ACTIVITY_ORM_QUERY_DATA),
-            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 事务操作", ARouterPath.ACTIVITY_ORM),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 事务操作", ARouterPath.ACTIVITY_ORM_TRANSACTION),
             Menu(Colors.LEAF_GREEN, "非列表数据缓存", ARouterPath.ACTIVITY_CACHE_NON_LIST_DATA),
             Menu(Colors.LEAF_GREEN, "列表数据缓存", ARouterPath.ACTIVITY_CACHE_LIST_DATA),
             Menu(Colors.LEAF_GREEN, "分页缓存", ARouterPath.ACTIVITY_CACHE_BATCH),

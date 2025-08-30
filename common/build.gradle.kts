@@ -61,7 +61,7 @@ dependencies {
     api("com.github.dora4:dora-walletconnect-support:1.160") {
         exclude(group = "com.madgag.spongycastle", module = "core")
     }
-    api("com.github.dora4:dcache-android:3.5.3")
+    api("com.github.dora4:dcache-android:3.5.5")
 //    api("com.github.dora4:dora-eventbus-support:1.1")
     api("com.github.dora4:dview-colors:1.1")
     api("com.github.dora4:dview-titlebar:1.37")

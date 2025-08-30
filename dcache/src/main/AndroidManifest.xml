@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".ui.OrmTransactionActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.CacheBatchActivity"
             android:exported="false" />
         <activity
