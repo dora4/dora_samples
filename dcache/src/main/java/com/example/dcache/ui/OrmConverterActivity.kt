@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dcache.R
-import com.example.dcache.databinding.ActivityOrmBinding
+import com.example.dcache.databinding.ActivityOrmConverterBinding
 import com.example.dcache.model.UserEntity
 import dora.BaseActivity
 import dora.db.Orm
@@ -14,11 +14,11 @@ import dora.db.table.TableManager
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 
-@Route(path = ARouterPath.ACTIVITY_ORM)
-class OrmActivity : BaseActivity<ActivityOrmBinding>() {
+@Route(path = ARouterPath.ACTIVITY_ORM_CONVERTER)
+class OrmConverterActivity : BaseActivity<ActivityOrmConverterBinding>() {
 
     override fun getLayoutId(): Int {
-        return R.layout.activity_orm
+        return R.layout.activity_orm_converter
     }
 
     override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
@@ -28,7 +28,7 @@ class OrmActivity : BaseActivity<ActivityOrmBinding>() {
         StatusBarUtils.setStatusBar(this, themeColor)
     }
 
-    override fun initData(savedInstanceState: Bundle?, binding: ActivityOrmBinding) {
+    override fun initData(savedInstanceState: Bundle?, binding: ActivityOrmConverterBinding) {
         binding.v = this
         // 正常来说这个是在Application中初始化
         Orm.init(this, "orm_sample")

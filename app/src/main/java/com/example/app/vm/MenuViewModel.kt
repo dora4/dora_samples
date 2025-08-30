@@ -56,10 +56,11 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 更新数据", ARouterPath.ACTIVITY_ORM_UPDATE_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 查询数据", ARouterPath.ACTIVITY_ORM_QUERY_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 事务操作", ARouterPath.ACTIVITY_ORM_TRANSACTION),
+            Menu(Colors.LEAF_GREEN, "ORM数据存储 - 转换器", ARouterPath.ACTIVITY_ORM_CONVERTER),
             Menu(Colors.LEAF_GREEN, "非列表数据缓存", ARouterPath.ACTIVITY_CACHE_NON_LIST_DATA),
             Menu(Colors.LEAF_GREEN, "列表数据缓存", ARouterPath.ACTIVITY_CACHE_LIST_DATA),
             Menu(Colors.LEAF_GREEN, "分页缓存", ARouterPath.ACTIVITY_CACHE_BATCH),
-            Menu(Colors.LEAF_GREEN, "数据分页", ARouterPath.ACTIVITY_CACHE_PAGER),
+            Menu(Colors.LEAF_GREEN, "缓存数据分页", ARouterPath.ACTIVITY_CACHE_PAGER),
 //            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
         )
     }

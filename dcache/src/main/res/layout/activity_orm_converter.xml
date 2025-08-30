@@ -8,7 +8,7 @@
 
         <variable
             name="v"
-            type="com.example.dcache.ui.OrmActivity" />
+            type="com.example.dcache.ui.OrmConverterActivity" />
     </data>
 
     <LinearLayout
