@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.CouponViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.GridViewActivity"
             android:exported="false" />
         <activity

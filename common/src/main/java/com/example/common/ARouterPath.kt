@@ -51,6 +51,7 @@ interface ARouterPath {
         const val ACTIVITY_FLEXIBLE_SCROLL_VIEW: String = "/$GROUP_VIEW/FlexibleScrollViewActivity"
         const val ACTIVITY_SWIPE_LAYOUT: String = "/$GROUP_VIEW/SwipeLayoutActivity"
         const val ACTIVITY_GRID_VIEW: String = "/$GROUP_VIEW/GridViewActivity"
+        const val ACTIVITY_COUPON_VIEW: String = "/$GROUP_VIEW/CouponViewActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"
