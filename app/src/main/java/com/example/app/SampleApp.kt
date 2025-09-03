@@ -15,7 +15,7 @@ import dora.db.OrmConfig
 import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
 import dora.pgyer.PgyService
-import dora.trade.DoraTrade
+import dora.pay.DoraFund
 
 /**
  * 继承dora.BaseApplication开始Dora之旅吧！如果你不使用这个BaseApplication，直接开始继承
@@ -51,7 +51,7 @@ class SampleApp : BaseApplication() {
             Web3ModalChainsPresets.ethChains["42161"]!!,   // 支持Arbitrum
             Web3ModalChainsPresets.ethChains["43114"]!!    // 支持Avalanche C-Chain
         )
-        DoraTrade.init(this, "App Name", "App Description",
+        DoraFund.init(this, "App Name", "App Description",
             "https://yourdomain.com", chains)
     }
 

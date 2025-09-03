@@ -35,8 +35,8 @@
 -keep class * implements dora.db.converter.PropertyConverter { *; }
 
 -keep class org.json.JSONObject { *; }
--keep class dora.trade.DoraTrade { *; }
--keep class dora.trade.DoraTrade$PayListener { *; }
+-keep class dora.pay.DoraFund { *; }
+-keep class dora.pay.DoraFund$PayListener { *; }
 -keep class org.web3j.** { *; }
 -keep class com.walletconnect.web3.modal.client.Web3Modal { *; }
 -keep class com.walletconnect.web3.modal.client.models.request.Request { *; }
