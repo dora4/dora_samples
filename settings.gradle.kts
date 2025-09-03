@@ -10,10 +10,13 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.namespace == "com.android.tools.build") {
-                useModule("com.android.tools.build:gradle:7.3.1")
+                useModule("com.android.tools.build:gradle:8.0.2")
             }
             if (requested.id.namespace == "org.jetbrains.kotlin") {
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
+            }
+            if (requested.id.namespace == "com.google.firebase") {
+                useModule("com.google.firebase:firebase-crashlytics-gradle:2.9.2")
             }
         }
     }
@@ -32,3 +35,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "dora_samples"
 include(":app")
+include(":dview")
+include(":common")
+include(":dcache")
+include(":dora")

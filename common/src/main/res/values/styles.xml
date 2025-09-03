@@ -1,0 +1,52 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ThemeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ThemeButton.DarkGold">
+        <item name="android:background">@drawable/shape_theme_button_dark_gold</item>
+    </style>
+    <style name="ThemeButton.EnchantingPurple">
+        <item name="android:background">@drawable/shape_theme_button_enchanting_purple</item>
+    </style>
+    <style name="ThemeButton.FirstLoveCyan">
+        <item name="android:background">@drawable/shape_theme_button_first_love_cyan</item>
+    </style>
+    <style name="ThemeButton.GirlPink">
+        <item name="android:background">@drawable/shape_theme_button_girl_pink</item>
+    </style>
+    <style name="ThemeButton.GoldYellow">
+        <item name="android:background">@drawable/shape_theme_button_gold_yellow</item>
+    </style>
+    <style name="ThemeButton.LeafGreen">
+        <item name="android:background">@drawable/shape_theme_button_leaf_green</item>
+    </style>
+    <style name="ThemeButton.ObsidianBlack">
+        <item name="android:background">@drawable/shape_theme_button_obsidian_black</item>
+    </style>
+    <style name="ThemeButton.PigeonBloodRed">
+        <item name="android:background">@drawable/shape_theme_button_pigeon_blood_red</item>
+    </style>
+    <style name="ThemeButton.SkyBlue">
+        <item name="android:background">@drawable/shape_theme_button_sky_blue</item>
+    </style>
+    <style name="ThemeButton.VibrantOrange">
+        <item name="android:background">@drawable/shape_theme_button_vibrant_orange</item>
+    </style>
+
+    <style name="ThemeTextNormal">
+        <item name="android:textColor">@color/colorTextNormal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

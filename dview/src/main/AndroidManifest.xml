@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+        <activity
+            android:name=".ui.CouponViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GridViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SwipeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FlexibleScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuPanelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EmptyLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RadioGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BottomDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ToggleButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoadingDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlertDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TitleBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProgressViewActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".ui.FloatingWindowService" />
+
+        <meta-data
+            android:name="dora.lifecycle.config.TipsGlobalConfig"
+            android:value="GlobalConfig" />
+    </application>
+
+</manifest>

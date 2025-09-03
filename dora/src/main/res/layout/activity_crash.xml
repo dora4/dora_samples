@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="v"
+            type="com.example.dora.ui.CrashActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/crash_log_report_file"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_request_permission"
+                style="@style/ThemeButton.ObsidianBlack"
+                android:click="@{()->v.requestPermission()}"
+                android:text="申请文件写入权限" />
+
+            <Button
+                android:id="@+id/btn_make_crash"
+                style="@style/ThemeButton.ObsidianBlack"
+                android:click="@{()->v.makeBug()}"
+                android:text="制造崩溃" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="崩溃日志将保存在/sdcard/crash目录下。"
+            style="@style/ThemeTextNormal" />
+    </LinearLayout>
+</layout>
