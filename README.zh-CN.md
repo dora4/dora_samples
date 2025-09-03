@@ -18,6 +18,10 @@
 - BaseRecyclerViewAdapterHelper万能适配器
 - ViewModel的使用
 
+## 尝鲜体验
+
+https://www.pgyer.com/dorasamples
+
 ## 开始
 
 克隆项目到你的磁盘中

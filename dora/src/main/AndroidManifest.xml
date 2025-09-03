@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pgyer配置开始 -->
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取网络信息权限 -->
+    <!-- 用户手机设置中允许未知来源安装包安装状态为关； -->
+    <!-- Android8.0 以后，如果要安装 apk 需要额外添加权限： -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <meta-data
+        android:name="dora.lifecycle.config.PgyerGlobalConfig"
+        android:value="GlobalConfig" />
+    <meta-data
+        android:name="PGYER_API_KEY"
+        android:value="b32485d39298de8a302c67883e192107" />
+    <meta-data
+        android:name="PGYER_FRONTJS_KEY"
+        android:value="b821f25618d4adb1e3b6976bfc8daa09" />
+    <meta-data
+        android:name="PGYER_FEATURE_CHECK_UNPDATE"
+        android:value="true" />
 
     <application>
+        <activity
+            android:name=".ui.PgyerActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.RouteActivity"
             android:exported="false" />

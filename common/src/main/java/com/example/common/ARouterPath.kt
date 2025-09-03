@@ -19,6 +19,7 @@ interface ARouterPath {
         const val ACTIVITY_TIPS: String = "/$GROUP_DORA/TipsActivity"
         const val ACTIVITY_FLOW_PAGE: String = "/$GROUP_DORA/FlowPageActivity"
         const val ACTIVITY_NET_DETECT: String = "/$GROUP_DORA/NetDetectActivity"
+        const val ACTIVITY_PGYER: String = "/$GROUP_DORA/PgyerActivity"
         const val ACTIVITY_VIEW_MODEL_SAMPLE_1: String =
             "/$GROUP_DORA/ViewModelSample1Activity"
         const val ACTIVITY_VIEW_MODEL_SAMPLE_2: String =

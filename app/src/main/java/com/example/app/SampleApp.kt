@@ -14,6 +14,7 @@ import dora.db.Orm
 import dora.db.OrmConfig
 import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
+import dora.pgyer.PgyService
 import dora.trade.DoraTrade
 
 /**
@@ -50,7 +51,8 @@ class SampleApp : BaseApplication() {
             Web3ModalChainsPresets.ethChains["42161"]!!,   // 支持Arbitrum
             Web3ModalChainsPresets.ethChains["43114"]!!    // 支持Avalanche C-Chain
         )
-        DoraTrade.init(this, "App Name", "App Description", "https://yourdomain.com", chains)
+        DoraTrade.init(this, "App Name", "App Description",
+            "https://yourdomain.com", chains)
     }
 
     private fun initDagger() {
@@ -68,6 +70,7 @@ class SampleApp : BaseApplication() {
             }
             // 映射API服务地址，可以映射多个
             mappingBaseUrl(MusicService::class.java, "http://doramusic.site:8080/")
+            mappingBaseUrl(PgyService::class.java, "http://www.pgyer.com/apiv2/")
         }
     }
 

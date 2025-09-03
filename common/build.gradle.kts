@@ -56,6 +56,7 @@ dependencies {
     api("com.github.dora4:dora-brvah-support:1.5")
     api("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")
+    api("com.github.dora4:dora-pgyer-support:1.9")
 
     api("com.github.dora4:dora-dagger-support:1.12")
     api("com.github.dora4:dora-walletconnect-support:1.160") {

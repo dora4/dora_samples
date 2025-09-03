@@ -35,6 +35,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.OBSIDIAN_BLACK, "RSA加密", ARouterPath.ACTIVITY_RSA),
 //            Menu(Colors.OBSIDIAN_BLACK, "网络状态探测", ARouterPath.ACTIVITY_NET_DETECT),
             Menu(Colors.OBSIDIAN_BLACK, "Web3支付", ARouterPath.ACTIVITY_WEB3_PAY),
+            Menu(Colors.OBSIDIAN_BLACK, "蒲公英分发集成", ARouterPath.ACTIVITY_PGYER),
             Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例1", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_1),
             Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例2", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_2),
 //            Menu(Colors.SKY_BLUE, "短视频极速版领现金进度条动画", ARouterPath.ACTIVITY_PROGRESS_VIEW),
