@@ -33,9 +33,6 @@
             android:name=".ui.OrmInsertDataActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.OrmActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.DataCacheActivity"
             android:screenOrientation="portrait" />
     </application>
