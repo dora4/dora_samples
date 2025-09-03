@@ -54,6 +54,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "网格布局", ARouterPath.ACTIVITY_GRID_VIEW),
             Menu(Colors.SKY_BLUE, "卡券控件", ARouterPath.ACTIVITY_COUPON_VIEW),
             Menu(Colors.SKY_BLUE, "流式布局", ARouterPath.ACTIVITY_FLOW_LAYOUT),
+            Menu(Colors.SKY_BLUE, "图标文字控件", ARouterPath.ACTIVITY_ICON_LABEL),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 更新数据", ARouterPath.ACTIVITY_ORM_UPDATE_DATA),

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.IconLabelActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <dora.widget.DoraIconLabelView
+                android:id="@+id/ilv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dview_ilv_text="邮箱"
+                app:dview_ilv_icon="@drawable/ic_email"/>
+
+            <dora.widget.DoraIconLabelView
+                android:id="@+id/ilv2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dview_ilv_text="导航"
+                app:dview_ilv_icon="@drawable/ic_compass"/>
+
+            <dora.widget.DoraIconLabelView
+                android:id="@+id/ilv3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:dview_ilv_text="搜索"
+                app:dview_ilv_icon="@drawable/ic_search"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

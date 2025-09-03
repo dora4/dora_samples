@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.IconLabelActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.FlowLayoutActivity"
             android:exported="false" />
         <activity
