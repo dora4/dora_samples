@@ -13,8 +13,8 @@ android {
     defaultConfig {
         minSdk = 23
         targetSdk = 34
-        versionCode = 32
-        versionName = "1.5.0"
+        versionCode = 33
+        versionName = "1.5.1"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
