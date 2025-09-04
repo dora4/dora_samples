@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.BottomBarActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <dora.widget.DoraBottomBar
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/black"
+                android:layout_alignParentBottom="true"
+                app:dview_bb_tabCount="2"
+                app:dview_bb_lottieNormal="@array/bottom_bar_normal"
+                app:dview_bb_lottieSelected="@array/bottom_bar_selected"
+                app:dview_bb_tabTitles="@array/bottom_bar_titles"
+                app:dview_bb_textColorNormal="@color/gray"
+                app:dview_bb_textColorSelected="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

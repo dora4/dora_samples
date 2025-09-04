@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 未选中动画 -->
+    <array name="bottom_bar_normal">
+        <item>@raw/uncheck</item>
+        <item>@raw/uncheck</item>
+    </array>
+
+    <!-- 选中动画 -->
+    <array name="bottom_bar_selected">
+        <item>@raw/trophy</item>
+        <item>@raw/cat</item>
+    </array>
+
+    <!-- 标题 -->
+    <string-array name="bottom_bar_titles">
+        <item>Tab1</item>
+        <item>Tab2</item>
+    </string-array>
+</resources>

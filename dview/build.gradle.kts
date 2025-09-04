@@ -69,6 +69,8 @@ dependencies {
     implementation("com.github.dora4:dview-iconlabel-view:1.0")
     implementation("com.github.dora4:dview-swipe-menu:1.1")
     implementation("com.github.dora4:dview-badge-view:1.0")
+    implementation("com.github.dora4:dview-bottombar:1.9")
+
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")

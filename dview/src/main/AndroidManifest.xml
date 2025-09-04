@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.BottomBarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.BadgeViewActivity"
             android:exported="false" />
         <activity
