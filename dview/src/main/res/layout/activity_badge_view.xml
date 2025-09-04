@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.BadgeViewActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <dora.widget.DoraBadgeView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gold_yellow"
+                app:dview_bv_badgeColor="@color/pigeon_blood_red"
+                app:dview_bv_showBadge="true"
+                app:dview_bv_badgeVerticesOffset="4dp"/>
+            <dora.widget.DoraBadgeView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/vibrant_orange"
+                app:dview_bv_badgeColor="@color/pigeon_blood_red"
+                app:dview_bv_showBadge="true"
+                app:dview_bv_badgeGravity="leftBottom"
+                app:dview_bv_badgeVerticesOffset="7dp"/>
+            <dora.widget.DoraBadgeView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/dark_gold"
+                app:dview_bv_badgeColor="@color/pigeon_blood_red"
+                app:dview_bv_showBadge="true"
+                app:dview_bv_badgeGravity="rightBottom"
+                app:dview_bv_badgeVerticesOffset="6dp"/>
+            <dora.widget.DoraBadgeView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/girl_pink"
+                app:dview_bv_badgeColor="@color/pigeon_blood_red"
+                app:dview_bv_showBadge="true"
+                app:dview_bv_badgeGravity="rightUp"
+                app:dview_bv_badgeVerticesOffset="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

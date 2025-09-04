@@ -56,6 +56,7 @@ interface ARouterPath {
         const val ACTIVITY_FLOW_LAYOUT: String = "/$GROUP_VIEW/FlowLayoutActivity"
         const val ACTIVITY_ICON_LABEL: String = "/$GROUP_VIEW/IconLabelActivity"
         const val ACTIVITY_SWIPE_MENU: String = "/$GROUP_VIEW/SwipeMenuActivity"
+        const val ACTIVITY_BADGE_VIEW: String = "/$GROUP_VIEW/BadgeViewActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"
