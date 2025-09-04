@@ -59,6 +59,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "通知红点控件", ARouterPath.ACTIVITY_BADGE_VIEW),
 //            Menu(Colors.SKY_BLUE, "底部导航控件", ARouterPath.ACTIVITY_BOTTOM_BAR),
             Menu(Colors.SKY_BLUE, "环形进度条", ARouterPath.ACTIVITY_PROGRESS_BAR),
+            Menu(Colors.SKY_BLUE, "购物车增减商品控件", ARouterPath.ACTIVITY_ADD_SUB_VIEW),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 更新数据", ARouterPath.ACTIVITY_ORM_UPDATE_DATA),

@@ -71,6 +71,8 @@ dependencies {
     implementation("com.github.dora4:dview-badge-view:1.0")
     implementation("com.github.dora4:dview-bottombar:1.9")
     implementation("com.github.dora4:dview-progressbar:1.0")
+    implementation("com.github.dora4:dview-addsub-view:1.3")
+
 
 
 

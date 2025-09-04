@@ -59,6 +59,7 @@ interface ARouterPath {
         const val ACTIVITY_BADGE_VIEW: String = "/$GROUP_VIEW/BadgeViewActivity"
         const val ACTIVITY_BOTTOM_BAR: String = "/$GROUP_VIEW/BottomBarActivity"
         const val ACTIVITY_PROGRESS_BAR: String = "/$GROUP_VIEW/ProgressBarActivity"
+        const val ACTIVITY_ADD_SUB_VIEW: String = "/$GROUP_VIEW/AddSubViewActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"
