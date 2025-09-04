@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.DropDownLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.AddSubViewActivity"
             android:exported="false" />
         <activity

@@ -72,8 +72,7 @@ dependencies {
     implementation("com.github.dora4:dview-bottombar:1.9")
     implementation("com.github.dora4:dview-progressbar:1.0")
     implementation("com.github.dora4:dview-addsub-view:1.3")
-
-
+    implementation("com.github.dora4:dview-dropdown-layout:1.2")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
