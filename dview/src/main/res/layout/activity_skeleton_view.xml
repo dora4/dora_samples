@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.SkeletonViewActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 矩形骨架 -->
+            <dora.widget.DoraSkeletonView
+                android:id="@+id/skeletonRect"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:dview_sv_animDuration="1500"
+                app:dview_sv_cornerRadius="16dp"
+                app:dview_sv_primaryColor="@android:color/darker_gray"
+                app:dview_sv_secondaryColor="@android:color/white"
+                app:dview_sv_shapeType="rectangle"
+                app:dview_sv_shimmer="true" />
+
+            <!-- 圆形骨架 -->
+            <dora.widget.DoraSkeletonView
+                android:id="@+id/skeletonCircle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                app:dview_sv_animDuration="2000"
+                app:dview_sv_primaryColor="@android:color/holo_blue_light"
+                app:dview_sv_secondaryColor="@android:color/holo_green_light"
+                app:dview_sv_shapeType="circle"
+                app:dview_sv_shimmer="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
