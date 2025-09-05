@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.PinchZoomLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ChartsActivity"
             android:exported="false" />
         <activity

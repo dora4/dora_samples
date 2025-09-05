@@ -63,6 +63,7 @@ interface ARouterPath {
         const val ACTIVITY_DROP_DOWN_LAYOUT: String = "/$GROUP_VIEW/DropDownLayoutActivity"
         const val ACTIVITY_CLEAR_EDIT_TEXT: String = "/$GROUP_VIEW/ClearEditTextActivity"
         const val ACTIVITY_CHARTS: String = "/$GROUP_VIEW/ChartsActivity"
+        const val ACTIVITY_PINCH_ZOOM_LAYOUT: String = "/$GROUP_VIEW/PinchZoomLayoutActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"
