@@ -65,6 +65,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "带清空按钮文本输入框", ARouterPath.ACTIVITY_CLEAR_EDIT_TEXT),
             Menu(Colors.SKY_BLUE, "图表引擎", ARouterPath.ACTIVITY_CHARTS),
             Menu(Colors.SKY_BLUE, "双指缩放控件", ARouterPath.ACTIVITY_PINCH_ZOOM_LAYOUT),
+            Menu(Colors.SKY_BLUE, "侧边字母导航条", ARouterPath.ACTIVITY_SIDE_BAR),
 
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),

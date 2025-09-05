@@ -76,6 +76,7 @@ dependencies {
     implementation("com.github.dora4:dview-clear-edittext:1.0")
     implementation("com.github.dora4:dview-charts:1.0")
     implementation("com.github.dora4:dview-pinchzoom-layout:1.0")
+    implementation("com.github.dora4:dview-sidebar:1.0")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")

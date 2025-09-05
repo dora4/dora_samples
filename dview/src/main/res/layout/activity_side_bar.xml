@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.SideBarActivity">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <dora.widget.DoraSideBar
+                android:id="@+id/sideBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                app:dview_sb_indicatorBgColor="@android:color/transparent"
+                app:dview_sb_indicatorItemWidth="20dp"
+                app:dview_sb_indicatorItemHeight="15dp"
+                app:dview_sb_indicatorSelectedBgColor="@android:color/white"
+                app:dview_sb_indicatorSelectedBgRadius="8dp"
+                app:dview_sb_indicatorSelectedTextColor="#04d5d5"
+                app:dview_sb_indicatorTextSize="10sp"
+                app:dview_sb_indicatorUnselectedTextColor="#646464"
+                app:dview_sb_indicatorBubbleBgColor="#20000000"
+                app:dview_sb_indicatorBubbleBgRadius="20dp"
+                app:dview_sb_indicatorBubbleMargin="0dp"
+                app:dview_sb_indicatorBubbleTextColor="@android:color/white"
+                app:dview_sb_indicatorBubbleTextSize="20sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>
