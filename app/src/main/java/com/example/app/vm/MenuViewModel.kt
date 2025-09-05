@@ -38,6 +38,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.OBSIDIAN_BLACK, "蒲公英分发集成", ARouterPath.ACTIVITY_PGYER),
             Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例1", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_1),
             Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例2", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_2),
+
 //            Menu(Colors.SKY_BLUE, "短视频极速版领现金进度条动画", ARouterPath.ACTIVITY_PROGRESS_VIEW),
             Menu(Colors.SKY_BLUE, "一个标题栏控件", ARouterPath.ACTIVITY_TITLE_BAR),
             Menu(Colors.SKY_BLUE, "菜单面板", ARouterPath.ACTIVITY_MENU_PANEL),
@@ -62,6 +63,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "购物车增减商品控件", ARouterPath.ACTIVITY_ADD_SUB_VIEW),
             Menu(Colors.SKY_BLUE, "下拉面板", ARouterPath.ACTIVITY_DROP_DOWN_LAYOUT),
             Menu(Colors.SKY_BLUE, "带清空按钮文本输入框", ARouterPath.ACTIVITY_CLEAR_EDIT_TEXT),
+            Menu(Colors.SKY_BLUE, "图表引擎", ARouterPath.ACTIVITY_CHARTS),
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),

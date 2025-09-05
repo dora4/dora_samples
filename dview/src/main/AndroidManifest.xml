@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.ChartsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ClearEditTextActivity"
             android:exported="false" />
         <activity
