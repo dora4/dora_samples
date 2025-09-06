@@ -67,6 +67,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "双指缩放控件", ARouterPath.ACTIVITY_PINCH_ZOOM_LAYOUT),
             Menu(Colors.SKY_BLUE, "侧边字母导航条", ARouterPath.ACTIVITY_SIDE_BAR),
             Menu(Colors.SKY_BLUE, "骨架屏加载控件", ARouterPath.ACTIVITY_SKELETON_VIEW),
+            Menu(Colors.SKY_BLUE, "高亮炫光控件", ARouterPath.ACTIVITY_FLASH_VIEW),
 
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),

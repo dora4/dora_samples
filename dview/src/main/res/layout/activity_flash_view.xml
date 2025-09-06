@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.FlashViewActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_rotateAngle="30">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="顺时针倾斜"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </dora.widget.DoraFlashView>
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_rotateAngle="0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="垂直"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </dora.widget.DoraFlashView>
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_rotateAngle="-30">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="逆时针倾斜"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </dora.widget.DoraFlashView>
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_deltaX="50dp"
+                app:dview_fv_rotateAngle="30">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="加速"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </dora.widget.DoraFlashView>
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_gradientSize="100dp"
+                app:dview_fv_highlightColor="#7fffff00"
+                app:dview_fv_rotateAngle="30"
+                app:dview_fv_type="blur">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_search" />
+            </dora.widget.DoraFlashView>
+
+            <dora.widget.DoraFlashView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:dview_fv_deltaX="15dp"
+                app:dview_fv_gradientSize="200dp"
+                app:dview_fv_rotateAngle="45"
+                app:dview_fv_type="blur">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_back" />
+            </dora.widget.DoraFlashView>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

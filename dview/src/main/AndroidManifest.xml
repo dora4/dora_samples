@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.FlashViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SkeletonViewActivity"
             android:exported="false" />
         <activity

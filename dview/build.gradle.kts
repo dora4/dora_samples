@@ -78,8 +78,7 @@ dependencies {
     implementation("com.github.dora4:dview-pinchzoom-layout:1.0")
     implementation("com.github.dora4:dview-sidebar:1.0")
     implementation("com.github.dora4:dview-skeleton-view:1.0")
-
-
+    implementation("com.github.dora4:dview-flash-view:1.0")
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
