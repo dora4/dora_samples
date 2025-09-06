@@ -2,7 +2,6 @@ package com.example.dview.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 
@@ -10,7 +9,6 @@ import dora.BaseActivity
 
 import com.example.dview.R
 import com.example.dview.databinding.ActivityFlipperViewBinding
-import dora.arouter.open
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 import dora.widget.DoraFlipperView

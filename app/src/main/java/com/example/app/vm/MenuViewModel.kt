@@ -70,6 +70,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "高亮炫光控件", ARouterPath.ACTIVITY_FLASH_VIEW),
             Menu(Colors.SKY_BLUE, "自动圆角按钮控件", ARouterPath.ACTIVITY_BUTTON),
             Menu(Colors.SKY_BLUE, "通知翻转控件", ARouterPath.ACTIVITY_FLIPPER_VIEW),
+            Menu(Colors.SKY_BLUE, "视差动画引导页", ARouterPath.ACTIVITY_PARALLAX_LAYOUT),
 
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),

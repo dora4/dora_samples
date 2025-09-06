@@ -69,6 +69,7 @@ interface ARouterPath {
         const val ACTIVITY_FLASH_VIEW: String = "/$GROUP_VIEW/FlashViewActivity"
         const val ACTIVITY_BUTTON: String = "/$GROUP_VIEW/ButtonActivity"
         const val ACTIVITY_FLIPPER_VIEW: String = "/$GROUP_VIEW/FlipperViewActivity"
+        const val ACTIVITY_PARALLAX_LAYOUT: String = "/$GROUP_VIEW/ParallaxLayoutActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"

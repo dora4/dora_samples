@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ParallaxLayoutActivity">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <dora.widget.DoraParallaxLayout
+                android:id="@+id/parallaxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                app:dview_pl_orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qixi1"
+                    app:dview_pl_scale_x="1.5"
+                    app:dview_pl_scale_y="1.5"
+                    app:dview_pl_translation_x="200dp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qixi2"
+                    android:layout_marginTop="1000dp"
+                    android:alpha="0.3"
+                    android:layout_gravity="center_horizontal"
+                    app:dview_pl_translation_y="-200dp"
+                    app:dview_pl_scale_x="2.0"
+                    app:dview_pl_scale_y="2.0"
+                    app:dview_pl_alpha="1" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qixi3"
+                    android:layout_gravity="end|center_vertical"
+                    app:dview_pl_alpha="0.3"
+                    app:dview_pl_rotation="45" />
+
+            </dora.widget.DoraParallaxLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>
