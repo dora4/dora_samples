@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.AvatarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ParallaxLayoutActivity"
             android:exported="false" />
         <activity

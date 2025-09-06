@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.AvatarActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <dora.widget.DoraRoundRectImageView
+                android:id="@+id/rriv_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"/>
+            <dora.widget.DoraCircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                app:dview_borderColor="@color/light_gray"
+                app:dview_drawBorder="true"
+                app:dview_borderWidth="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
