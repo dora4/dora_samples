@@ -80,6 +80,8 @@ dependencies {
     implementation("com.github.dora4:dview-skeleton-view:1.0")
     implementation("com.github.dora4:dview-flash-view:1.0")
     implementation("com.github.dora4:dview-button:1.0")
+    implementation("com.github.dora4:dview-flipper-view:1.2")
+
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
