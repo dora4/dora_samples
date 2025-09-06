@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ButtonActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <dora.widget.DoraButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="提交"
+                android:textSize="16sp"
+                app:dview_cornerRadius="12dp"
+                app:dview_disableBgColor="@android:color/darker_gray"
+                app:dview_disableTextColor="@android:color/white"
+                app:dview_normalBgColor="@android:color/holo_blue_dark"
+                app:dview_normalTextColor="@android:color/white"
+                app:dview_hoverBgColor="@android:color/holo_blue_light"
+                app:dview_hoverTextColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
