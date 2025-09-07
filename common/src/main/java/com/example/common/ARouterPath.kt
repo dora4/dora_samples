@@ -76,6 +76,7 @@ interface ARouterPath {
         const val ACTIVITY_TEXT_VIEW: String = "/$GROUP_VIEW/TextViewActivity"
         const val ACTIVITY_PROGRESS_BUTTON: String = "/$GROUP_VIEW/ProgressButtonActivity"
         const val ACTIVITY_COLLAPSING_LAYOUT: String = "/$GROUP_VIEW/CollapsingLayoutActivity"
+        const val ACTIVITY_FILE_BROWSER: String = "/$GROUP_VIEW/FileBrowserActivity"
 
         const val VIEW_SERVICE = "/$GROUP_VIEW/ViewProvider"
         const val DORA_SERVICE = "/$GROUP_DORA/DoraProvider"

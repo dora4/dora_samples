@@ -77,6 +77,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "自动隐藏文本控件", ARouterPath.ACTIVITY_TEXT_VIEW),
             Menu(Colors.SKY_BLUE, "带进度的按钮", ARouterPath.ACTIVITY_PROGRESS_BUTTON),
             Menu(Colors.SKY_BLUE, "折叠布局", ARouterPath.ACTIVITY_COLLAPSING_LAYOUT),
+//            Menu(Colors.SKY_BLUE, "文件浏览器", ARouterPath.ACTIVITY_FILE_BROWSER),
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
