@@ -87,9 +87,7 @@ dependencies {
     implementation("com.github.dora4:dview-equalizer-view:1.0")
     implementation("com.github.dora4:dview-text-view:1.0")
     implementation("com.github.dora4:dview-progress-button:1.1")
-
-
-
+    implementation("com.github.dora4:dview-collapsing-layout:1.0")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
