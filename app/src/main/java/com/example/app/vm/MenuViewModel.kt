@@ -74,6 +74,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "头像裁剪", ARouterPath.ACTIVITY_AVATAR),
             Menu(Colors.SKY_BLUE, "唱片旋转控件", ARouterPath.ACTIVITY_ROTATE_VIEW),
             Menu(Colors.SKY_BLUE, "均衡器控件", ARouterPath.ACTIVITY_EQUALIZER_VIEW),
+            Menu(Colors.SKY_BLUE, "自动隐藏文本控件", ARouterPath.ACTIVITY_TEXT_VIEW),
 
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
