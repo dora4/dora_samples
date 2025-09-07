@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.EqualizerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.RotateViewActivity"
             android:exported="false" />
         <activity
