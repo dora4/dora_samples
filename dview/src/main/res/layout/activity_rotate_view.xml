@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.RotateViewActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPanelBg"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp">
+            <dora.widget.DoraRotateView
+                android:id="@+id/rotateView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:dview_rv_appName="应用名称"
+                app:dview_rv_albumText="专辑描述"
+                app:dview_rv_appSlogan="玩转Android自定义控件"
+                app:dview_rv_copyRight="©2025"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
