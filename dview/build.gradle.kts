@@ -90,6 +90,7 @@ dependencies {
     implementation("com.github.dora4:dview-collapsing-layout:1.0")
     implementation("com.github.dora4:dview-file-browser:1.20")
     implementation("com.github.dora4:dview-indicator-view:1.0")
+    implementation("com.github.dora4:dview-splash-view:1.1")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")

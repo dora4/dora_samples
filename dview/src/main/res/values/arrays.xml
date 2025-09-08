@@ -18,4 +18,10 @@
         <item>Tab1</item>
         <item>Tab2</item>
     </string-array>
+
+    <array name="splash_images">
+        <item>@drawable/qixi1</item>
+        <item>@drawable/qixi2</item>
+        <item>@drawable/qixi3</item>
+    </array>
 </resources>
