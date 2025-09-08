@@ -93,6 +93,7 @@ dependencies {
     implementation("com.github.dora4:dview-splash-view:1.1")
     implementation("com.github.dora4:dview-animator:1.0")
     implementation("com.github.dora4:dview-drawables:1.0")
+    implementation("com.github.dora4:dview-list-helper:1.0")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")
