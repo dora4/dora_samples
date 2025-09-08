@@ -81,6 +81,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "指示器控件", ARouterPath.ACTIVITY_INDICATOR_VIEW),
             Menu(Colors.SKY_BLUE, "闪屏页控件", ARouterPath.ACTIVITY_SPLASH_VIEW),
             Menu(Colors.SKY_BLUE, "动画引擎", ARouterPath.ACTIVITY_ANIMATOR),
+            Menu(Colors.SKY_BLUE, "自定义形状", ARouterPath.ACTIVITY_DRAWABLE),
 
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM数据存储 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
