@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.IndicatorViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.FileBrowserActivity"
             android:exported="false" />
         <activity
