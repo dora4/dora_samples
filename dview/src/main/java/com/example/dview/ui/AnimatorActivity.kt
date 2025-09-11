@@ -30,5 +30,6 @@ class AnimatorActivity : BaseActivity<ActivityAnimatorBinding>() {
         (AlphaAction(0.3f) + AlphaAction(1.0f)).startAnimation(binding.iv, 2000)
         ScaleAction(1.2f, 1.2f).startAnimation(binding.iv, 3000)
         (RotateAction(90f) + RotateAction(0f)).startAnimation(binding.iv, 2000)
+        LineTo(0f, 700f).startAnimation(binding.tv, 3000)
     }
 }

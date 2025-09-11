@@ -23,13 +23,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="5dp">
+            <dora.widget.DoraTextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                style="@style/ThemeTextNormal"
+                android:text="这幅水墨画是使用的Sumi的风格。"/>
             <ImageView
                 android:id="@+id/iv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/by_sandra_boynton"/>
+                android:src="@drawable/by_sumi_e_drawing"/>
         </LinearLayout>
     </LinearLayout>
 </layout>
