@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:padding="5dp">
 
             <dora.widget.DoraFlashView
@@ -47,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                app:dview_fv_bgColor="@color/girl_pink"
                 app:dview_fv_rotateAngle="0">
 
                 <TextView
@@ -63,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                app:dview_fv_bgColor="@color/gold_yellow"
                 app:dview_fv_rotateAngle="-30">
 
                 <TextView
@@ -79,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                app:dview_fv_bgColor="@color/vibrant_orange"
                 app:dview_fv_deltaX="50dp"
                 app:dview_fv_rotateAngle="30">
 
@@ -92,10 +96,9 @@
             </dora.widget.DoraFlashView>
 
             <dora.widget.DoraFlashView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:padding="10dp"
                 app:dview_fv_gradientSize="100dp"
                 app:dview_fv_highlightColor="#7fffff00"
                 app:dview_fv_rotateAngle="30"
@@ -103,9 +106,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_search" />
+                    android:src="@drawable/by_jose_royo" />
             </dora.widget.DoraFlashView>
 
             <dora.widget.DoraFlashView
@@ -117,12 +120,12 @@
                 app:dview_fv_gradientSize="200dp"
                 app:dview_fv_rotateAngle="45"
                 app:dview_fv_type="blur">
-
+                <!-- 留出内边距相框效果 -->
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_back" />
+                    android:background="@drawable/by_tom_toles" />
             </dora.widget.DoraFlashView>
         </LinearLayout>
     </LinearLayout>

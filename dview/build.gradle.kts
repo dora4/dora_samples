@@ -78,7 +78,7 @@ dependencies {
     implementation("com.github.dora4:dview-pinchzoom-layout:1.0")
     implementation("com.github.dora4:dview-sidebar:1.0")
     implementation("com.github.dora4:dview-skeleton-view:1.0")
-    implementation("com.github.dora4:dview-flash-view:1.0")
+    implementation("com.github.dora4:dview-flash-view:1.1")
     implementation("com.github.dora4:dview-button:1.0")
     implementation("com.github.dora4:dview-flipper-view:1.2")
     implementation("com.github.dora4:dview-parallax-layout:1.2")
