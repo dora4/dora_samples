@@ -46,7 +46,7 @@ class ListHelperActivity : BaseActivity<ActivityListHelperBinding>() {
                     )
                     textSize = 16f
                     setPadding(20, 20, 20, 20)
-                    setBackgroundColor(getColor(com.example.common.R.color.vibrant_orange))
+                    setBackgroundColor(getColor(com.example.common.R.color.dark_gold))
                     setTextColor(Color.WHITE)
                 }
                 return MyViewHolder(textView)
@@ -62,13 +62,13 @@ class ListHelperActivity : BaseActivity<ActivityListHelperBinding>() {
         controller = DoraListHelper.attach(binding.recyclerView, adapter) {
             divider(thickness = 2, color = Color.LTGRAY)
             // 示例1：普通线性列表
-            linear(vertical = true)
+//            linear(vertical = true)
 
             // 示例2：换成网格布局
 //             grid(spanCount = 3, spacing = 16, includeEdge = true)
 
             // 示例3：流式换行布局
-//             flow(itemSpacing = 12, lineSpacing = 16)
+             flow(itemSpacing = 12, lineSpacing = 16)
         }
 
         // 提交数据

@@ -24,22 +24,63 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <dora.widget.DoraButton
-                android:id="@+id/btnSubmit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="提交"
                 android:textSize="16sp"
+                android:layout_margin="10dp"
                 app:dview_cornerRadius="12dp"
                 app:dview_disableBgColor="@android:color/darker_gray"
                 app:dview_disableTextColor="@android:color/white"
-                app:dview_normalBgColor="@android:color/holo_blue_dark"
+                app:dview_normalBgColor="#11cbd7"
                 app:dview_normalTextColor="@android:color/white"
-                app:dview_hoverBgColor="@android:color/holo_blue_light"
+                app:dview_hoverBgColor="#00adb5"
                 app:dview_hoverTextColor="@android:color/white" />
 
+            <dora.widget.DoraButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="登录"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                app:dview_cornerRadius="12dp"
+                app:dview_disableBgColor="@android:color/darker_gray"
+                app:dview_disableTextColor="@android:color/white"
+                app:dview_normalBgColor="#6eb6ff"
+                app:dview_normalTextColor="@android:color/white"
+                app:dview_hoverBgColor="#7098da"
+                app:dview_hoverTextColor="@android:color/white" />
+
+            <dora.widget.DoraButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="注册"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                app:dview_cornerRadius="12dp"
+                app:dview_disableBgColor="@android:color/darker_gray"
+                app:dview_disableTextColor="@android:color/white"
+                app:dview_normalBgColor="#ff6464"
+                app:dview_normalTextColor="@android:color/white"
+                app:dview_hoverBgColor="#ff8264"
+                app:dview_hoverTextColor="@android:color/white" />
+
+            <dora.widget.DoraButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="确认"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                app:dview_cornerRadius="12dp"
+                app:dview_disableBgColor="@android:color/darker_gray"
+                app:dview_disableTextColor="@android:color/white"
+                app:dview_normalBgColor="#a82ffc"
+                app:dview_normalTextColor="@android:color/white"
+                app:dview_hoverBgColor="#c264fe"
+                app:dview_hoverTextColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 

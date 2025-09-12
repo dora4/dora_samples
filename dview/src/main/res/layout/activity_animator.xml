@@ -25,10 +25,10 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="5dp">
-            <dora.widget.DoraTextView
+            <TextView
                 android:id="@+id/tv"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 style="@style/ThemeTextNormal"
                 android:text="这幅水墨画是使用的Sumi的风格。"/>
             <ImageView

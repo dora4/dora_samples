@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.MarginLayoutParams
+import android.widget.FrameLayout
+import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
@@ -37,12 +39,12 @@ class DrawableActivity : BaseActivity<ActivityDrawableBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityDrawableBinding) {
         val root = binding.llShapes.apply {
-            layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-            orientation = LinearLayout.VERTICAL
+            layoutParams = FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+            orientation = LinearLayout.HORIZONTAL
             setPadding(32, 32, 32, 32)
         }
         val lp = MarginLayoutParams(100, 100)
-        lp.topMargin = 20
+        lp.marginStart = 20
         // 圆角矩形背景
         val rounded = View(this).apply {
             layoutParams = lp

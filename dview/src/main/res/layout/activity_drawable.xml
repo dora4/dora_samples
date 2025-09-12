@@ -19,13 +19,21 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-
-        <LinearLayout
-            android:id="@+id/ll_shapes"
+        <TextView
+            android:id="@+id/tv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            style="@style/ThemeTextNormal"
+            android:layout_margin="10dp"
+            android:text="提供了一些常用的自定义形状的Demo。"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_shapes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+        </HorizontalScrollView>
     </LinearLayout>
 </layout>
