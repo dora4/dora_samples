@@ -19,7 +19,12 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/ThemeTextNormal"
+            android:text="以下哪一个不是Dora全家桶的模块？"/>
 
         <dora.widget.DoraRadioGroup
             android:layout_width="match_parent"
@@ -39,7 +44,7 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:layout_margin="5dp"
-                    android:text="选项1"
+                    android:text="A.dview"
                     android:textColor="@color/white"
                     android:background="@drawable/selector_multi_radio_group_bg"/>
                 <RadioButton
@@ -51,7 +56,7 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:layout_margin="5dp"
-                    android:text="选项2"
+                    android:text="B.dora"
                     android:textColor="@color/white"
                     android:background="@drawable/selector_multi_radio_group_bg"/>
             </LinearLayout>
@@ -69,7 +74,7 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:layout_margin="5dp"
-                    android:text="选项3"
+                    android:text="C.ameng"
                     android:textColor="@color/white"
                     android:background="@drawable/selector_multi_radio_group_bg"/>
                 <RadioButton
@@ -81,7 +86,7 @@
                     android:gravity="center"
                     android:padding="5dp"
                     android:layout_margin="5dp"
-                    android:text="选项4"
+                    android:text="D.dcache"
                     android:textColor="@color/white"
                     android:background="@drawable/selector_multi_radio_group_bg"/>
             </LinearLayout>
