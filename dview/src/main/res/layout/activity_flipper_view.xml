@@ -28,13 +28,37 @@
             android:padding="5dp">
 
             <dora.widget.DoraFlipperView
-                android:id="@+id/flipperView"
+                android:id="@+id/fv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:dview_fv_flipInterval="5000"
                 app:dview_fv_textColor="@color/white"
                 app:dview_fv_textSize="15sp"
-                android:background="#AA000000"/>
+                android:background="#ffaaa5"/>
+            <dora.widget.DoraFlipperView
+                android:id="@+id/fv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dview_fv_flipInterval="5000"
+                app:dview_fv_textColor="@color/white"
+                app:dview_fv_textSize="15sp"
+                android:background="#ffd3b6"/>
+            <dora.widget.DoraFlipperView
+                android:id="@+id/fv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dview_fv_flipInterval="5000"
+                app:dview_fv_textColor="@color/colorTextNormal"
+                app:dview_fv_textSize="15sp"
+                android:background="#fdffab"/>
+            <dora.widget.DoraFlipperView
+                android:id="@+id/fv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dview_fv_flipInterval="5000"
+                app:dview_fv_textColor="@color/colorTextNormal"
+                app:dview_fv_textSize="15sp"
+                android:background="#a8e6cf"/>
         </LinearLayout>
     </LinearLayout>
 

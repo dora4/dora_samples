@@ -19,25 +19,31 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
-            <dora.widget.DoraRoundRectImageView
-                android:id="@+id/rriv_avatar"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"/>
-            <dora.widget.DoraCircleImageView
-                android:id="@+id/civ_avatar"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
-                app:dview_borderColor="@color/light_gray"
-                app:dview_drawBorder="true"
-                app:dview_borderWidth="4dp"/>
-        </LinearLayout>
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+                <dora.widget.DoraRoundRectImageView
+                    android:id="@+id/rriv_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:dview_cornerRadius="10dp"/>
+                <dora.widget.DoraCircleImageView
+                    android:id="@+id/civ_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:dview_borderColor="@color/light_gray"
+                    app:dview_drawBorder="true"
+                    app:dview_borderWidth="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 
 </layout>

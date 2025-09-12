@@ -27,7 +27,7 @@ class AvatarActivity : BaseActivity<ActivityAvatarBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityAvatarBinding) {
-        binding.civAvatar.setImageResource(R.drawable.qixi1)
-        binding.rrivAvatar.setImageResource(R.drawable.qixi2)
+        binding.civAvatar.setImageResource(R.drawable.by_hiro_mashima_offline)
+        binding.rrivAvatar.setImageResource(R.drawable.by_hiro_mashima_online)
     }
 }
