@@ -57,7 +57,6 @@ class ListHelperActivity : BaseActivity<ActivityListHelperBinding>() {
                 (holder.itemView as TextView).text = item.title
             }
         }
-
         // DoraListHelper 一站式构建
         controller = DoraListHelper.attach(binding.recyclerView, adapter) {
             divider(thickness = 2, color = Color.LTGRAY)
@@ -70,7 +69,8 @@ class ListHelperActivity : BaseActivity<ActivityListHelperBinding>() {
             // 示例3：流式换行布局
              flow(itemSpacing = 12, lineSpacing = 16)
         }
-
+        // 不让滑动
+        binding.recyclerView.setOnTouchListener { _, _ -> true }
         // 提交数据
         controller.submitList(
             listOf(
