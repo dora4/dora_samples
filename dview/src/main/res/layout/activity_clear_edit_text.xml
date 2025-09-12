@@ -19,16 +19,20 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:background="@color/colorPanelBg">
 
             <dora.widget.DoraClearEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/white"
                 android:hint="输入用户名"
                 android:inputType="text"/>
 
@@ -36,6 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/white"
                 android:hint="输入密码"
                 android:inputType="textPassword"/>
         </LinearLayout>
