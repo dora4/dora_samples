@@ -13,8 +13,8 @@ android {
     defaultConfig {
         minSdk = 23
         targetSdk = 34
-        versionCode = 53
-        versionName = "1.5.21"
+        versionCode = 54
+        versionName = "1.5.22"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
@@ -98,7 +98,7 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
 
-    implementation("com.github.dora4:dora-firebase-support:1.13")
+    implementation("com.github.dora4:dora-firebase-support:1.14")
 //    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
 //    implementation("com.google.firebase:firebase-crashlytics-ktx")
 //    implementation("com.google.firebase:firebase-analytics-ktx")

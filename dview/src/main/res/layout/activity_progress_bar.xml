@@ -19,15 +19,42 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <dora.widget.DoraProgressBar
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerInParent="true"
-                app:dview_pb_progressColor="@color/gold_yellow"/>
-        </RelativeLayout>
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="30dp"
+                android:visibility="invisible"
+                app:dview_pb_progressWidth="1dp"
+                app:dview_pb_progressColor="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_show_loading_view"
+                    android:layout_width="wrap_content"
+                    style="@style/ThemeButton.SkyBlue"
+                    android:text="显示加载控件"/>
+                <Button
+                    android:id="@+id/btn_hide_loading_view"
+                    android:layout_width="wrap_content"
+                    style="@style/ThemeButton.SkyBlue"
+                    android:text="隐藏加载控件"/>
+                <Button
+                    android:id="@+id/btn_show_loading_dialog"
+                    android:layout_width="wrap_content"
+                    style="@style/ThemeButton.SkyBlue"
+                    android:text="显示加载对话框"/>
+            </LinearLayout>
+        </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
