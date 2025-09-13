@@ -22,32 +22,61 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="10dp">
+            android:orientation="horizontal">
 
             <dora.widget.DoraIconLabelView
                 android:id="@+id/ilv1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingVertical="10dp"
                 app:dview_ilv_text="邮箱"
-                app:dview_ilv_icon="@drawable/ic_email"/>
+                app:dview_ilv_textSize="14sp"
+                app:dview_ilv_textColor="@color/colorTextNormal"
+                app:dview_ilv_icon="@drawable/ic_email"
+                app:dview_ilv_iconSize="20dp"
+                app:dview_ilv_iconBackgroundColor="@color/light_gray"
+                app:dview_ilv_iconBackgroundPadding="10dp"
+                app:dview_ilv_iconBackgroundShape="rounded_rect"
+                app:dview_ilv_iconBackgroundBorder="true"
+                app:dview_ilv_iconBackgroundBorderWidth="1px"
+                app:dview_ilv_iconBackgroundBorderColor="@color/dark_gray"/>
 
             <dora.widget.DoraIconLabelView
                 android:id="@+id/ilv2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingVertical="10dp"
                 app:dview_ilv_text="导航"
-                app:dview_ilv_icon="@drawable/ic_compass"/>
+                app:dview_ilv_textSize="14sp"
+                app:dview_ilv_textColor="@color/colorTextNormal"
+                app:dview_ilv_icon="@drawable/ic_compass"
+                app:dview_ilv_iconSize="20dp"
+                app:dview_ilv_iconBackgroundColor="@color/light_gray"
+                app:dview_ilv_iconBackgroundPadding="10dp"
+                app:dview_ilv_iconBackgroundShape="rounded_rect"
+                app:dview_ilv_iconBackgroundBorder="true"
+                app:dview_ilv_iconBackgroundBorderWidth="1px"
+                app:dview_ilv_iconBackgroundBorderColor="@color/dark_gray"/>
 
             <dora.widget.DoraIconLabelView
                 android:id="@+id/ilv3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingVertical="10dp"
                 app:dview_ilv_text="搜索"
-                app:dview_ilv_icon="@drawable/ic_search"/>
+                app:dview_ilv_textSize="14sp"
+                app:dview_ilv_textColor="@color/colorTextNormal"
+                app:dview_ilv_icon="@drawable/ic_search"
+                app:dview_ilv_iconSize="20dp"
+                app:dview_ilv_iconBackgroundColor="@color/light_gray"
+                app:dview_ilv_iconBackgroundPadding="10dp"
+                app:dview_ilv_iconBackgroundShape="rounded_rect"
+                app:dview_ilv_iconBackgroundBorder="true"
+                app:dview_ilv_iconBackgroundBorderWidth="1px"
+                app:dview_ilv_iconBackgroundBorderColor="@color/dark_gray"/>
 
         </LinearLayout>
     </LinearLayout>
