@@ -1,188 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<dora.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<dora.widget.FlowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:padding="5dp">
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签1"
+        android:text="卧室全朝南"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签2"
+        android:text="南北通透"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签3"
+        android:text="厨卫全明"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签4"
+        android:text="双阳台"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签5"
+        android:text="主卧套房"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签6"
+        android:text="靠近地铁站"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签7"
+        android:text="户型方正"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签8"
+        android:text="玄关入户"
         android:textColor="@color/white" />
 
     <TextView
+        android:id="@+id/tv9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
+        android:background="@drawable/shape_theme_button_first_love_cyan"
         android:padding="5dp"
-        android:text="标签9"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签10"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签11"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签12"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签13"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签14"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签15"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签16"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签17"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签18"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签19"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_vibrant_orange"
-        android:padding="5dp"
-        android:text="标签20"
+        android:text="靠近学校"
         android:textColor="@color/white" />
 </dora.widget.FlowLayout>

@@ -15,12 +15,11 @@ import com.example.dview.R
 import com.example.dview.databinding.ActivityDropDownLayoutBinding
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
-import dora.util.ToastUtils
 import dora.widget.DoraTitleBar
 import dora.widget.DropDownLayout
 
 @Route(path = ARouterPath.ACTIVITY_DROP_DOWN_LAYOUT)
-class DropDownLayoutActivity : BaseActivity<ActivityDropDownLayoutBinding>() {
+class DropDownLayoutActivity : BaseActivity<ActivityDropDownLayoutBinding>(), View.OnClickListener {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_drop_down_layout
@@ -35,18 +34,29 @@ class DropDownLayoutActivity : BaseActivity<ActivityDropDownLayoutBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityDropDownLayoutBinding) {
         binding.titleBar
-            .addMenuButton(com.example.common.R.drawable.ic_confirm)
+            .addMenuButton(com.example.common.R.drawable.ic_dropdown)
             .setOnIconClickListener(object : DoraTitleBar.OnIconClickListener {
                 override fun onIconBackClick(icon: AppCompatImageView) {
                 }
 
                 override fun onIconMenuClick(position: Int, icon: AppCompatImageView) {
-                    if (!binding.dropdownLayout.isShadowShown()) {
+                    if (binding.dropdownLayout.isShadowShown()) {
+                        binding.dropdownLayout.hideDropDownView()
+                    } else {
                         binding.dropdownLayout.showDropDownView()
                     }
                 }
             })
         val view = LayoutInflater.from(this).inflate(R.layout.item_tags, null)
+        view.findViewById<TextView>(R.id.tv1).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv2).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv3).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv4).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv5).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv6).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv7).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv8).setOnClickListener(this)
+        view.findViewById<TextView>(R.id.tv9).setOnClickListener(this)
         binding.dropdownLayout.setDropDownView(view)
         binding.dropdownLayout.setOnShadowClickListener(object : DropDownLayout.OnShadowClickListener {
             override fun onClickShadow(shadowLayer: View) {
@@ -54,5 +64,9 @@ class DropDownLayoutActivity : BaseActivity<ActivityDropDownLayoutBinding>() {
                 binding.dropdownLayout.hideDropDownView()
             }
         })
+    }
+
+    override fun onClick(v: View?) {
+        showShortToast("点击了${(v as TextView).text}")
     }
 }

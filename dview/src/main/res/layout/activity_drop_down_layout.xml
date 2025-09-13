@@ -22,7 +22,15 @@
         <dora.widget.DropDownLayout
             android:id="@+id/dropdownLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@color/colorPanelBg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/ThemeTextNormal"
+                android:text="这是页面内容"/>
+        </dora.widget.DropDownLayout>
     </LinearLayout>
 
 </layout>
