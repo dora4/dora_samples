@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.SparseArray
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -26,8 +27,12 @@ import java.util.Locale
 @Route(path = ARouterPath.ACTIVITY_SIDE_BAR)
 class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
 
-
-    private val adapter = LetterAdapter(this)
+    private val adapter by lazy {
+        LetterAdapter(this,
+            20f,
+            ContextCompat.getColor(this,
+            com.example.common.R.color.colorTextNormal))
+    }
     private lateinit var decorationConfig: DecorationConfig
 
     override fun getLayoutId(): Int {
@@ -44,12 +49,12 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
     override fun initData(savedInstanceState: Bundle?, binding: ActivitySideBarBinding) {
         decorationConfig = DecorationConfig.Builder()
             .setLine(1, Color.parseColor("#ebebeb"))
-            .setSelectedTextColor(0x04, 0xd5, 0xd5)
-            .setUnSelectTextColor(0x64, 0x64, 0x64)
-            .setSelectedBgColor(0xff, 0xff, 0xff)
-            .setUnSelectBgColor(0xee, 0xee, 0xee)
+            .setSelectedTextColor(Color.parseColor("#04d5d5"))
+            .setUnSelectTextColor(Color.parseColor("#646464"))
+            .setSelectedBgColor(Color.parseColor("#ffffff"))
+            .setUnSelectBgColor(Color.parseColor("#eeeeee"))
             .setTextXOffset(DensityUtils.dp2px(this, 12f).toFloat())
-            .setTextSize(DensityUtils.dp2px(this, 14f).toFloat())
+            .setTextSize(DensityUtils.sp2px(this, 15f).toFloat())
             .setHeight(DensityUtils.dp2px(this, 30f))
             .build()
         val content: ArrayList<String> = ArrayList()
@@ -72,7 +77,7 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.itemAnimator = DefaultItemAnimator()
         binding.recyclerView.adapter = adapter
-        //更新侧边栏字母
+        // 更新侧边栏字母
         binding.sideBar.setIndicators(array)
         adapter.addData(content)
         binding.recyclerView.addItemDecoration(SpaceItemDecoration(1))
@@ -101,6 +106,84 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
         content.add("where")
         content.add("how")
         content.add("when")
+        content.add("over")
+        content.add("under")
+        content.add("between")
+        content.add("through")
+        content.add("before")
+        content.add("after")
+        content.add("about")
+        content.add("above")
+        content.add("below")
+        content.add("near")
+        content.add("far")
+        content.add("again")
+        content.add("always")
+        content.add("never")
+        content.add("often")
+        content.add("sometimes")
+        content.add("together")
+        content.add("apart")
+        content.add("inside")
+        content.add("outside")
+        content.add("around")
+        content.add("behind")
+        content.add("beside")
+        content.add("across")
+        content.add("against")
+        content.add("during")
+        content.add("without")
+        content.add("within")
+        content.add("beyond")
+        content.add("toward")
+        content.add("upon")
+        content.add("along")
+        content.add("off")
+        content.add("onto")
+        content.add("up")
+        content.add("down")
+        content.add("left")
+        content.add("right")
+        content.add("forward")
+        content.add("back")
+        content.add("fast")
+        content.add("slow")
+        content.add("high")
+        content.add("low")
+        content.add("nearby")
+        content.add("distant")
+        content.add("early")
+        content.add("late")
+        content.add("young")
+        content.add("old")
+        content.add("new")
+        content.add("ancient")
+        content.add("big")
+        content.add("small")
+        content.add("short")
+        content.add("long")
+        content.add("wide")
+        content.add("narrow")
+        content.add("strong")
+        content.add("weak")
+        content.add("hot")
+        content.add("cold")
+        content.add("warm")
+        content.add("cool")
+        content.add("happy")
+        content.add("sad")
+        content.add("angry")
+        content.add("calm")
+        content.add("bright")
+        content.add("dark")
+        content.add("light")
+        content.add("heavy")
+        content.add("easy")
+        content.add("hard")
+        content.add("rich")
+        content.add("poor")
+        content.add("true")
+        content.add("false")
 
         // 更新侧边栏字母
         mBinding.sideBar.setIndicators(buildIndicatorSideLetter(content))
@@ -112,8 +195,8 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
         mBinding.sideBar.attachToRecyclerView(mBinding.recyclerView, decorationConfig, buildIndicatorSideLetter(content))
     }
 
-    private fun buildIndicatorSideLetter(indicators: List<String>) : SparseArray<String> {
-        Collections.sort(indicators)
+    private fun buildIndicatorSideLetter(indicators: MutableList<String>) : SparseArray<String> {
+        indicators.sort()
         val array = SparseArray<String>()
         var lastUpperCaseLetter = ""
         for ((index, indicator) in indicators.withIndex()) {

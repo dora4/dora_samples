@@ -38,7 +38,7 @@
                 app:dview_sb_indicatorSelectedBgColor="@android:color/white"
                 app:dview_sb_indicatorSelectedBgRadius="8dp"
                 app:dview_sb_indicatorSelectedTextColor="#04d5d5"
-                app:dview_sb_indicatorTextSize="10sp"
+                app:dview_sb_indicatorTextSize="12sp"
                 app:dview_sb_indicatorUnselectedTextColor="#646464"
                 app:dview_sb_indicatorBubbleBgColor="#20000000"
                 app:dview_sb_indicatorBubbleBgRadius="20dp"

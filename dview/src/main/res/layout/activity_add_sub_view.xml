@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,6 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/vibrant_orange"
         android:orientation="vertical">
 
         <dora.widget.DoraTitleBar
@@ -19,12 +21,34 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
-        <dora.widget.AddSubView
-            android:id="@+id/addSubView"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
-            app:dview_asv_contentTextColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+            <dora.widget.AddSubView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                app:dview_asv_editable="false"/>
+            <dora.widget.AddSubView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                app:dview_asv_contentTextColor="@color/sky_blue"/>
+            <dora.widget.AddSubView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                app:dview_asv_contentWidth="100dp"
+                app:dview_asv_min="1"
+                app:dview_asv_max="99999"
+                app:dview_asv_step="2"
+                app:dview_asv_leftBackground="@color/light_gray"
+                app:dview_asv_rightBackground="@color/light_gray"
+                app:dview_asv_contentBackground="@color/light_gray"
+                app:dview_asv_contentTextColor="@color/white"/>
+        </LinearLayout>
     </LinearLayout>
-
 </layout>
