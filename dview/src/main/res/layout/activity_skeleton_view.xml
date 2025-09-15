@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPanelBg"
         android:orientation="vertical">
 
         <dora.widget.DoraTitleBar
@@ -20,36 +21,107 @@
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
 
+        <ViewStub
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/skeletonLayout"
+            android:layout="@layout/layout_skeleton_content" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 圆形骨架 -->
+                <dora.widget.DoraSkeletonView
+                    android:id="@+id/skeletonCircle"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:dview_sv_animDuration="2000"
+                    app:dview_sv_primaryColor="@color/light_gray"
+                    app:dview_sv_secondaryColor="@color/white"
+                    app:dview_sv_shapeType="circle"
+                    app:dview_sv_shimmer="true" />
+
+                <dora.widget.DoraSkeletonView
+                    android:id="@+id/skeletonCircle2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    app:dview_sv_animDuration="2000"
+                    app:dview_sv_primaryColor="@color/light_gray"
+                    app:dview_sv_secondaryColor="@color/white"
+                    app:dview_sv_shapeType="circle"
+                    app:dview_sv_shimmer="true" />
+
+                <dora.widget.DoraSkeletonView
+                    android:id="@+id/skeletonCircle3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    app:dview_sv_animDuration="2000"
+                    app:dview_sv_primaryColor="@color/light_gray"
+                    app:dview_sv_secondaryColor="@color/white"
+                    app:dview_sv_shapeType="circle"
+                    app:dview_sv_shimmer="true" />
+
+                <dora.widget.DoraSkeletonView
+                    android:id="@+id/skeletonCircle4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    app:dview_sv_animDuration="2000"
+                    app:dview_sv_primaryColor="@color/light_gray"
+                    app:dview_sv_secondaryColor="@color/white"
+                    app:dview_sv_shapeType="circle"
+                    app:dview_sv_shimmer="true" />
+            </LinearLayout>
+
             <!-- 矩形骨架 -->
             <dora.widget.DoraSkeletonView
                 android:id="@+id/skeletonRect"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_marginTop="10dp"
                 app:dview_sv_animDuration="1500"
                 app:dview_sv_cornerRadius="16dp"
-                app:dview_sv_primaryColor="@android:color/darker_gray"
-                app:dview_sv_secondaryColor="@android:color/white"
+                app:dview_sv_primaryColor="@color/light_gray"
+                app:dview_sv_secondaryColor="@color/white"
                 app:dview_sv_shapeType="rectangle"
                 app:dview_sv_shimmer="true" />
 
-            <!-- 圆形骨架 -->
             <dora.widget.DoraSkeletonView
-                android:id="@+id/skeletonCircle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="24dp"
-                app:dview_sv_animDuration="2000"
-                app:dview_sv_primaryColor="@android:color/holo_blue_light"
-                app:dview_sv_secondaryColor="@android:color/holo_green_light"
-                app:dview_sv_shapeType="circle"
+                android:id="@+id/skeletonRect2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:dview_sv_animDuration="1500"
+                app:dview_sv_cornerRadius="16dp"
+                app:dview_sv_primaryColor="@color/light_gray"
+                app:dview_sv_secondaryColor="@color/white"
+                app:dview_sv_shapeType="rectangle"
+                app:dview_sv_shimmer="true" />
+
+            <dora.widget.DoraSkeletonView
+                android:id="@+id/skeletonRect3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:dview_sv_animDuration="1500"
+                app:dview_sv_cornerRadius="16dp"
+                app:dview_sv_primaryColor="@color/light_gray"
+                app:dview_sv_secondaryColor="@color/white"
+                app:dview_sv_shapeType="rectangle"
                 app:dview_sv_shimmer="true" />
         </LinearLayout>
+
     </LinearLayout>
 
 </layout>

@@ -30,7 +30,6 @@ class ProgressButtonActivity : BaseActivity<ActivityProgressButtonBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityProgressButtonBinding) {
-
         // 点击按钮开始模拟进度
         binding.progressButton.setOnClickListener {
             if (binding.progressButton.isNew()) {

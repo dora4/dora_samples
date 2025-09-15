@@ -30,7 +30,7 @@
                 app:dview_sv_images="@array/splash_images"
                 app:dview_sv_switchInterval="2000"
                 app:dview_sv_countdown="5000"
-                app:dview_sv_skipTextSize="18sp"
+                app:dview_sv_skipTextSize="15sp"
                 app:dview_sv_skipTextTemplate="跳过 %ds" />
 
         </FrameLayout>

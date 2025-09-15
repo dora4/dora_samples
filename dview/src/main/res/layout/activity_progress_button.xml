@@ -25,15 +25,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_horizontal"
-            android:paddingVertical="10dp">
+            android:padding="20dp">
 
             <dora.widget.ProgressButton
                 android:id="@+id/progressButton"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:text="开始下载"
+                android:textColor="@color/colorTextNormal"
                 app:dview_pb_autoReset="true"
-                app:dview_pb_backgroundColor="@android:color/darker_gray"
+                app:dview_pb_backgroundColor="@color/white"
                 app:dview_pb_borderColor="@android:color/holo_blue_dark"
                 app:dview_pb_borderWidth="2dp"
                 app:dview_pb_cornerRadius="25dp"
