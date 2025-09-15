@@ -14,25 +14,25 @@
 
         <dora.widget.DoraCircleImageView
             android:id="@+id/civ1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"/>
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
 
         <dora.widget.DoraCircleImageView
             android:id="@+id/civ2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="10dp"/>
 
         <dora.widget.DoraCircleImageView
             android:id="@+id/civ3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="10dp"/>
 
         <dora.widget.DoraCircleImageView
             android:id="@+id/civ4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="10dp"/>
     </LinearLayout>
 
