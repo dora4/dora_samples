@@ -91,15 +91,15 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.LEAF_GREEN, "ORM基础 - 查询数据", ARouterPath.ACTIVITY_ORM_QUERY_DATA),
             Menu(Colors.LEAF_GREEN, "ORM基础 - 事务操作", ARouterPath.ACTIVITY_ORM_TRANSACTION),
             Menu(Colors.LEAF_GREEN, "ORM基础 - 转换器", ARouterPath.ACTIVITY_ORM_CONVERTER),
+//            Menu(Colors.LEAF_GREEN, "数据缓存 - 非列表数据缓存", ARouterPath.ACTIVITY_CACHE_NON_LIST_DATA),
+//            Menu(Colors.LEAF_GREEN, "数据缓存 - 列表数据缓存", ARouterPath.ACTIVITY_CACHE_LIST_DATA),
+            Menu(Colors.LEAF_GREEN, "数据缓存 - 分页缓存", ARouterPath.ACTIVITY_CACHE_BATCH),
+//            Menu(Colors.LEAF_GREEN, "数据缓存 - 缓存分页", ARouterPath.ACTIVITY_CACHE_PAGER),
             Menu(Colors.LEAF_GREEN, "基本数据类型测试", ARouterPath.ACTIVITY_BASIC_DATA_TYPE_TEST),
             Menu(Colors.LEAF_GREEN, "ORM读取性能测试", ARouterPath.ACTIVITY_ORM_READ_TEST),
             Menu(Colors.LEAF_GREEN, "ORM写入性能测试", ARouterPath.ACTIVITY_ORM_WRITE_TEST),
             Menu(Colors.LEAF_GREEN, "复杂数据类型测试", ARouterPath.ACTIVITY_COMPLEX_DATA_TYPE_TEST),
-//            Menu(Colors.LEAF_GREEN, "非列表数据缓存", ARouterPath.ACTIVITY_CACHE_NON_LIST_DATA),
-//            Menu(Colors.LEAF_GREEN, "列表数据缓存", ARouterPath.ACTIVITY_CACHE_LIST_DATA),
-//            Menu(Colors.LEAF_GREEN, "分页缓存", ARouterPath.ACTIVITY_CACHE_BATCH),
-//            Menu(Colors.LEAF_GREEN, "缓存数据分页", ARouterPath.ACTIVITY_CACHE_PAGER),
-//            Menu(Color.LEAF_GREEN, "数据缓存（断网情况加载缓存数据）", ARouterPath.ACTIVITY_DATA_CACHE)
+            Menu(Colors.LEAF_GREEN, "RESTful API响应测试", ARouterPath.ACTIVITY_NET_TEST),
         )
     }
 }

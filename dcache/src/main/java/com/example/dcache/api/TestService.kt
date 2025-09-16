@@ -23,8 +23,8 @@ interface TestService : ApiService {
 
     @POST("openApi/pageTest")
     @FormUrlEncoded
-    fun sendPostPageTest(@Field("pageSize") pageSize: Int, @Field("pageNo") pageNo: Int): Call<ApiResult<PageDTO<TestCaseModel4>>>
+    fun sendPostPageTest(@Field("pageSize") pageSize: Int, @Field("pageNo") pageNo: Int): Call<TestPageResult<PageDTO<TestCaseModel4>>>
 
     @GET("openApi/pageTest")
-    fun sendGetPageTest(@Query("pageSize") pageSize: Int, @Query("pageNo") pageNo: Int): Call<ApiResult<PageDTO<TestCaseModel>>>
+    fun sendGetPageTest(@Query("pageSize") pageSize: Int, @Query("pageNo") pageNo: Int): Call<TestPageResult<PageDTO<TestCaseModel>>>
 }

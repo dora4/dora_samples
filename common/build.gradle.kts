@@ -67,6 +67,8 @@ dependencies {
     api("com.github.dora4:dview-colors:1.1")
     api("com.github.dora4:dview-titlebar:1.37")
     api("com.github.dora4:dview-menu-panel:1.38")
+    api("com.github.dora4:dview-empty-layout:1.12")
+    api("com.github.dora4:dview-swipe-layout:1.0")
     api("com.github.dora4:dview-alert-dialog:1.25")
 
     // XXPermissions

@@ -39,12 +39,12 @@ interface ARouterPath {
         const val ACTIVITY_CACHE_LIST_DATA: String = "/$GROUP_CACHE/CacheListDataActivity"
         const val ACTIVITY_CACHE_BATCH: String = "/$GROUP_CACHE/CacheBatchActivity"
         const val ACTIVITY_CACHE_PAGER: String = "/$GROUP_CACHE/CachePagerActivity"
-//        const val ACTIVITY_DATA_CACHE: String = "/$GROUP_CACHE/DataCacheActivity"
         const val ACTIVITY_ORM_MODEL_EDITOR: String = "/$GROUP_CACHE/OrmModelEditorActivity"
         const val ACTIVITY_BASIC_DATA_TYPE_TEST: String = "/$GROUP_CACHE/BasicDataTypeTestActivity"
         const val ACTIVITY_COMPLEX_DATA_TYPE_TEST: String = "/$GROUP_CACHE/ComplexDataTypeTestActivity"
         const val ACTIVITY_ORM_READ_TEST: String = "/$GROUP_CACHE/OrmReadTestActivity"
         const val ACTIVITY_ORM_WRITE_TEST: String = "/$GROUP_CACHE/OrmWriteTestActivity"
+        const val ACTIVITY_NET_TEST: String = "/$GROUP_CACHE/NetTestActivity"
 
 
         const val ACTIVITY_PROGRESS_VIEW: String = "/$GROUP_VIEW/ProgressViewActivity"

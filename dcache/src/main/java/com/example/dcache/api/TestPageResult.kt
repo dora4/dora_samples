@@ -2,7 +2,7 @@ package com.example.dcache.api
 
 import dora.cache.data.adapter.PageResult
 
-class ApiResult<T> : PageResult<T> {
+class TestPageResult<T> : PageResult<T> {
 
     var code: String? = null
     var msg: String? = null

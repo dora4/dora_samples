@@ -17,12 +17,68 @@
             android:id="@+id/titleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:dview_title="@string/common_title"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/android_cache_course"/>
+            android:background="@drawable/android_cache_course" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_theme_button_leaf_green"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="开始缓存"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_theme_button_leaf_green"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="清空缓存"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <dora.widget.DoraEmptyLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <dora.widget.pull.SwipeLayout
+                android:id="@+id/swipeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/layout_swipe_layout_header" />
+
+                <dora.widget.pull.PullableRecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPanelBg"
+                    app:dview_canPullDown="false"
+                    app:dview_canPullUp="true" />
+
+                <include layout="@layout/layout_swipe_layout_footer" />
+            </dora.widget.pull.SwipeLayout>
+        </dora.widget.DoraEmptyLayout>
     </LinearLayout>
 
 </layout>

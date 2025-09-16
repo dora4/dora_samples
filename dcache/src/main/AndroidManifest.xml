@@ -48,6 +48,9 @@
             android:name=".ui.OrmModelEditorActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.NetTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.DataCacheActivity"
             android:screenOrientation="portrait" />
     </application>
