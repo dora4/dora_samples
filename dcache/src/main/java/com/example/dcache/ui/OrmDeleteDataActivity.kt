@@ -18,7 +18,6 @@ import dora.util.ViewUtils
 import dora.widget.DoraAlertDialog
 import kotlin.random.Random
 
-
 @Route(path = ARouterPath.ACTIVITY_ORM_DELETE_DATA)
 class OrmDeleteDataActivity : BaseActivity<ActivityOrmDeleteDataBinding>() {
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_menu_panel_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/tv_menu_panel_toggle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="15sp" />
+    <dora.widget.DoraToggleButton
+        android:id="@+id/tb_menu_panel_toggle_arrow"
+        android:layout_width="41dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:dview_checked="true"
+        app:dview_uncheckColor="@color/color_menu_panel_gray"
+        app:dview_backgroundColor="@color/color_menu_panel_gray"
+        app:dview_checkedColor="@color/colorPrimary"
+        app:dview_borderWidth="2dp"
+        app:dview_showIndicator="false" />
+</RelativeLayout>

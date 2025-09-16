@@ -21,7 +21,6 @@ import dora.widget.sidebar.decoration.DecorationConfig
 import dora.widget.sidebar.decoration.SideBarItemDecoration
 import dora.widget.sidebar.decoration.SpaceItemDecoration
 import dora.widget.sidebar.util.DensityUtils
-import java.util.Collections
 import java.util.Locale
 
 @Route(path = ARouterPath.ACTIVITY_SIDE_BAR)
@@ -54,7 +53,7 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
             .setSelectedBgColor(Color.parseColor("#ffffff"))
             .setUnSelectBgColor(Color.parseColor("#eeeeee"))
             .setTextXOffset(DensityUtils.dp2px(this, 12f).toFloat())
-            .setTextSize(DensityUtils.sp2px(this, 15f).toFloat())
+            .setTextSize(DensityUtils.sp2px(this, 18f).toFloat())
             .setHeight(DensityUtils.dp2px(this, 30f))
             .build()
         val content: ArrayList<String> = ArrayList()

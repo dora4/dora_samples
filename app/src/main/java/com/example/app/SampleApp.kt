@@ -5,8 +5,12 @@ import com.example.app.di.component.AppComponent
 import com.example.app.di.component.DaggerAppComponent
 import com.example.common.di.module.AppModule
 import com.example.common.model.PopMusic
-import com.example.common.service.MusicService
+import com.example.dcache.api.TestService
 import com.example.dcache.model.OrmTestModel
+import com.example.dcache.model.TestCaseModel
+import com.example.dcache.model.TestCaseModel2
+import com.example.dcache.model.TestCaseModel3
+import com.example.dcache.model.TestCaseModel4
 import com.walletconnect.web3.modal.client.Modal
 import com.walletconnect.web3.modal.presets.Web3ModalChainsPresets
 import dora.BaseApplication
@@ -18,8 +22,8 @@ import dora.pgyer.PgyService
 import dora.pay.DoraFund
 
 /**
- * 继承dora.BaseApplication开始Dora之旅吧！如果你不使用这个BaseApplication，直接开始继承
- * dora.BaseActivity也是可以的，这样做的话，会丢失Dora对于app开发的一些优化，如Dora SDK的生
+ * 继承[dora.BaseApplication]开始Dora之旅吧！如果你不使用这个[dora.BaseApplication]，直接开始继承
+ * [dora.BaseActivity]也是可以的，这样做的话，会丢失Dora对于app开发的一些优化，如Dora SDK的生
  * 命周期注入将无法使用。
  */
 class SampleApp : BaseApplication() {
@@ -69,7 +73,7 @@ class SampleApp : BaseApplication() {
                 build()
             }
             // 映射API服务地址，可以映射多个
-            mappingBaseUrl(MusicService::class.java, "http://doramusic.site:8080/")
+            mappingBaseUrl(TestService::class.java, "http://dorachat.com:9091/")
             mappingBaseUrl(PgyService::class.java, "http://www.pgyer.com/apiv2/")
         }
     }
@@ -77,8 +81,12 @@ class SampleApp : BaseApplication() {
     private fun initOrm() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
-            .version(2)
-            .tables(PopMusic::class.java, OrmTestModel::class.java)
+            .version(3)
+            .tables(PopMusic::class.java, OrmTestModel::class.java,
+                TestCaseModel::class.java,
+                TestCaseModel2::class.java,
+                TestCaseModel3::class.java,
+                TestCaseModel4::class.java)
             .build()
         Orm.init(this, config)
     }

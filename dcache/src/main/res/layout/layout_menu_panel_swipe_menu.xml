@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<dora.widget.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSwipeRemoveLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:dview_ios="false"
+    app:dview_leftSwipe="true"
+    app:dview_swipeEnable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_panel_swipe_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:background="@color/white"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/tv_menu_panel_swipe_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_menu_panel_swipe_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/pigeon_blood_red"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</dora.widget.SwipeMenuLayout>

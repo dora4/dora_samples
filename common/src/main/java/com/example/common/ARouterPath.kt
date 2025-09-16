@@ -27,6 +27,8 @@ interface ARouterPath {
         const val ACTIVITY_RSA: String = "/$GROUP_DORA/RsaActivity"
         const val ACTIVITY_ROUTE: String = "/$GROUP_DORA/RouteActivity"
         const val ACTIVITY_WEB3_PAY: String = "/$GROUP_DORA/Web3PayActivity"
+
+
         const val ACTIVITY_ORM_INSERT_DATA: String = "/$GROUP_CACHE/OrmInsertDataActivity"
         const val ACTIVITY_ORM_UPDATE_DATA: String = "/$GROUP_CACHE/OrmUpdateDataActivity"
         const val ACTIVITY_ORM_QUERY_DATA: String = "/$GROUP_CACHE/OrmQueryDataActivity"
@@ -38,6 +40,13 @@ interface ARouterPath {
         const val ACTIVITY_CACHE_BATCH: String = "/$GROUP_CACHE/CacheBatchActivity"
         const val ACTIVITY_CACHE_PAGER: String = "/$GROUP_CACHE/CachePagerActivity"
 //        const val ACTIVITY_DATA_CACHE: String = "/$GROUP_CACHE/DataCacheActivity"
+        const val ACTIVITY_ORM_MODEL_EDITOR: String = "/$GROUP_CACHE/OrmModelEditorActivity"
+        const val ACTIVITY_BASIC_DATA_TYPE_TEST: String = "/$GROUP_CACHE/BasicDataTypeTestActivity"
+        const val ACTIVITY_COMPLEX_DATA_TYPE_TEST: String = "/$GROUP_CACHE/ComplexDataTypeTestActivity"
+        const val ACTIVITY_ORM_READ_TEST: String = "/$GROUP_CACHE/OrmReadTestActivity"
+        const val ACTIVITY_ORM_WRITE_TEST: String = "/$GROUP_CACHE/OrmWriteTestActivity"
+
+
         const val ACTIVITY_PROGRESS_VIEW: String = "/$GROUP_VIEW/ProgressViewActivity"
         const val ACTIVITY_TITLE_BAR: String = "/$GROUP_VIEW/TitleBarActivity"
         const val ACTIVITY_TOGGLE_BUTTON: String = "/$GROUP_VIEW/ToggleButtonActivity"

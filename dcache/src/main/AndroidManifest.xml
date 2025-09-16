@@ -33,6 +33,21 @@
             android:name=".ui.OrmInsertDataActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.BasicDataTypeTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ComplexDataTypeTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OrmReadTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OrmWriteTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OrmModelEditorActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.DataCacheActivity"
             android:screenOrientation="portrait" />
     </application>
