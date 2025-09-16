@@ -4,7 +4,6 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.example.app.di.component.AppComponent
 import com.example.app.di.component.DaggerAppComponent
 import com.example.common.di.module.AppModule
-import com.example.common.model.PopMusic
 import com.example.dcache.api.TestService
 import com.example.dcache.model.OrmTestModel
 import com.example.dcache.model.TestCaseModel
@@ -82,7 +81,7 @@ class SampleApp : BaseApplication() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
             .version(3)
-            .tables(PopMusic::class.java, OrmTestModel::class.java,
+            .tables(OrmTestModel::class.java,
                 TestCaseModel::class.java,
                 TestCaseModel2::class.java,
                 TestCaseModel3::class.java,
