@@ -68,5 +68,6 @@ class DropDownLayoutActivity : BaseActivity<ActivityDropDownLayoutBinding>(), Vi
 
     override fun onClick(v: View?) {
         showShortToast("点击了${(v as TextView).text}")
+        mBinding.dropdownLayout.hideDropDownView()
     }
 }

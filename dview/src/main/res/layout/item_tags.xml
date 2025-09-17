@@ -1,99 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<dora.widget.FlowLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:padding="5dp">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
+    <dora.widget.FlowLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="卧室全朝南"
-        android:textColor="@color/white" />
+        android:background="@color/white"
+        android:padding="5dp">
 
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="南北通透"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="卧室全朝南"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="厨卫全明"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="南北通透"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="双阳台"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="厨卫全明"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="主卧套房"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="双阳台"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="靠近地铁站"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="主卧套房"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="户型方正"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="靠近地铁站"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="玄关入户"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="户型方正"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/tv9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/shape_theme_button_first_love_cyan"
-        android:padding="5dp"
-        android:text="靠近学校"
-        android:textColor="@color/white" />
-</dora.widget.FlowLayout>
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="玄关入户"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_theme_button_first_love_cyan"
+            android:padding="5dp"
+            android:text="靠近学校"
+            android:textColor="@color/white" />
+    </dora.widget.FlowLayout>
+</RelativeLayout>

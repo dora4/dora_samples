@@ -31,7 +31,9 @@ class IndicatorViewActivity : BaseActivity<ActivityIndicatorViewBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityIndicatorViewBinding) {
-        val items = listOf(R.drawable.by_molly_brett1, R.drawable.by_molly_brett2,
+        val items = listOf(R.drawable.by_lisi_martin1, R.drawable.by_lisi_martin2,
+            R.drawable.by_lisi_martin3, R.drawable.by_lisi_martin4,
+            R.drawable.by_molly_brett1, R.drawable.by_molly_brett2,
             R.drawable.by_molly_brett3, R.drawable.by_molly_brett4)
         binding.viewPager.adapter = object : RecyclerView.Adapter<ImageVH>() {
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageVH {

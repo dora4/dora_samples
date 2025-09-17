@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="10dp"
-                app:dview_iv_indicatorCount="4"
+                app:dview_iv_indicatorCount="8"
                 app:dview_iv_indicatorWidth="12dp"
                 app:dview_iv_indicatorHeight="12dp"
                 app:dview_iv_indicatorSpacing="8dp"

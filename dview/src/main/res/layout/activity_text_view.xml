@@ -25,33 +25,45 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/by_keisai_eisen" />
             <dora.widget.DoraTextView
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_margin="5dp"
                 style="@style/ThemeTextNormal"
                 android:text="这个文本控件1的文本"/>
             <dora.widget.DoraTextView
                 android:id="@+id/tv2"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_margin="5dp"
                 style="@style/ThemeTextNormal"
                 android:text="这个文本控件2的文本"/>
             <dora.widget.DoraTextView
                 android:id="@+id/tv3"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_margin="5dp"
                 android:text="这个文本控件3的文本"/>
             <dora.widget.DoraTextView
                 android:id="@+id/tv4"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_margin="5dp"
                 style="@style/ThemeTextNormal"
                 android:text="这个文本控件4的文本"/>
             <dora.widget.DoraTextView
                 android:id="@+id/tv5"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_margin="5dp"
                 style="@style/ThemeTextNormal"
                 android:text="这个文本控件5的文本"/>
         </LinearLayout>
