@@ -2,9 +2,8 @@ package com.example.dview.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -32,22 +31,21 @@ class IndicatorViewActivity : BaseActivity<ActivityIndicatorViewBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityIndicatorViewBinding) {
-        val items = listOf("Page 1", "Page 2", "Page 3", "Page 4", "Page 5")
-        binding.viewPager.adapter = object : RecyclerView.Adapter<TextVH>() {
-            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TextVH {
-                val tv = TextView(parent.context).apply {
-                    textSize = 24f
-                    gravity = Gravity.CENTER
+        val items = listOf(R.drawable.by_molly_brett1, R.drawable.by_molly_brett2,
+            R.drawable.by_molly_brett3, R.drawable.by_molly_brett4)
+        binding.viewPager.adapter = object : RecyclerView.Adapter<ImageVH>() {
+            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageVH {
+                val iv = ImageView(parent.context).apply {
                     layoutParams = ViewGroup.LayoutParams(
                         ViewGroup.LayoutParams.MATCH_PARENT,
                         ViewGroup.LayoutParams.MATCH_PARENT
                     )
                 }
-                return TextVH(tv)
+                return ImageVH(iv)
             }
             override fun getItemCount() = items.size
-            override fun onBindViewHolder(holder: TextVH, position: Int) {
-                holder.textView.text = items[position]
+            override fun onBindViewHolder(holder: ImageVH, position: Int) {
+                holder.imageView.setImageResource(items[position])
             }
         }
 
@@ -84,5 +82,5 @@ class IndicatorViewActivity : BaseActivity<ActivityIndicatorViewBinding>() {
         })
     }
 
-    class TextVH(val textView: TextView) : RecyclerView.ViewHolder(textView)
+    class ImageVH(val imageView: ImageView) : RecyclerView.ViewHolder(imageView)
 }

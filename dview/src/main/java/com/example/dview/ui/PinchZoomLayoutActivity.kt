@@ -23,9 +23,8 @@ import dora.widget.DoraPinchZoomLayout
 class PinchZoomLayoutActivity : BaseActivity<ActivityPinchZoomLayoutBinding>() {
 
     val pages: IntArray = intArrayOf(
-        R.drawable.qixi1,
-        R.drawable.qixi2,
-        R.drawable.qixi3)
+        R.drawable.by_ren_hangs_photograph_depicting1,
+        R.drawable.by_ren_hangs_photograph_depicting2)
 
     override fun getLayoutId(): Int {
         return R.layout.activity_pinch_zoom_layout

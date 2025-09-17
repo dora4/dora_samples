@@ -53,7 +53,7 @@ class SideBarActivity : BaseActivity<ActivitySideBarBinding>() {
             .setSelectedBgColor(Color.parseColor("#ffffff"))
             .setUnSelectBgColor(Color.parseColor("#eeeeee"))
             .setTextXOffset(DensityUtils.dp2px(this, 12f).toFloat())
-            .setTextSize(DensityUtils.sp2px(this, 18f).toFloat())
+            .setTextSize(DensityUtils.sp2px(this, 15f).toFloat())
             .setHeight(DensityUtils.dp2px(this, 30f))
             .build()
         val content: ArrayList<String> = ArrayList()
