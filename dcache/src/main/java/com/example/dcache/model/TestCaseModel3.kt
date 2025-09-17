@@ -12,7 +12,7 @@ data class TestCaseModel3(
 
     // @Id注解将自动配置主键，且列名以_id命名
     @Id
-    val id: Long = 0,
+    var id: Long = 0,
 
     @Column("complex_object")
     @Convert(converter = TestCaseModelConverter::class, columnType = String::class)

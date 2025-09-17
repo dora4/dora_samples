@@ -33,11 +33,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="5dp">
+
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:src="@drawable/dorafund_banner"/>
+                        android:background="@drawable/dorafund_banner"/>
 
                     <TextView
                         android:id="@+id/tv_summary"

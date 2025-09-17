@@ -92,6 +92,7 @@ class ComplexDataTypeTestActivity : BaseActivity<ActivityComplexDataTypeTestBind
                     if (DaoFactory.getDao(TestCaseModel3::class.java).delete(model)) {
                         ToastUtils.showShort("删除成功")
                         mBinding.menuPanel.removeItem(item)
+                        finish()
                     } else {
                         ToastUtils.showShort("删除失败")
                     }

@@ -80,7 +80,7 @@ class SampleApp : BaseApplication() {
     private fun initOrm() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
-            .version(3)
+            .version(4)
             .tables(OrmTestModel::class.java,
                 TestCaseModel::class.java,
                 TestCaseModel2::class.java,
