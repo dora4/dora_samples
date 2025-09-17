@@ -13,7 +13,7 @@ import com.example.dcache.R
 import com.example.dcache.adapter.TestCaseModelAdapter
 import com.example.dcache.repository.TestRepository
 import com.example.dcache.databinding.ActivityCacheBatchBinding
-import com.example.dcache.model.TestCaseModel4
+import com.example.dcache.db.model.TestCaseModel4
 import dora.cache.repository.DoraPageDatabaseCacheRepository
 import dora.db.dao.DaoFactory
 import dora.util.IntentUtils

@@ -9,7 +9,7 @@ import com.example.common.ARouterPath
 import com.example.dcache.R
 import com.example.dcache.api.TestService
 import com.example.dcache.databinding.ActivityNetTestBinding
-import com.example.dcache.model.TestCaseModel2
+import com.example.dcache.db.model.TestCaseModel2
 import dora.BaseActivity
 import dora.http.DoraHttp.net
 import dora.http.DoraHttp.result

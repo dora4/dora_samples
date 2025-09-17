@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.example.dcache.R;
-import com.example.dcache.model.OrmTestModel;
+import com.example.dcache.db.model.OrmTestModel;
 
 public class OrmTestModelAdapter extends BaseQuickAdapter<OrmTestModel, OrmTestModelAdapter.OrmTestModelViewHolder> {
 

@@ -10,7 +10,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dcache.R
 import com.example.dcache.databinding.ActivityOrmModelEditorBinding
-import com.example.dcache.model.TestCaseModel
+import com.example.dcache.db.model.TestCaseModel
 import com.example.dcache.widget.ToggleButtonEntity
 import com.example.dcache.widget.ToggleButtonMenuPanelItem
 import dora.BaseActivity

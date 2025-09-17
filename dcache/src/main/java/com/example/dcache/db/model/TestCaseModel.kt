@@ -1,4 +1,4 @@
-package com.example.dcache.model
+package com.example.dcache.db.model
 
 import dora.db.constraint.Default
 import dora.db.constraint.Id

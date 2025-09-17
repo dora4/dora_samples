@@ -3,7 +3,7 @@ package com.example.dcache.adapter
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.dcache.R
-import com.example.dcache.model.TestCaseModel4
+import com.example.dcache.db.model.TestCaseModel4
 
 class TestCaseModelAdapter : BaseQuickAdapter<TestCaseModel4, BaseViewHolder>(R.layout.item_test_case_model) {
 

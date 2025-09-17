@@ -8,7 +8,7 @@ import com.example.common.ARouterPath
 import com.example.common.Colors
 import com.example.dcache.R
 import com.example.dcache.databinding.ActivityBasicDataTypeTestBinding
-import com.example.dcache.model.TestCaseModel
+import com.example.dcache.db.model.TestCaseModel
 import com.example.dcache.widget.SwipeMenuPanelItem
 import dora.BaseActivity
 import dora.db.dao.DaoFactory

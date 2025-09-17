@@ -13,7 +13,7 @@ import dora.BaseActivity
 
 import com.example.dcache.R
 import com.example.dcache.databinding.ActivityOrmInsertDataBinding
-import com.example.dcache.model.OrmTestModel
+import com.example.dcache.db.model.OrmTestModel
 import dora.db.dao.DaoFactory
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils

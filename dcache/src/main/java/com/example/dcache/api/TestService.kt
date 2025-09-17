@@ -1,9 +1,9 @@
 package com.example.dcache.api
 
 import com.example.common.model.ApiResult
-import com.example.dcache.model.TestCaseModel
-import com.example.dcache.model.TestCaseModel2
-import com.example.dcache.model.TestCaseModel4
+import com.example.dcache.db.model.TestCaseModel
+import com.example.dcache.db.model.TestCaseModel2
+import com.example.dcache.db.model.TestCaseModel4
 import dora.http.retrofit.ApiService
 import retrofit2.Call
 import retrofit2.http.Field

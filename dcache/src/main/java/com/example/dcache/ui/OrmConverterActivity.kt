@@ -6,7 +6,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dcache.R
 import com.example.dcache.databinding.ActivityOrmConverterBinding
-import com.example.dcache.model.UserEntity
+import com.example.dcache.db.model.UserEntity
 import dora.BaseActivity
 import dora.db.Orm
 import dora.db.dao.DaoFactory

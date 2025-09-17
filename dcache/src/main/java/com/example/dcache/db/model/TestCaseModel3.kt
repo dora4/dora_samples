@@ -1,6 +1,6 @@
-package com.example.dcache.model
+package com.example.dcache.db.model
 
-import com.example.dcache.db.TestCaseModelConverter
+import com.example.dcache.db.converter.TestCaseModelConverter
 import dora.db.constraint.Id
 import dora.db.migration.OrmMigration
 import dora.db.table.*

@@ -4,7 +4,7 @@ import android.content.Context
 import com.example.dcache.api.PageDTO
 import com.example.dcache.api.TestPageResult
 import com.example.dcache.api.TestService
-import com.example.dcache.model.TestCaseModel4
+import com.example.dcache.db.model.TestCaseModel4
 import dora.cache.DoraPageListCallback
 import dora.cache.data.adapter.PageListResultAdapter
 import dora.cache.data.fetcher.OnLoadListener

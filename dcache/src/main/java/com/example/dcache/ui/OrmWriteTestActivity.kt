@@ -7,7 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dcache.R
 import com.example.dcache.databinding.ActivityOrmWriteTestBinding
-import com.example.dcache.model.TestCaseModel2
+import com.example.dcache.db.model.TestCaseModel2
 import dora.BaseActivity
 import dora.db.builder.WhereBuilder
 import dora.db.dao.DaoFactory

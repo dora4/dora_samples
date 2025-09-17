@@ -5,11 +5,11 @@ import com.example.app.di.component.AppComponent
 import com.example.app.di.component.DaggerAppComponent
 import com.example.common.di.module.AppModule
 import com.example.dcache.api.TestService
-import com.example.dcache.model.OrmTestModel
-import com.example.dcache.model.TestCaseModel
-import com.example.dcache.model.TestCaseModel2
-import com.example.dcache.model.TestCaseModel3
-import com.example.dcache.model.TestCaseModel4
+import com.example.dcache.db.model.OrmTestModel
+import com.example.dcache.db.model.TestCaseModel
+import com.example.dcache.db.model.TestCaseModel2
+import com.example.dcache.db.model.TestCaseModel3
+import com.example.dcache.db.model.TestCaseModel4
 import com.walletconnect.web3.modal.client.Modal
 import com.walletconnect.web3.modal.presets.Web3ModalChainsPresets
 import dora.BaseApplication
@@ -81,7 +81,8 @@ class SampleApp : BaseApplication() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
             .version(4)
-            .tables(OrmTestModel::class.java,
+            .tables(
+                OrmTestModel::class.java,
                 TestCaseModel::class.java,
                 TestCaseModel2::class.java,
                 TestCaseModel3::class.java,

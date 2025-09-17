@@ -1,4 +1,4 @@
-package com.example.dcache.model;
+package com.example.dcache.db.model;
 
 import androidx.annotation.NonNull;
 

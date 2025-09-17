@@ -9,11 +9,12 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.dcache.R
-import com.example.dcache.model.TestCaseModel3
+import com.example.dcache.db.model.TestCaseModel3
 import dora.widget.panel.menu.AbsMenuPanelItem
 
 class SwipeMenuPanelItem2(override var title: String?,
-                          menu: TestCaseModel3) : AbsMenuPanelItem<TestCaseModel3>(menu) {
+                          menu: TestCaseModel3
+) : AbsMenuPanelItem<TestCaseModel3>(menu) {
 
     private var itemListener: ItemListener? = null
 
