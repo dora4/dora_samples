@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         style="@style/ThemeTextNormal"
-        android:text="苹果经典配色包括黑色、白色、粉色、紫色、银色、深空灰和金色等，这些低饱和度的金属色调搭配极简设计，传达出简洁与高级感，成为科技产品中极具代表性的视觉符号。这里的配色不代表苹果真实配色，仅供参考"/>
+        android:text="苹果经典配色包括黑色、白色、粉色、紫色、银色、深空灰和金色等，这些低饱和度的金属色调搭配极简设计，传达出简洁与高级感，成为科技产品中极具代表性的视觉符号。这里的配色不代表苹果真实配色，仅供参考。"/>
 
     <TextView
         android:layout_width="match_parent"

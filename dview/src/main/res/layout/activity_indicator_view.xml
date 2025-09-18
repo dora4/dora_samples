@@ -41,9 +41,9 @@
                 app:dview_iv_indicatorHeight="12dp"
                 app:dview_iv_indicatorSpacing="8dp"
                 app:dview_iv_indicatorShape="circle"
-                app:dview_iv_indicatorSelectedColor="@color/obsidian_black"
-                app:dview_iv_indicatorUnselectedColor="@android:color/darker_gray"
-                app:dview_iv_indicatorScaleFactor="1.5"
+                app:dview_iv_indicatorSelectedColor="#DADADA"
+                app:dview_iv_indicatorUnselectedColor="#E1E1E1"
+                app:dview_iv_indicatorScaleFactor="1.2"
                 app:dview_iv_indicatorAlphaFactor="0.5" />
         </LinearLayout>
     </LinearLayout>
