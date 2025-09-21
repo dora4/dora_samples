@@ -41,7 +41,7 @@ class GridViewActivity : BaseActivity<ActivityGridViewBinding>() {
         binding.gridView.setOnCellSelectListener(object : DoraGridView.OnCellSelectListener {
 
             override fun onCellSelected(rowIndex: Int, columnIndex: Int, cell: Cell?) {
-                showShortToast("选择格子($rowIndex,$columnIndex)")
+                showShortToast("选择格子($rowIndex,$columnIndex,${cell?.text ?: "无"})")
             }
         })
     }
