@@ -52,14 +52,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
     // Dora全家桶
-    api("com.github.dora4:dora:1.3.29")
+    api("com.github.dora4:dora:1.3.30")
     api("com.github.dora4:dora-brvah-support:1.5")
     api("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")
     api("com.github.dora4:dora-pgyer-support:1.9")
 
     api("com.github.dora4:dora-dagger-support:1.12")
-    api("com.github.dora4:dora-walletconnect-support:2.0.9") {
+    api("com.github.dora4:dora-walletconnect-support:2.0.10") {
         exclude(group = "com.madgag.spongycastle", module = "core")
     }
     api("com.github.dora4:dcache-android:3.5.6")

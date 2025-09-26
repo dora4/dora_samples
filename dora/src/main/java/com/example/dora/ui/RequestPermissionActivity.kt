@@ -1,6 +1,11 @@
 package com.example.dora.ui
 
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.os.Environment
+import android.provider.Settings
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 
@@ -8,6 +13,7 @@ import dora.BaseActivity
 
 import com.example.dora.R
 import com.example.dora.databinding.ActivityRequestPermissionBinding
+import dora.util.IntentUtils
 import dora.util.PermissionHelper
 
 @Route(path = ARouterPath.ACTIVITY_REQUEST_PERMISSION)
@@ -37,13 +43,21 @@ class RequestPermissionActivity : BaseActivity<ActivityRequestPermissionBinding>
             }
         }
         binding.btnRequestWriteFile.setOnClickListener {
-            helper.permissions(
-                PermissionHelper.Permission.WRITE_EXTERNAL_STORAGE
-            ).request {
-                if (it) {
-                    showShortToast("已授予存储文件的权限")
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                if (!Environment.isExternalStorageManager()) {
+                    startActivity(IntentUtils.getRequestStoragePermissionIntent(packageName))
                 } else {
-                    showShortToast("未授予存储文件的权限")
+                    showShortToast("已授予存储文件的权限")
+                }
+            } else {
+                helper.permissions(
+                    PermissionHelper.Permission.WRITE_EXTERNAL_STORAGE
+                ).request {
+                    if (it) {
+                        showShortToast("已授予存储文件的权限")
+                    } else {
+                        showShortToast("未授予存储文件的权限")
+                    }
                 }
             }
         }
