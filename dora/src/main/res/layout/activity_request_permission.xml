@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dora.ui.RequestPermissionActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dora.widget.DoraTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:dview_title="@string/common_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/btn_request_call_phone"
+                style="@style/ThemeButton.ObsidianBlack"
+                android:layout_margin="5dp"
+                android:text="申请拨打电话权限"/>
+            <Button
+                android:id="@+id/btn_request_write_file"
+                style="@style/ThemeButton.ObsidianBlack"
+                android:layout_margin="5dp"
+                android:text="申请存储文件权限"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

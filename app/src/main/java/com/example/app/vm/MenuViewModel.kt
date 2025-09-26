@@ -27,6 +27,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.GIRL_PINK, "游乐园简介", ARouterPath.ACTIVITY_INTRODUCE),
             Menu(Colors.GIRL_PINK, "Star收藏一下不迷路", ARouterPath.ACTIVITY_WEB_VIEW),
             Menu(Colors.OBSIDIAN_BLACK, "将崩溃日志写入文件", ARouterPath.ACTIVITY_CRASH),
+            Menu(Colors.OBSIDIAN_BLACK, "运行时权限申请", ARouterPath.ACTIVITY_REQUEST_PERMISSION),
             Menu(Colors.OBSIDIAN_BLACK, "忽略调用线程的吐司", ARouterPath.ACTIVITY_TIPS),
             Menu(Colors.OBSIDIAN_BLACK, "ARouter路由Intent传参", ARouterPath.ACTIVITY_EXTRAS),
             Menu(Colors.OBSIDIAN_BLACK, "ARouter组件化路由", ARouterPath.ACTIVITY_ROUTE),

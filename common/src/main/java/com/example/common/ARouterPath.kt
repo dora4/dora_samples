@@ -16,6 +16,7 @@ interface ARouterPath {
         const val ACTIVITY_EXTRAS: String = "/$GROUP_DORA/ExtrasActivity"
         const val ACTIVITY_EVENT_BUS: String = "/$GROUP_DORA/EventBusActivity"
         const val ACTIVITY_CRASH: String = "/$GROUP_DORA/CrashActivity"
+        const val ACTIVITY_REQUEST_PERMISSION: String = "/$GROUP_DORA/RequestPermissionActivity"
         const val ACTIVITY_TIPS: String = "/$GROUP_DORA/TipsActivity"
         const val ACTIVITY_FLOW_PAGE: String = "/$GROUP_DORA/FlowPageActivity"
         const val ACTIVITY_NET_DETECT: String = "/$GROUP_DORA/NetDetectActivity"
