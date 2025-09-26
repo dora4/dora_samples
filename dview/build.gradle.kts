@@ -95,6 +95,7 @@ dependencies {
     implementation("com.github.dora4:dview-drawables:1.0")
     implementation("com.github.dora4:dview-list-helper:1.0")
     implementation("com.github.dora4:dview-book-pager:1.28")
+    implementation("com.github.dora4:dview-table-view:1.12")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")

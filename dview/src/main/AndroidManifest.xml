@@ -5,6 +5,9 @@
 
     <application>
         <activity
+            android:name=".ui.TableViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.BookPagerActivity"
             android:exported="false" />
         <activity
