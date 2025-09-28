@@ -65,7 +65,7 @@ dependencies {
     implementation("com.github.dora4:dview-floating-menu:1.8")
     implementation("com.github.dora4:dview-gridview:1.21")
     implementation("com.github.dora4:dview-coupon-view:1.16")
-    implementation("com.github.dora4:dview-flow-layout:1.1")
+    implementation("com.github.dora4:dview-flow-layout:1.2")
     implementation("com.github.dora4:dview-iconlabel-view:1.7")
     implementation("com.github.dora4:dview-swipe-menu:1.1")
     implementation("com.github.dora4:dview-badge-view:1.0")
