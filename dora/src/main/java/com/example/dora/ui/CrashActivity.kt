@@ -28,11 +28,16 @@ class CrashActivity : BaseActivity<ActivityCrashBinding>() {
     }
 
     fun requestPermission() {
-        XXPermissions.with(this)
-            .permission(Permission.MANAGE_EXTERNAL_STORAGE)
-            .request { permissions, allGranted ->
-                DoraCrash.initCrash(this, "crash")
-            }
+        if (!XXPermissions.isGranted(this, Permission.MANAGE_EXTERNAL_STORAGE)) {
+            XXPermissions.with(this)
+                .permission(Permission.MANAGE_EXTERNAL_STORAGE)
+                .request { _, _ ->
+                    DoraCrash.initCrash(this, "crash")
+                }
+        } else {
+            showShortToast("已授予存储权限")
+            DoraCrash.initCrash(this, "crash")
+        }
     }
 
     fun makeBug() {
