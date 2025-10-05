@@ -28,13 +28,13 @@ class IconLabelActivity : BaseActivity<ActivityIconLabelBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityIconLabelBinding) {
         binding.ilv1.setOnClickListener {
-            showShortToast("点击了邮箱菜单")
+            showShortToast("点击了柱状图菜单")
         }
         binding.ilv2.setOnClickListener {
-            showShortToast("点击了导航菜单")
+            showShortToast("点击了折线图菜单")
         }
         binding.ilv3.setOnClickListener {
-            showShortToast("点击了搜索菜单")
+            showShortToast("点击了饼图菜单")
         }
     }
 }
