@@ -59,7 +59,7 @@ dependencies {
     implementation("com.github.dora4:dview-tabbar:1.1")
     implementation("com.github.dora4:dview-radio-group:1.0")
     implementation("com.github.dora4:dview-empty-layout:1.12")
-    implementation("com.github.dora4:dview-menu-panel:1.38")
+    implementation("com.github.dora4:dview-menu-panel:1.39")
     implementation("com.github.dora4:dview-flexible-scrollview:1.0")
     implementation("com.github.dora4:dview-swipe-layout:1.0")
     implementation("com.github.dora4:dview-floating-menu:1.8")
@@ -96,6 +96,7 @@ dependencies {
     implementation("com.github.dora4:dview-list-helper:1.0")
     implementation("com.github.dora4:dview-book-pager:1.28")
     implementation("com.github.dora4:dview-table-view:1.12")
+    implementation("com.github.dora4:dview-expandable-layout:1.0")
 
 
     kapt("com.alibaba:arouter-compiler:1.5.2")

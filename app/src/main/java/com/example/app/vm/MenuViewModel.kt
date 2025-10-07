@@ -86,6 +86,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.SKY_BLUE, "列表工具助手", ARouterPath.ACTIVITY_LIST_HELPER),
 //            Menu(Colors.SKY_BLUE, "翻书控件", ARouterPath.ACTIVITY_BOOK_PAGER),
             Menu(Colors.SKY_BLUE, "表格控件", ARouterPath.ACTIVITY_TABLE_VIEW),
+            Menu(Colors.SKY_BLUE, "可折叠展开的内容", ARouterPath.ACTIVITY_EXPANDABLE_LAYOUT),
 
             Menu(Colors.LEAF_GREEN, "ORM基础 - 插入数据", ARouterPath.ACTIVITY_ORM_INSERT_DATA),
             Menu(Colors.LEAF_GREEN, "ORM基础 - 删除数据", ARouterPath.ACTIVITY_ORM_DELETE_DATA),
