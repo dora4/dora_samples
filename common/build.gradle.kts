@@ -52,7 +52,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
     // Dora全家桶
-    api("com.github.dora4:dora:1.3.30")
+    api("com.github.dora4:dora:1.3.37")
     api("com.github.dora4:dora-brvah-support:1.5")
     api("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")
@@ -66,7 +66,7 @@ dependencies {
 //    api("com.github.dora4:dora-eventbus-support:1.1")
     api("com.github.dora4:dview-colors:1.1")
     api("com.github.dora4:dview-titlebar:1.37")
-    api("com.github.dora4:dview-menu-panel:1.38")
+    api("com.github.dora4:dview-menu-panel:1.39")
     api("com.github.dora4:dview-empty-layout:1.12")
     api("com.github.dora4:dview-swipe-layout:1.0")
     api("com.github.dora4:dview-alert-dialog:1.25")

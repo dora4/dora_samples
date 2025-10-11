@@ -1,5 +1,6 @@
 package com.example.dora.ui
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
@@ -12,6 +13,7 @@ import com.example.dora.R
 import com.example.dora.databinding.ActivityRequestPermissionBinding
 import dora.util.IntentUtils
 import dora.util.PermissionHelper
+import dora.util.StatusBarUtils
 
 @Route(path = ARouterPath.ACTIVITY_REQUEST_PERMISSION)
 class RequestPermissionActivity : BaseActivity<ActivityRequestPermissionBinding>() {
@@ -20,6 +22,13 @@ class RequestPermissionActivity : BaseActivity<ActivityRequestPermissionBinding>
 
     override fun getLayoutId(): Int {
         return R.layout.activity_request_permission
+    }
+
+    override fun onGetExtras(action: String?, bundle: Bundle?, intent: Intent) {
+        mBinding.titleBar.title = IntentUtils.getStringExtra(intent, "title")
+        val themeColor = IntentUtils.getIntExtra(intent, "themeColor")
+        mBinding.titleBar.setBackgroundColor(themeColor)
+        StatusBarUtils.setStatusBar(this, themeColor)
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityRequestPermissionBinding) {

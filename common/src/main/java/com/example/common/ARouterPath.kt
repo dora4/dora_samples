@@ -28,6 +28,7 @@ interface ARouterPath {
         const val ACTIVITY_RSA: String = "/$GROUP_DORA/RsaActivity"
         const val ACTIVITY_ROUTE: String = "/$GROUP_DORA/RouteActivity"
         const val ACTIVITY_WEB3_PAY: String = "/$GROUP_DORA/Web3PayActivity"
+        const val ACTIVITY_ROOT_CHECKER: String = "/$GROUP_DORA/RootCheckerActivity"
 
 
         const val ACTIVITY_ORM_INSERT_DATA: String = "/$GROUP_CACHE/OrmInsertDataActivity"

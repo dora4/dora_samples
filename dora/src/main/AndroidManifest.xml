@@ -9,11 +9,8 @@
     <!-- 用户手机设置中允许未知来源安装包安装状态为关； -->
     <!-- Android8.0 以后，如果要安装 apk 需要额外添加权限： -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-
-    <uses-permission
-        android:name="android.permission.CALL_PHONE"/>
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="dora.lifecycle.config.PgyerGlobalConfig"
@@ -29,6 +26,9 @@
         android:value="true" />
 
     <application>
+        <activity
+            android:name=".ui.RootCheckerActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.RequestPermissionActivity"
             android:exported="false" />

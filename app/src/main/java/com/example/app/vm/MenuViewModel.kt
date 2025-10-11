@@ -34,6 +34,7 @@ class MenuViewModel : BaseViewModel() {
             Menu(Colors.OBSIDIAN_BLACK, "Fragment流式切换", ARouterPath.ACTIVITY_FLOW_PAGE),
 //            Menu(Colors.OBSIDIAN_BLACK "使用EventBus扩展包", ARouterPath.ACTIVITY_EVENT_BUS),
             Menu(Colors.OBSIDIAN_BLACK, "RSA加密", ARouterPath.ACTIVITY_RSA),
+            Menu(Colors.OBSIDIAN_BLACK, "ROOT检测", ARouterPath.ACTIVITY_ROOT_CHECKER),
 //            Menu(Colors.OBSIDIAN_BLACK, "网络状态探测", ARouterPath.ACTIVITY_NET_DETECT),
             Menu(Colors.OBSIDIAN_BLACK, "Web3支付", ARouterPath.ACTIVITY_WEB3_PAY),
             Menu(Colors.OBSIDIAN_BLACK, "蒲公英分发集成", ARouterPath.ACTIVITY_PGYER),
