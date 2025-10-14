@@ -140,7 +140,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "eTAIBZuUv0xw",
                 "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
                 "测试订单",
-                "支付0.01 USDT",
+                "支付0.01个原生代币",
                 0.01,
                 DoraFund.getCurrentChain()!!,
                 null,
