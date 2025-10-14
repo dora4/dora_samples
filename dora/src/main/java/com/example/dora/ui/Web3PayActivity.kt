@@ -142,8 +142,8 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "测试订单",
                 "支付0.01 USDT",
                 0.01,
-                EVMChains.POLYGON,
-                PolygonToken.USDT,
+                DoraFund.getCurrentChain()!!,
+                null,
                 object : DoraFund.OrderListener {
                     override fun onPrintOrder(
                         orderId: String,
