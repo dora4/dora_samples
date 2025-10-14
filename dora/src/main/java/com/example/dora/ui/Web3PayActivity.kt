@@ -13,6 +13,7 @@ import com.walletconnect.web3.modal.client.Modal
 import dora.BaseActivity
 import dora.pay.DoraFund
 import dora.pay.PayUtils
+import dora.pay.token.PolygonToken
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 import dora.util.ToastUtils
@@ -52,7 +53,6 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                         "测试订单",
                         "支付0.01个原生代币",
                         0.01,
-                        DoraFund.getCurrentChain()!!,
                         null,
                         object : DoraFund.OrderListener {
                             override fun onPrintOrder(
@@ -135,7 +135,6 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "测试订单",
                 "支付0.01个原生代币",
                 0.01,
-                DoraFund.getCurrentChain()!!,
                 null,
                 object : DoraFund.OrderListener {
                     override fun onPrintOrder(
