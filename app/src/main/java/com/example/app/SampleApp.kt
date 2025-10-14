@@ -48,7 +48,6 @@ class SampleApp : BaseApplication() {
     }
 
     private fun initPay() {
-        // 通过chainId指定支持的以太坊兼容链
         DoraFund.init(this, "App Name", "App Description",
             "https://yourdomain.com",
             arrayOf(
