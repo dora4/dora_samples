@@ -10,7 +10,6 @@ import com.example.common.ARouterPath
 import com.example.dora.R
 import com.example.dora.databinding.ActivityWeb3PayBinding
 import com.walletconnect.web3.modal.client.Modal
-import com.walletconnect.web3.modal.client.Web3Modal
 import dora.BaseActivity
 import dora.pay.DoraFund
 import dora.pay.PayUtils
