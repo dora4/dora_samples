@@ -19,6 +19,7 @@ import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
 import dora.pgyer.PgyService
 import dora.pay.DoraFund
+import dora.pay.EVMChains
 
 /**
  * 继承[dora.BaseApplication]开始Dora之旅吧！如果你不使用这个[dora.BaseApplication]，直接开始继承
@@ -48,14 +49,15 @@ class SampleApp : BaseApplication() {
 
     private fun initPay() {
         // 通过chainId指定支持的以太坊兼容链
-        val chains: Array<Modal.Model.Chain> = arrayOf(
-            Web3ModalChainsPresets.ethChains["1"]!!,      // 支持Ethereum
-            Web3ModalChainsPresets.ethChains["137"]!!,    // 支持Polygon
-            Web3ModalChainsPresets.ethChains["42161"]!!,   // 支持Arbitrum
-            Web3ModalChainsPresets.ethChains["43114"]!!    // 支持Avalanche C-Chain
-        )
         DoraFund.init(this, "App Name", "App Description",
-            "https://yourdomain.com", chains)
+            "https://yourdomain.com",
+            arrayOf(
+                EVMChains.ETHEREUM,   // 支持Ethereum
+                EVMChains.POLYGON,    // 支持Polygon
+                EVMChains.ARBITRUM,   // 支持Arbitrum
+                EVMChains.AVALANCHE   // 支持Avalanche C-Chain
+            )
+        )
     }
 
     private fun initDagger() {

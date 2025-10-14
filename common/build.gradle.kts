@@ -10,7 +10,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -59,7 +59,7 @@ dependencies {
     api("com.github.dora4:dora-pgyer-support:1.9")
 
     api("com.github.dora4:dora-dagger-support:1.12")
-    api("com.github.dora4:dora-walletconnect-support:2.0.10") {
+    api("com.github.dora4:dora-walletconnect-support:2.1.14") {
         exclude(group = "com.madgag.spongycastle", module = "core")
     }
     api("com.github.dora4:dcache-android:3.5.6")

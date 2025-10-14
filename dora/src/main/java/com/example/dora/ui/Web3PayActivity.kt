@@ -13,7 +13,9 @@ import com.walletconnect.web3.modal.client.Modal
 import com.walletconnect.web3.modal.client.Web3Modal
 import dora.BaseActivity
 import dora.pay.DoraFund
+import dora.pay.EVMChains
 import dora.pay.PayUtils
+import dora.pay.token.PolygonToken
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 import dora.util.ToastUtils
@@ -45,14 +47,16 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 // payProxy：基础版密钥，无需填写收款账号，官方代收
                 // pay：去中心化，需填写收款账号，直接打到商户账户
                 if (isWalletConnected()) {
-                    // 连接上钱包自动调启支付
+                    // 连接上钱包自动调启支付，不传token转该链的原生代币
                     DoraFund.payProxy(
                         this,
                         "eTAIBZuUv0xw",
                         "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
                         "测试订单",
-                        "支付0.01个代币",
+                        "支付0.01个原生代币",
                         0.01,
+                        DoraFund.getCurrentChain()!!,
+                        null,
                         object : DoraFund.OrderListener {
                             override fun onPrintOrder(
                                 orderId: String,
@@ -136,8 +140,10 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "eTAIBZuUv0xw",
                 "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
                 "测试订单",
-                "支付0.01个代币",
+                "支付0.01 USDT",
                 0.01,
+                EVMChains.POLYGON,
+                PolygonToken.USDT,
                 object : DoraFund.OrderListener {
                     override fun onPrintOrder(
                         orderId: String,
