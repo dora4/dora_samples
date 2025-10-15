@@ -20,6 +20,12 @@
             android:background="@color/colorPrimary"
             app:dview_title="@string/common_title" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/by_disney_studio_presents" />
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

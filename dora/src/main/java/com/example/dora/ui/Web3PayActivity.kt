@@ -13,7 +13,6 @@ import com.walletconnect.web3.modal.client.Modal
 import dora.BaseActivity
 import dora.pay.DoraFund
 import dora.pay.PayUtils
-import dora.pay.token.PolygonToken
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 import dora.util.ToastUtils
