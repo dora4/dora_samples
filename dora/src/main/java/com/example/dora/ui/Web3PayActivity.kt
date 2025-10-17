@@ -52,6 +52,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                         "测试订单",
                         "支付0.01个原生代币",
                         0.01,
+                        null,
                         object : DoraFund.OrderListener {
                             override fun onPrintOrder(
                                 orderId: String,
@@ -133,6 +134,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 "测试订单",
                 "支付0.01个原生代币",
                 0.01,
+                null,
                 object : DoraFund.OrderListener {
                     override fun onPrintOrder(
                         orderId: String,
