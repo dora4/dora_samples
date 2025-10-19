@@ -12,7 +12,13 @@ import com.example.dora.databinding.ActivityWeb3PayBinding
 import com.walletconnect.web3.modal.client.Modal
 import dora.BaseActivity
 import dora.pay.DoraFund
+import dora.pay.EVMChains
 import dora.pay.PayUtils
+import dora.pay.token.ArbitrumToken
+import dora.pay.token.AvalancheToken
+import dora.pay.token.EthereumToken
+import dora.pay.token.PolygonToken
+import dora.pay.token.Token
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 import dora.util.ToastUtils
@@ -45,25 +51,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 // pay：去中心化，需填写收款账号，直接打到商户账户
                 if (DoraFund.isWalletConnected()) {
                     // 连接上钱包自动调启支付，不传token转该链的原生代币
-                    DoraFund.payProxy(
-                        this,
-                        "eTAIBZuUv0xw",
-                        "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
-                        "测试订单",
-                        "支付0.01个原生代币",
-                        0.01,
-                        null,
-                        object : DoraFund.OrderListener {
-                            override fun onPrintOrder(
-                                orderId: String,
-                                chain: Modal.Model.Chain,
-                                value: Double
-                            ) {
-                                // 在这里保存订单号，便于钱包支付完成后得到对应的交易哈希
-                                Timber.tag(TAG).i("生成支付订单，交易订单号：$orderId")
-                            }
-                        }
-                    )
+                    pay()
                 }
             }
         }
@@ -125,27 +113,14 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                 ToastUtils.showShort("请先连接钱包")
                 return@setOnClickListener
             }
-            // payProxy：基础版密钥，无需填写收款账号，官方代收
-            // pay：去中心化，需填写收款账号，直接打到商户账户
-            DoraFund.payProxy(
-                this,
-                "eTAIBZuUv0xw",
-                "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
-                "测试订单",
-                "支付0.01个原生代币",
-                0.01,
-                null,
-                object : DoraFund.OrderListener {
-                    override fun onPrintOrder(
-                        orderId: String,
-                        chain: Modal.Model.Chain,
-                        value: Double
-                    ) {
-                        // 在这里保存订单号（本地或服务器），便于钱包支付完成后得到对应的交易哈希
-                        Timber.tag(TAG).i("生成支付订单，交易订单号：$orderId")
-                    }
-                }
-            )
+            pay()
+        }
+        binding.btnPayUsdt.setOnClickListener {
+            if (!DoraFund.isWalletConnected()) {
+                ToastUtils.showShort("请先连接钱包")
+                return@setOnClickListener
+            }
+            payUSDT()
         }
         // 5.查询订单支付状态
         binding.btnQueryTransaction.setOnClickListener {
@@ -157,5 +132,63 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
                     ToastUtils.showShort("查询上笔支付订单：${if (ok) "成功" else "失败"}")
                 }
         }
+    }
+
+    private fun pay() {
+        // payProxy：基础版密钥，无需填写收款账号，官方代收
+        // pay：去中心化，需填写收款账号，直接打到商户账户
+        DoraFund.payProxy(
+            this,
+            "eTAIBZuUv0xw",
+            "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
+            "测试订单",
+            "支付0.01个原生代币",
+            0.01,
+            null,
+            object : DoraFund.OrderListener {
+                override fun onPrintOrder(
+                    orderId: String,
+                    chain: Modal.Model.Chain,
+                    value: Double
+                ) {
+                    // 在这里保存订单号（本地或服务器），便于钱包支付完成后得到对应的交易哈希
+                    Timber.tag(TAG).i("生成支付订单，交易订单号：$orderId")
+                }
+            }
+        )
+    }
+
+    private fun matchUSDT(chain: Modal.Model.Chain?): Token {
+        return when (chain) {
+            EVMChains.ETHEREUM -> EthereumToken.USDT
+            EVMChains.POLYGON -> PolygonToken.USDT
+            EVMChains.AVALANCHE -> AvalancheToken.USDT
+            EVMChains.ARBITRUM -> ArbitrumToken.USDT
+            else -> EthereumToken.USDT
+        }
+    }
+
+    private fun payUSDT() {
+        // payProxy：基础版密钥，无需填写收款账号，官方代收
+        // pay：去中心化，需填写收款账号，直接打到商户账户
+        DoraFund.payProxy(
+            this,
+            "eTAIBZuUv0xw",
+            "SvuYlqClCezj9UN55PXvHnaESnt62qpJ",
+            "测试订单",
+            "支付0.01 USDT",
+            0.01,
+            matchUSDT(DoraFund.getCurrentChain()),
+            object : DoraFund.OrderListener {
+                override fun onPrintOrder(
+                    orderId: String,
+                    chain: Modal.Model.Chain,
+                    value: Double
+                ) {
+                    // 在这里保存订单号（本地或服务器），便于钱包支付完成后得到对应的交易哈希
+                    Timber.tag(TAG).i("生成支付订单，交易订单号：$orderId")
+                }
+            }
+        )
     }
 }

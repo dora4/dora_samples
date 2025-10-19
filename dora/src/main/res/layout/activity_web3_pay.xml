@@ -60,7 +60,11 @@
                     <Button
                         android:id="@+id/btn_pay"
                         style="@style/ThemeButton.ObsidianBlack"
-                        android:text="调启支付" />
+                        android:text="支付原生代币" />
+                    <Button
+                        android:id="@+id/btn_pay_usdt"
+                        style="@style/ThemeButton.ObsidianBlack"
+                        android:text="支付USDT" />
                 </LinearLayout>
 
                 <TextView

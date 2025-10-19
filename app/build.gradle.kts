@@ -11,10 +11,10 @@ android {
     compileSdk = 34
     buildToolsVersion = "34.0.0"
     defaultConfig {
-        minSdk = 23
+        minSdk = 24
         targetSdk = 34
-        versionCode = 72
-        versionName = "1.6.13"
+        versionCode = 73
+        versionName = "1.6.14"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
