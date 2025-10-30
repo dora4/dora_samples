@@ -13,7 +13,7 @@ pluginManagement {
                 useModule("com.android.tools.build:gradle:8.0.2")
             }
             if (requested.id.namespace == "org.jetbrains.kotlin") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21")
             }
             if (requested.id.namespace == "com.google.firebase") {
                 useModule("com.google.firebase:firebase-crashlytics-gradle:2.9.2")
