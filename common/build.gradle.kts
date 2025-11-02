@@ -52,7 +52,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
     // Dora全家桶
-    api("com.github.dora4:dora:1.3.40")
+    api("com.github.dora4:dora:1.3.43")
     api("com.github.dora4:dora-brvah-support:1.5")
     api("com.github.dora4:dora-arouter-support:1.6")
     kapt("com.alibaba:arouter-compiler:1.5.2")

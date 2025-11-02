@@ -10,8 +10,6 @@ import com.example.dcache.db.model.TestCaseModel
 import com.example.dcache.db.model.TestCaseModel2
 import com.example.dcache.db.model.TestCaseModel3
 import com.example.dcache.db.model.TestCaseModel4
-import com.walletconnect.web3.modal.client.Modal
-import com.walletconnect.web3.modal.presets.Web3ModalChainsPresets
 import dora.BaseApplication
 import dora.db.Orm
 import dora.db.OrmConfig
@@ -20,16 +18,17 @@ import dora.http.retrofit.RetrofitManager
 import dora.pgyer.PgyService
 import dora.pay.DoraFund
 import dora.pay.EVMChains
+import dora.util.ThreadUtils
 
 /**
  * 继承[dora.BaseApplication]开始Dora之旅吧！如果你不使用这个[dora.BaseApplication]，直接开始继承
- * [dora.BaseActivity]也是可以的，这样做的话，会丢失Dora对于app开发的一些优化，如Dora SDK的生
+ * [dora.BaseActivity]也是可以的。这样做的话，会丢失Dora对于app开发的一些优化，如Dora SDK的生
  * 命周期注入将无法使用。
  */
 class SampleApp : BaseApplication() {
 
     /**
-     * Dagger组件化依赖注入可以根据实际业务选择取舍。
+     * Dagger组件化依赖注入可以根据实际业务规模选择取舍，用于大项目。
      */
     lateinit var appComponent: AppComponent
 
@@ -43,13 +42,19 @@ class SampleApp : BaseApplication() {
         initRetrofit()
         // 初始化支付SDK
         initPay()
-        ARouter.openLog()    // 打开日志
-        ARouter.openDebug()  // 打开调试模式
+        // 懒加载，主线程空闲时执行一些不紧急的操作，不影响启动速度
+        ThreadUtils.lazyLoad {
+            ARouter.openLog()    // 打开日志
+            ARouter.openDebug()  // 打开调试模式
+            true
+        }
     }
 
     private fun initPay() {
-        DoraFund.init(this, "App Name", "App Description",
-            "https://yourdomain.com",
+        DoraFund.init(this,
+            "App Name", // 不会校验，仅显示在钱包
+            "App Description", // 不会校验，仅显示在钱包
+            "https://yourdomain.com", // 不会校验，仅显示在钱包
             arrayOf(
                 EVMChains.ETHEREUM,   // 支持Ethereum
                 EVMChains.POLYGON,    // 支持Polygon
@@ -81,7 +86,7 @@ class SampleApp : BaseApplication() {
     private fun initOrm() {
         val config = OrmConfig.Builder()
             .database("dora_sample")
-            .version(4)
+            .version(4) // 从1开始递增
             .tables(
                 OrmTestModel::class.java,
                 TestCaseModel::class.java,

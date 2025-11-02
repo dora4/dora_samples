@@ -1,7 +1,6 @@
 package com.example.dora.ui
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -45,7 +44,7 @@ class Web3PayActivity : BaseActivity<ActivityWeb3PayBinding>() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             if (requestCode == REQUEST_CODE_TEST_PAY) {
                 // payProxy：基础版密钥，无需填写收款账号，官方代收
                 // pay：去中心化，需填写收款账号，直接打到商户账户

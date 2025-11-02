@@ -7,6 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.common.router.IViewRouter
 import com.example.dview.ui.FloatingWindowService
+import dora.util.IntentUtils
 
 @Route(path = ARouterPath.VIEW_SERVICE)
 class ViewRouter : IViewRouter {
@@ -18,7 +19,7 @@ class ViewRouter : IViewRouter {
     }
 
     override fun showFloatingView() {
-        if (Settings.canDrawOverlays(context)) {
+        if (IntentUtils.hasOverlayPermission(context)) {
             context.startService(Intent(context, FloatingWindowService::class.java))
         }
     }
