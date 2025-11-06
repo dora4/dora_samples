@@ -2,7 +2,6 @@ package com.example.dview
 
 import android.content.Context
 import android.content.Intent
-import android.provider.Settings
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.common.router.IViewRouter
