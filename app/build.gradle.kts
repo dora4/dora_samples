@@ -8,13 +8,12 @@ plugins {
 
 android {
     namespace = "com.example.app"
-    compileSdk = 34
+    compileSdk = 36
     buildToolsVersion = "34.0.0"
     defaultConfig {
         minSdk = 24
-        targetSdk = 34
-        versionCode = 74
-        versionName = "1.6.15"
+        versionCode = 75
+        versionName = "1.6.16"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
@@ -70,9 +69,6 @@ android {
     compileOptions {
         sourceCompatibility(JavaVersion.VERSION_17)
         targetCompatibility(JavaVersion.VERSION_17)
-    }
-    kotlinOptions {
-        jvmTarget = "17"
     }
 }
 

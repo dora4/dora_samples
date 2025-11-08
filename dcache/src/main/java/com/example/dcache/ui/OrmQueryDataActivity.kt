@@ -47,7 +47,7 @@ class OrmQueryDataActivity : BaseActivity<ActivityOrmQueryDataBinding>() {
     }
 
     private fun showInputDialog() {
-        DoraAlertDialog(this).show(createInputView()) {
+        DoraAlertDialog.create(this).show(createInputView()) {
             val spinner: AppCompatSpinner = it.findViewById(R.id.spinner)
             val et1: EditText = it.findViewById(R.id.et1)
             val et2: EditText = it.findViewById(R.id.et2)

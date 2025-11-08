@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.dview"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 23
@@ -30,9 +30,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = "17"
     }
 }
 
@@ -76,7 +73,7 @@ dependencies {
     implementation("com.github.dora4:dview-clear-edittext:1.0")
     implementation("com.github.dora4:dview-charts:1.0")
     implementation("com.github.dora4:dview-pinchzoom-layout:1.0")
-    implementation("com.github.dora4:dview-sidebar:1.3")
+    implementation("com.github.dora4:dview-sidebar:1.4")
     implementation("com.github.dora4:dview-skeleton-view:1.0")
     implementation("com.github.dora4:dview-flash-view:1.1")
     implementation("com.github.dora4:dview-button:1.0")

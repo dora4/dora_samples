@@ -10,7 +10,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.namespace == "com.android.tools.build") {
-                useModule("com.android.tools.build:gradle:8.0.2")
+                useModule("com.android.tools.build:gradle:8.1.0")
             }
             if (requested.id.namespace == "org.jetbrains.kotlin") {
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21")

@@ -29,7 +29,7 @@ class AlertDialogActivity : BaseActivity<ActivityAlertDialogBinding>() {
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityAlertDialogBinding) {
         binding.btnShowAlertDialog.setOnClickListener {
-            DoraAlertDialog(this).show("提示信息") {
+            DoraAlertDialog.create(this).show("提示信息") {
                 title("系统消息")
                 themeColorResId(com.example.common.R.color.sky_blue)
                 positiveListener {

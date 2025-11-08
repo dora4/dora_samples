@@ -7,20 +7,13 @@ plugins {
 
 android {
     namespace = "com.example.common"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 23
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-
-        // ARouter
-        kapt {
-            arguments {
-                arg("AROUTER_MODULE_NAME", project.name)
-            }
-        }
     }
     buildFeatures {
         // 不要去掉，BindingAdapters类需要
@@ -39,8 +32,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "17"
+}
+
+// ARouter
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.name)
     }
 }
 
@@ -69,7 +66,7 @@ dependencies {
     api("com.github.dora4:dview-menu-panel:1.39")
     api("com.github.dora4:dview-empty-layout:1.12")
     api("com.github.dora4:dview-swipe-layout:1.0")
-    api("com.github.dora4:dview-alert-dialog:1.25")
+    api("com.github.dora4:dview-alert-dialog:1.28")
 
     // XXPermissions
     api("com.github.getActivity:XXPermissions:18.2")

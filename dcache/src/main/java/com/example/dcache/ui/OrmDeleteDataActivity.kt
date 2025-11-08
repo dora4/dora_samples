@@ -37,7 +37,7 @@ class OrmDeleteDataActivity : BaseActivity<ActivityOrmDeleteDataBinding>() {
     override fun initData(savedInstanceState: Bundle?, binding: ActivityOrmDeleteDataBinding) {
         binding.v = this
         adapter.setOnItemClickListener { adapter, view, position ->
-            DoraAlertDialog(this@OrmDeleteDataActivity)
+            DoraAlertDialog.create(this@OrmDeleteDataActivity)
                 .show("是否删除此条数据？") {
                     positiveListener {
                         val model = adapter.getItem(position) as OrmTestModel

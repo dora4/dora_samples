@@ -40,7 +40,7 @@ class OrmUpdateDataActivity : BaseActivity<ActivityOrmUpdateDataBinding>() {
     override fun initData(savedInstanceState: Bundle?, binding: ActivityOrmUpdateDataBinding) {
         binding.v = this
         adapter.setOnItemClickListener { _, view, position ->
-            DoraAlertDialog(this).show(createInputView()) {
+            DoraAlertDialog.create(this).show(createInputView()) {
                 val et1: EditText = it.findViewById(R.id.et1)
                 val et2: EditText = it.findViewById(R.id.et2)
                 positiveListener {

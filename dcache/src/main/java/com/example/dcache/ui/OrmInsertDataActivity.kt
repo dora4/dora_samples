@@ -46,7 +46,7 @@ class OrmInsertDataActivity : BaseActivity<ActivityOrmInsertDataBinding>() {
     }
 
     private fun showInputDialog(block: (model : OrmTestModel) -> Unit) {
-        DoraAlertDialog(this).show(createInputView()) {
+        DoraAlertDialog.create(this).show(createInputView()) {
             val et1: EditText = it.findViewById(R.id.et1)
             val et2: EditText = it.findViewById(R.id.et2)
             positiveListener {
