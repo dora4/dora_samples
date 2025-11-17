@@ -3,7 +3,7 @@ package com.example.dcache.widget
 import dora.widget.panel.IMenu
 import java.util.UUID
 
-class ToggleButtonEntity @JvmOverloads constructor(
+class ToggleButtonEntity(
     var label: String,
     var isSelect: Boolean,
     var listener: OnSelectListener
