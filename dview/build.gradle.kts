@@ -74,7 +74,7 @@ dependencies {
     implementation("com.github.dora4:dview-flipper-view:1.2")
     implementation("com.github.dora4:dview-parallax-layout:1.2")
     implementation("com.github.dora4:dview-avatar:1.4")
-    implementation("com.github.dora4:dview-rotate-view:1.1")
+    implementation("com.github.dora4:dview-rotate-view:1.2")
     implementation("com.github.dora4:dview-equalizer-view:1.0")
     implementation("com.github.dora4:dview-text-view:1.0")
     implementation("com.github.dora4:dview-progress-button:1.1")
