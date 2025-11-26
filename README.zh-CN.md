@@ -41,5 +41,3 @@ git clone https://github.com/dora4/dora_samples
 ├─`ui` 界面，如Activity和Fragment
 
 ├─`vm` ViewModel
-
-![1 (1)](https://github.com/user-attachments/assets/0d8ca31f-c98e-400f-aee2-7cf9f2d75598)
