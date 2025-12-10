@@ -1,6 +1,5 @@
 package com.example.dcache.ui
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -164,7 +163,7 @@ class OrmModelEditorActivity : BaseActivity<ActivityOrmModelEditorBinding>() {
                             InputMenuPanelItem.ID_EDIT_TEXT_INPUT) as EditText).toByte()
                         intent.putExtra("model", testCaseModel)
                     }
-                    setResult(Activity.RESULT_OK, intent)
+                    setResult(RESULT_OK, intent)
                     finish()
                 }
             }

@@ -3,6 +3,7 @@ package com.example.dcache.api
 import com.example.common.model.ApiResult
 import com.example.dcache.db.model.TestCaseModel
 import com.example.dcache.db.model.TestCaseModel2
+import com.example.dcache.db.model.TestCaseModel3
 import com.example.dcache.db.model.TestCaseModel4
 import dora.http.retrofit.ApiService
 import retrofit2.Call
@@ -25,6 +26,9 @@ interface TestService : ApiService {
     @FormUrlEncoded
     fun sendPostPageTest(@Field("pageSize") pageSize: Int, @Field("pageNo") pageNo: Int): Call<TestPageResult<PageDTO<TestCaseModel4>>>
 
-    @GET("openApi/pageTest")
-    fun sendGetPageTest(@Query("pageSize") pageSize: Int, @Query("pageNo") pageNo: Int): Call<TestPageResult<PageDTO<TestCaseModel>>>
+    /**
+     * 此接口没有，仅演示写法。
+     */
+    @GET("openApi/listTest")
+    fun sendGetListTest(): Call<ApiResult<MutableList<TestCaseModel3>>>
 }

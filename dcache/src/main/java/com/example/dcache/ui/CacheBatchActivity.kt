@@ -11,7 +11,7 @@ import dora.BaseActivity
 
 import com.example.dcache.R
 import com.example.dcache.adapter.TestCaseModelAdapter
-import com.example.dcache.repository.TestRepository
+import com.example.dcache.repository.TestPageRepository
 import com.example.dcache.databinding.ActivityCacheBatchBinding
 import com.example.dcache.db.model.TestCaseModel4
 import dora.cache.repository.DoraPageDatabaseCacheRepository
@@ -25,7 +25,7 @@ import dora.widget.pull.SwipeLayout
 @Route(path = ARouterPath.ACTIVITY_CACHE_BATCH)
 class CacheBatchActivity : BaseActivity<ActivityCacheBatchBinding>() {
 
-    private lateinit var repository: TestRepository
+    private lateinit var repository: TestPageRepository
     private val adapter = TestCaseModelAdapter()
 
     override fun getLayoutId(): Int {
@@ -40,7 +40,7 @@ class CacheBatchActivity : BaseActivity<ActivityCacheBatchBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityCacheBatchBinding) {
-        repository = TestRepository(this)
+        repository = TestPageRepository(this)
         val tvStart = findViewById<TextView>(R.id.tvStart)
         val tvReset = findViewById<TextView>(R.id.tvReset)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)

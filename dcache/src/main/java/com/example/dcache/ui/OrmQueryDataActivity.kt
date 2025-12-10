@@ -51,7 +51,7 @@ class OrmQueryDataActivity : BaseActivity<ActivityOrmQueryDataBinding>() {
             val spinner: AppCompatSpinner = it.findViewById(R.id.spinner)
             val et1: EditText = it.findViewById(R.id.et1)
             val et2: EditText = it.findViewById(R.id.et2)
-            var pos: Int = 0
+            var pos = 0
             spinner.onItemSelectedListener = object : OnItemSelectedListener {
 
                 override fun onItemSelected(

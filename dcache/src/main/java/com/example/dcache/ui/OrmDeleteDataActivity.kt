@@ -42,7 +42,6 @@ class OrmDeleteDataActivity : BaseActivity<ActivityOrmDeleteDataBinding>() {
                     positiveListener {
                         val model = adapter.getItem(position) as OrmTestModel
                         try {
-
                             val ok = DaoFactory.getDao(OrmTestModel::class.java).delete(model)
                             if (ok) {
                                 adapter.removeAt(position)
