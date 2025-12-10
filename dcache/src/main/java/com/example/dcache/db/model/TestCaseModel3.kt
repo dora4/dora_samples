@@ -1,6 +1,6 @@
 package com.example.dcache.db.model
 
-import com.example.dcache.db.converter.TestCaseModelConverter
+import com.example.dcache.db.converter.TestCaseModelJsonConverter
 import dora.db.constraint.Id
 import dora.db.migration.OrmMigration
 import dora.db.table.*
@@ -15,7 +15,7 @@ data class TestCaseModel3(
     var id: Long = 0,
 
     @Column("complex_object")
-    @Convert(converter = TestCaseModelConverter::class, columnType = String::class)
+    @Convert(converter = TestCaseModelJsonConverter::class, columnType = String::class)
     var model: TestCaseModel? = null,
 
     override val isUpgradeRecreated: Boolean = false,
