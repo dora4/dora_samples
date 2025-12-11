@@ -6,6 +6,7 @@ import com.example.dcache.db.model.TestCaseModel2
 import com.example.dcache.db.model.TestCaseModel3
 import com.example.dcache.db.model.TestCaseModel4
 import dora.http.retrofit.ApiService
+import io.reactivex.Observable
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -20,7 +21,7 @@ interface TestService : ApiService {
     fun sendPostTest(@Field("pageSize") pageSize: Int): Call<ApiResult<MutableList<TestCaseModel>>>
 
     @GET("openApi/test")
-    fun sendGetTest(@Query("pageSize") pageSize: Int): Call<ApiResult<MutableList<TestCaseModel2>>>
+    fun sendGetTest(@Query("pageSize") pageSize: Int): Observable<ApiResult<MutableList<TestCaseModel2>>>
 
     @POST("openApi/pageTest")
     @FormUrlEncoded

@@ -75,6 +75,8 @@ class SampleApp : BaseApplication() {
             okhttp {
                 // 添加格式化输出日志的拦截器
                 interceptors().add(FormatLogInterceptor())
+                // 支持RxJava，接口可返回Observable
+                rxJava(true)
                 build()
             }
             // 映射API服务地址，可以映射多个

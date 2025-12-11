@@ -13,6 +13,7 @@ import com.example.dcache.db.model.TestCaseModel2
 import dora.BaseActivity
 import dora.http.DoraHttp.net
 import dora.http.DoraHttp.result
+import dora.http.DoraHttp.rxResult
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
 
@@ -41,7 +42,7 @@ class NetTestActivity : BaseActivity<ActivityNetTestBinding>() {
                     isRunning = true
                     val start = System.currentTimeMillis()
                     (0 until 10).forEach { i ->
-                        val models = result(TestService::class) { sendGetTest(10) }?.data
+                        val models = rxResult(TestService::class) { sendGetTest(10) }?.data
                         loopPrint(binding.tvPrint, models)
                     }
                     binding.ivRun.visibility = View.VISIBLE
