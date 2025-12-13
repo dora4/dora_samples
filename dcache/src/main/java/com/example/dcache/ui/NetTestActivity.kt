@@ -12,7 +12,6 @@ import com.example.dcache.databinding.ActivityNetTestBinding
 import com.example.dcache.db.model.TestCaseModel2
 import dora.BaseActivity
 import dora.http.DoraHttp.net
-import dora.http.DoraHttp.result
 import dora.http.DoraHttp.rxResult
 import dora.util.IntentUtils
 import dora.util.StatusBarUtils
