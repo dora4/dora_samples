@@ -1,7 +1,8 @@
-package com.example.app
+package com.example.common.adapter
 
-import com.example.app.bean.Menu
-import com.example.app.databinding.ItemMenuListBinding
+import com.example.common.R
+import com.example.common.databinding.ItemMenuListBinding
+import com.example.common.model.Menu
 import dora.arouter.open
 import dora.brvah.BaseAdapter
 import dora.firebase.SpmUtils

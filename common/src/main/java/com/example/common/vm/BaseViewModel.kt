@@ -3,8 +3,8 @@ package com.example.common.vm
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import dora.brvah.BaseAdapter
-import dora.brvah.decoration.DividerItemDecoration
 import dora.util.GlobalContext
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
@@ -12,13 +12,14 @@ import io.reactivex.disposables.Disposable
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
 open class BaseViewModel : ViewModel() {
 
     var listDecoration = ObservableField<DividerItemDecoration>()
     var adapter = ObservableField<BaseAdapter<*, *>>()
     var viewState = ObservableField<ViewState>()
-    private val disposable: CompositeDisposable by lazy { CompositeDisposable() }
+    @Inject lateinit var disposable: CompositeDisposable
 
     init {
         listDecoration.set(DividerItemDecoration(GlobalContext.get(), DividerItemDecoration.VERTICAL))

@@ -34,7 +34,7 @@ class SampleApp : BaseApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        // 初始化dagger的app模块，dagger不是必须的
+        // 初始化dagger的app模块，dagger不是必须的，要么项目大到依赖注入可以提效，要么就是在同事面前炫技（故弄玄虚）
         initDagger()
         // 初始化orm框架
         initOrm()
@@ -46,7 +46,6 @@ class SampleApp : BaseApplication() {
         ThreadUtils.lazyLoad {
             ARouter.openLog()    // 打开日志
             ARouter.openDebug()  // 打开调试模式
-            true
         }
     }
 

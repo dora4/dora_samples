@@ -1,7 +1,7 @@
 package com.example.app.di.component
 
 import com.example.app.MenuListActivity
-import com.example.app.di.module.MenuModule
+import com.example.common.di.module.MenuModule
 import dagger.Component
 
 /**
