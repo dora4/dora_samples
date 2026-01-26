@@ -6,17 +6,6 @@
 
 This project is a usage example of https://github.com/dora4/dora, simple and easy to understand.
 
-## Features
-- Crash log writing to file
-- Toast with automatic thread switching
-- Stream switching
-- Generic title bar widget
-- Loading progress dialog
-- ARouter for navigating between screens
-- EventBus for event communication
-- The Universal Adapter using BaseRecyclerViewAdapterHelper
-- The usage of ViewModel
-
 ## Download App
 
 https://www.pgyer.com/dorasamples
@@ -28,16 +17,4 @@ Clone the project to your local disk.
 ```bash
 git clone https://github.com/dora4/dora_samples
 ```
-
-## Directory
-
-├─`bean` Value Objects (VO)
-
-├─`di` Dagger dependency injection
-
-├─`model` Model or entity classes
-
-├─`ui` User interface components, such as Activity and Fragment
-
-├─`vm` ViewModel
 

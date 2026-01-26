@@ -6,18 +6,6 @@
 
 此项目为 https://github.com/dora4/dora 的使用案例，简单易懂。
 
-## 特性
-
-- 崩溃日志写入文件
-- 自动切换线程的Toast
-- 流式切换
-- 通用标题栏控件
-- 加载进度对话框
-- ARouter界面跳转
-- EventBus事件通信
-- BaseRecyclerViewAdapterHelper万能适配器
-- ViewModel的使用
-
 ## 尝鲜体验
 
 https://www.pgyer.com/dorasamples
@@ -29,15 +17,3 @@ https://www.pgyer.com/dorasamples
 ```bash
 git clone https://github.com/dora4/dora_samples
 ```
-
-## 目录
-
-├─`bean` VO值对象
-
-├─`di` Dagger的依赖注入
-
-├─`model` 模型类或实体类
-
-├─`ui` 界面，如Activity和Fragment
-
-├─`vm` ViewModel
