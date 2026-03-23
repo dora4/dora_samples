@@ -52,9 +52,9 @@ dependencies {
 //    implementation("com.google.firebase:firebase-analytics-ktx")
 
     // Dora全家桶
-    api("com.github.dora4:dora:1.3.57")
-    api("com.github.dora4:dora-brvah-support:1.5")
-    api("com.github.dora4:dora-arouter-support:1.6")
+    api("com.github.dora4:dora:1.3.61")
+    api("com.github.dora4:dora-brvah-support:1.6")
+    api("com.github.dora4:dora-arouter-support:1.10")
     kapt("com.alibaba:arouter-compiler:1.5.2")
     api("com.github.dora4:dora-pgyer-support:1.10")
 

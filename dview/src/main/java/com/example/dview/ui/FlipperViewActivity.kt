@@ -36,7 +36,10 @@ class FlipperViewActivity : BaseActivity<ActivityFlipperViewBinding>() {
             override fun onFlipStart() {
             }
 
-            override fun onItemClick(text: String) {
+            override fun onItemClick(index: Int, text: String) {
+            }
+
+            override fun onLoadText(index: Int, text: String) {
             }
         })
         // 航班 1
