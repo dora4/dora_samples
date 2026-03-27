@@ -72,6 +72,10 @@ android {
     }
 }
 
+kotlin {
+    // 安装了多jdk的情况下，编译时自动帮你选jvm，否则需要手动操作IDE
+    jvmToolchain(17)
+}
 kapt {
     arguments {
         arg("AROUTER_MODULE_NAME", project.name)
