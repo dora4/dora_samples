@@ -18,24 +18,6 @@ android {
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
     }
-    flavorDimensions.add("app")
-    // Flavor变体
-    productFlavors {
-//        create("beta") {
-//            dimension = "app"
-//            versionNameSuffix = "-beta"
-//        }
-//        create("alpha") {
-//            dimension = "app"
-//            applicationIdSuffix = ".alpha"
-//            versionNameSuffix = "-alpha"
-//        }
-//        create("dev") {
-//            dimension = "app"
-//            applicationIdSuffix = ".dev"
-//            versionNameSuffix = "-dev"
-//        }
-    }
     sourceSets {
         getByName("main") {
             jniLibs.srcDirs("libs")
@@ -43,7 +25,6 @@ android {
     }
     buildFeatures {
         dataBinding = true
-        buildConfig = true
     }
     signingConfigs {
         create("release") {
@@ -76,6 +57,7 @@ kotlin {
     // 安装了多jdk的情况下，编译时自动帮你选jvm，否则需要手动操作IDE
     jvmToolchain(17)
 }
+
 kapt {
     arguments {
         arg("AROUTER_MODULE_NAME", project.name)
@@ -83,12 +65,10 @@ kapt {
 }
 
 dependencies {
-    
     implementation(project(":common"))
     implementation(project(":dora"))
     implementation(project(":dview"))
     implementation(project(":dcache"))
-
     kapt("com.alibaba:arouter-compiler:1.5.2")
     kapt("com.google.dagger:dagger-compiler:2.16")
 }
