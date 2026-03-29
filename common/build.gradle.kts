@@ -42,17 +42,9 @@ kapt {
 }
 
 dependencies {
-
-    // 埋点统计
-    api("com.github.dora4:dora-firebase-support:1.14")
-//    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
-//    implementation("com.google.firebase:firebase-crashlytics-ktx")
-//    implementation("com.google.firebase:firebase-analytics-ktx")
-//    implementation("com.google.firebase:firebase-config-ktx")
-//    implementation("com.google.firebase:firebase-analytics-ktx")
-
     // Dora全家桶
     api("com.github.dora4:dora:1.3.61")
+    api("com.github.dora4:dora-firebase-support:1.14")
     api("com.github.dora4:dora-brvah-support:1.6")
     api("com.github.dora4:dora-arouter-support:1.10")
     kapt("com.alibaba:arouter-compiler:1.5.2")
