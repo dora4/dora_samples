@@ -74,6 +74,12 @@
         <activity
             android:name=".ui.ViewModelSample2Activity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewModelSample4Activity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -25,6 +25,10 @@ interface ARouterPath {
             "/$GROUP_DORA/ViewModelSample1Activity"
         const val ACTIVITY_VIEW_MODEL_SAMPLE_2: String =
             "/$GROUP_DORA/ViewModelSample2Activity"
+        const val ACTIVITY_VIEW_MODEL_SAMPLE_3: String =
+            "/$GROUP_DORA/ViewModelSample3Activity"
+        const val ACTIVITY_VIEW_MODEL_SAMPLE_4: String =
+            "/$GROUP_DORA/ViewModelSample4Activity"
         const val ACTIVITY_RSA: String = "/$GROUP_DORA/RsaActivity"
         const val ACTIVITY_ROUTE: String = "/$GROUP_DORA/RouteActivity"
         const val ACTIVITY_WEB3_PAY: String = "/$GROUP_DORA/Web3PayActivity"

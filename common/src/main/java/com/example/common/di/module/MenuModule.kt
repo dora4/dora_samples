@@ -36,6 +36,8 @@ class MenuModule {
         Menu(Colors.OBSIDIAN_BLACK, "蒲公英分发集成", ARouterPath.ACTIVITY_PGYER),
         Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例1", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_1),
         Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例2", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_2),
+        Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例3", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_3),
+        Menu(Colors.OBSIDIAN_BLACK, "ViewModel示例4", ARouterPath.ACTIVITY_VIEW_MODEL_SAMPLE_4),
 
 //            Menu(Colors.SKY_BLUE, "短视频极速版领现金进度条动画", ARouterPath.ACTIVITY_PROGRESS_VIEW),
         Menu(Colors.SKY_BLUE, "一个标题栏控件", ARouterPath.ACTIVITY_TITLE_BAR),

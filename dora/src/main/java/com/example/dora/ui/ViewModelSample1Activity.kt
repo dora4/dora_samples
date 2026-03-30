@@ -36,7 +36,6 @@ class ViewModelSample1Activity :
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityViewModelSample1Binding) {
-        super.initData(savedInstanceState, binding)
         binding.vm = viewModel
     }
 }

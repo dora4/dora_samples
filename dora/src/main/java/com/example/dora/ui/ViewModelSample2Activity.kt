@@ -36,7 +36,6 @@ class ViewModelSample2Activity :
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityViewModelSample2Binding) {
-        super.initData(savedInstanceState, binding)
         binding.vm = viewModel
         // 确保与数据绑定的LiveData正确连接到生命周期
         binding.lifecycleOwner = this
