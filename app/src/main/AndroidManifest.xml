@@ -20,6 +20,7 @@
         <activity
             android:name="com.example.app.MenuListActivity"
             android:exported="true"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,9 +35,6 @@
         <meta-data
             android:name="dora.lifecycle.config.ARouterGlobalConfig"
             android:value="GlobalConfig" />
-<!--        <meta-data-->
-<!--            android:name="dora.lifecycle.config.EventBusGlobalConfig"-->
-<!--            android:value="GlobalConfig" />-->
     </application>
 
 </manifest>
