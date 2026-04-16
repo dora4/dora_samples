@@ -15,7 +15,6 @@ import dora.db.Orm
 import dora.db.OrmConfig
 import dora.http.log.FormatLogInterceptor
 import dora.http.retrofit.RetrofitManager
-import dora.pgyer.PgyService
 import dora.pay.DoraFund
 import dora.pay.EVMChains
 import dora.util.ThreadUtils
@@ -80,7 +79,7 @@ class SampleApp : BaseApplication() {
             }
             // 映射API服务地址，可以映射多个
             mappingBaseUrl(TestService::class.java, "http://dorachat.com:9091/")
-            mappingBaseUrl(PgyService::class.java, "http://www.pgyer.com/apiv2/")
+//            mappingBaseUrl(PgyService::class.java, "http://www.pgyer.com/apiv2/")
         }
     }
 
