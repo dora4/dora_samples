@@ -12,8 +12,8 @@ android {
     buildToolsVersion = "34.0.0"
     defaultConfig {
         minSdk = 24
-        versionCode = 82
-        versionName = "1.6.23"
+        versionCode = 83
+        versionName = "1.6.24"
         applicationId = "com.example.dora"
         // 21以上虚拟机天然支持multidex
         multiDexEnabled = true
