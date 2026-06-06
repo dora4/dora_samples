@@ -36,7 +36,7 @@ class FlipperViewActivity : BaseActivity<ActivityFlipperViewBinding>() {
             override fun onFlipStart() {
             }
 
-            override fun onItemClick(index: Int, text: String) {
+            override fun onClickText(index: Int, text: String) {
             }
 
             override fun onLoadText(index: Int, text: String) {
