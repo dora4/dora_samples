@@ -43,7 +43,7 @@ kapt {
 
 dependencies {
     // Dora全家桶
-    api("com.github.dora4:dora:1.3.61")
+    api("com.github.dora4:dora:1.3.68")
     api("com.github.dora4:dora-firebase-support:1.14")
     api("com.github.dora4:dora-brvah-support:1.6")
     api("com.github.dora4:dora-arouter-support:1.11")
@@ -54,11 +54,11 @@ dependencies {
     api("com.github.dora4:dora-walletconnect-support:2.1.35") {
         exclude(group = "com.madgag.spongycastle", module = "core")
     }
-    api("com.github.dora4:dcache-android:3.6.12")
+    api("com.github.dora4:dcache-android:3.6.16")
     api("com.github.dora4:dview-colors:1.1")
-    api("com.github.dora4:dview-titlebar:1.39")
+    api("com.github.dora4:dview-titlebar:1.40")
     api("com.github.dora4:dview-menu-panel:1.47")
-    api("com.github.dora4:dview-empty-layout:1.12")
+    api("com.github.dora4:dview-empty-layout:1.14")
     api("com.github.dora4:dview-swipe-layout:1.1")
     api("com.github.dora4:dview-alert-dialog:1.35")
 
