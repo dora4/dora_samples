@@ -56,6 +56,9 @@
             android:name=".ui.FlipperViewActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.AudioWaveViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ButtonActivity"
             android:exported="false" />
         <activity

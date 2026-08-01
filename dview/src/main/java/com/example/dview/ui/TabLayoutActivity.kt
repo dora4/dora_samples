@@ -2,7 +2,6 @@ package com.example.dview.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.ARouterPath
 import com.example.dview.R
@@ -32,12 +31,16 @@ class TabLayoutActivity : BaseActivity<ActivityTabLayoutBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityTabLayoutBinding) {
-        binding.tabBar.addTextTab("频道1")
-        binding.tabBar.addTextTab("频道2")
-        binding.tabBar.addTextTab("频道3")
-        binding.tabBar.setOnTabClickListener(object : DoraTabBar.OnTabClickListener {
-
-            override fun onTabClick(view: View, position: Int) {
+        binding.tabBar.setTabs(
+            arrayOf(
+                DoraTabBar.DoraTab("频道1", null, null),
+                DoraTabBar.DoraTab("频道2", null, null),
+                DoraTabBar.DoraTab("频道3", null, null),
+            )
+        )
+        binding.tabBar.setOnTabSelectListener(object : DoraTabBar.OnTabSelectListener {
+            override fun onTabSelected(position: Int) {
+                binding.tabBar.setCurrentTab(position)
                 when (position) {
                     0 -> {
                         showPage(pageOne)
@@ -52,8 +55,10 @@ class TabLayoutActivity : BaseActivity<ActivityTabLayoutBinding>() {
                     }
                 }
             }
-        })
 
+            override fun onTabReselected(position: Int) {
+            }
+        })
         val argumentsOne = Bundle()
         val argumentsTwo = Bundle()
         val argumentsThree = Bundle()
