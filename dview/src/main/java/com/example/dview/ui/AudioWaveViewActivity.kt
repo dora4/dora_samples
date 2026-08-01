@@ -29,7 +29,7 @@ class AudioWaveViewActivity : BaseActivity<ActivityAudioWaveViewBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityAudioWaveViewBinding) {
-        binding.voiceWaveView.apply {
+        binding.awv.apply {
             setLineWidth(6f)
             setLineSpace(10f)
             setDuration(1000L)
