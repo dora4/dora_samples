@@ -27,15 +27,12 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingVertical="10dp"
-            app:dview_tabIsDivided="false"
-            app:dview_tabUnselectedTextColor="@color/colorTextNormal"
-            app:dview_tabSelectedTextColor="@color/sky_blue"
-            app:dview_indicatorType="NORMAL"
-            app:dview_indicatorColor="@color/sky_blue"
-            app:dview_tabPadding="10dp"
-            app:dview_iconGravity="LEFT"
-            app:dview_iconWidth="20dp"
-            app:dview_iconHeight="20dp"/>
+            app:dview_tb_tabIsDivided="false"
+            app:dview_tb_tabUnselectedTextColor="@color/colorTextNormal"
+            app:dview_tb_tabSelectedTextColor="@color/sky_blue"
+            app:dview_tb_indicatorType="NORMAL"
+            app:dview_tb_indicatorColor="@color/sky_blue"
+            app:dview_tb_tabPadding="10dp"/>
 
         <View
             android:layout_width="match_parent"

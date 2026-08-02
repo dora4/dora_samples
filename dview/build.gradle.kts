@@ -47,7 +47,7 @@ dependencies {
     implementation("com.github.dora4:dview-progress-view:1.0")
     implementation("com.github.dora4:dview-toggle-button:1.5")
     implementation("com.github.dora4:dview-toast:1.1")
-    implementation("com.github.dora4:dview-tabbar:1.4")
+    implementation("com.github.dora4:dview-tabbar:1.9")
     implementation("com.github.dora4:dview-radio-group:1.0")
     implementation("com.github.dora4:dview-empty-layout:1.14")
     implementation("com.github.dora4:dview-menu-panel:1.47")

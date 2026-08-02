@@ -31,16 +31,10 @@ class TabLayoutActivity : BaseActivity<ActivityTabLayoutBinding>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivityTabLayoutBinding) {
-        binding.tabBar.setTabs(
-            arrayOf(
-                DoraTabBar.DoraTab("频道1", null, null),
-                DoraTabBar.DoraTab("频道2", null, null),
-                DoraTabBar.DoraTab("频道3", null, null),
-            )
-        )
+        binding.tabBar.setTextTabs("频道1", "频道2", "频道3")
         binding.tabBar.setOnTabSelectListener(object : DoraTabBar.OnTabSelectListener {
             override fun onTabSelected(position: Int) {
-                binding.tabBar.setCurrentTab(position)
+                binding.tabBar.setCurrentTab(position, true)
                 when (position) {
                     0 -> {
                         showPage(pageOne)
